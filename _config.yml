@@ -22,7 +22,10 @@ url: "https://megus.org" # the base hostname & protocol for your site, e.g. http
 twitter_username: sugem
 
 header_pages:
+  - about.md
   - resume.md
+
+show_excerpts: true
 
 google_analytics: UA-104711057-2
 

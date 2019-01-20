@@ -207,6 +207,11 @@
   @include relative-font-size(1.5);
 }
 
+.rss-subscribe {
+  text-align: center;
+  font-size: $small-font-size;
+  color: $grey-color;
+}
 
 
 /**

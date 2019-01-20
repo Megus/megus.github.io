@@ -25,6 +25,7 @@ body {
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
+  font-weight: 100;
   flex-direction: column;
 }
 
@@ -94,6 +95,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
+  margin-top: $spacing-unit;
+  line-height: 1.2;
   font-weight: $base-font-weight;
 }
 
@@ -132,6 +135,8 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
@@ -251,4 +256,33 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+/**
+ * Iframes
+ */
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+@include media-query($on-palm) {
+  iframe {
+    height: 200px;
+  }
+}
+
+/**
+ * HR
+ */
+hr {
+  text-align: center;
+  border: 0;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+hr::before {
+  content: "...";
+  letter-spacing: 1em;
 }
