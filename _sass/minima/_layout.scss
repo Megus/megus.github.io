@@ -240,7 +240,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  min-height: 50vh;
+  min-height: 70vh;
 }
 
 .post-cover-title {
@@ -303,4 +303,11 @@
     color: $grey-color;
     text-decoration: underline;
   }
+}
+
+/**
+ * Home page
+ */
+.home-post-cover {
+  margin-bottom: $spacing-unit / 2;
 }

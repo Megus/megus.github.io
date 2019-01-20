@@ -21,9 +21,15 @@ layout: default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
+          {%- if post.cover_image -%}
+            <img class="home-post-cover" src="{{ post.cover_image }}" />
+          {%- endif -%}
           {{ post.excerpt }}
         {%- endif -%}
-        <div class="post-meta">{{ post.date | date: date_format }}</div>
+        <div class="post-meta">
+          <span>{{ post.date | date: date_format }}</span> |
+          <span><a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></span>
+        </div>
       </li>
       {%- endfor -%}
     </ul>
@@ -32,3 +38,4 @@ layout: default
   {%- endif -%}
 
 </div>
+<script id="dsq-count-scr" src="//megus.disqus.com/count.js" async></script>
