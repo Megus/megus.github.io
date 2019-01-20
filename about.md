@@ -3,6 +3,8 @@ layout: default
 title: About
 ---
 
+# About me
+
 Hello, my name is Roman “Megus” Petrov. I'm a software developer and a musician from Russia. 
 
 Social links:

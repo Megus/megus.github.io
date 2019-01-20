@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creativity through limitation: 8-bit demoscene"
-cover_image: /assets/blog-images/stellar-contour.jpg
+cover_image: /assets/blog-images/2018-08-05-cover.jpg
 ---
 
 "Creativity through limitation" is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.
@@ -31,10 +31,10 @@ My favorite 8-bit platforms are ZX Spectrum and Commodore 64. It's so cool to wa
 Atari 2600 demos are not as entertaining as, for example, C64 ones, but watch them keeping in mind all the crazy platform limitations. It's no surprise that demo coders like VCS — it's a real challenge to make any classic demo effect on it!
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/j90nIyq6_vM"></iframe>
-[Bang! by Xayax](http://www.pouet.net/prod.php?which=62955)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=62955">Bang! by Xayax</a></p>
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/1nTRMTnTeLQ"></iframe>
-[Chiphead by KK/Altair^DMA](http://www.pouet.net/prod.php?which=68505)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=68505">Chiphead by KK/Altair^DMA</a></p>
 
 ---- 
 
@@ -51,10 +51,10 @@ Atari 2600 demos are not as entertaining as, for example, C64 ones, but watch th
 Sounds produced by POKEY are also a giant leap from VCS's TIA. Four oscillators with several 1-bit waveforms and decent pitch accuracy (you could also pair two channels to improve it).
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/9EAG_811b4o"></iframe>
-[Near by Agenda](http://www.pouet.net/prod.php?which=64930)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=64930">Near by Agenda</a></p>
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/HVuEd742Yyg"></iframe>
-[Numen by Taqart](http://www.pouet.net/prod.php?which=9044)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=9044">Numen by Taqart</a></p>
 
 ---- 
 
@@ -71,10 +71,10 @@ On [CPC] you can also set a color for each pixel, similar to Atari XL/XE. In 160
 AY sound chip has three pulse wave oscillators, a noise generator that can be mixed with any pulse oscillator, and a simple amplitude envelope generator. However, musicians came up with a way to get more complex waveforms by using the fact that envelope generator can generate looped sawtooth and triangle envelopes and loop frequency can go to the audio range.
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/dDVAzMjA7bM"></iframe>
-[Still Rising by Vanity](http://www.pouet.net/prod.php?which=61177)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=61177">Still Rising by Vanity</a></p>
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/6wBwbRYL-F4"></iframe>
-[phX by Condense](http://www.pouet.net/prod.php?which=75725)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=75725">phX by Condense</a></p>
 
 ---- 
 
@@ -93,10 +93,10 @@ You can use only two colors ("ink" and "paper") in an 8-by-8 pixel block on Spec
 Even with multicolor you're still limited to the 16 colors palette. Here comes another trick: if you flip two colors each frame, you get a flickery illusion of a "mixed" color. You get about 36 colors this way. The cover image for this article was drawn using this technique. Developers often used the same trick on other platforms.
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/zQ1C4FpsR2o"></iframe>
-[Stellar Contour by Brainwave](http://www.pouet.net/prod.php?which=6110)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=6110">Stellar Contour by Brainwave</a></p>
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/b-kkzl2foaQ"></iframe>
-[Across the Edge by deMarche](http://www.pouet.net/prod.php?which=68035)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=68035">Across the Edge by deMarche</a></p>
 
 ---- 
 
@@ -122,10 +122,10 @@ The CPU of C64 is pretty slow, but the creative and smart usage of VIC-II allows
 The most outstanding feature of C64 for me is its sound chip — SID. It was designed by a musician for musicians, and it's fantastic! Three oscillator channels with multiple waveforms, ring modulation, oscillator sync, analog multimode filter and ADSR envelopes. No other platform came close to this power!
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/52mQzN439W4"></iframe>
-[We Come In Peace by Fairlight, Censor Design, Offence](http://www.pouet.net/prod.php?which=75743)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=75743">We Come In Peace by Fairlight, Censor Design, Offence</a></p>
 
 <iframe allowfullscreen src="https://www.youtube.com/embed/W-Crwct7U0c"></iframe>
-[Second Reality (C64 version) by Smash Designs](http://www.pouet.net/prod.php?which=1216)
+<p class="footnote"><a href="http://www.pouet.net/prod.php?which=1216">Second Reality (C64 version) by Smash Designs</a></p>
 
 [Demoscene]: https://en.wikipedia.org/wiki/Demoscene
 [Brainwave]: http://www.pouet.net/groups.php?which=715
