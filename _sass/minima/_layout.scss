@@ -231,6 +231,39 @@
   }
 }
 
+.post-cover {
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 50vh;
+}
+
+.post-cover-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+  position: absolute;
+  text-align: center;
+  text-shadow:
+    1px 1px 2px black,
+    -1px 1px 2px black,
+    -1px -1px 2px black,
+    1px -1px 2px black,
+    3px 3px 5px black;
+  width: 100%;
+  bottom: 0%;
+  color: #def;
+}
+
 .post-content {
   margin-bottom: $spacing-unit;
 

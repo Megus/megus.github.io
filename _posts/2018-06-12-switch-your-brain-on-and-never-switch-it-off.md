@@ -7,6 +7,8 @@ I started to learn programming when I was six, and this year I'm celebrating thi
 
 > — Switch your brain on and never switch it off!
 
+<!--more-->
+
 I first heard this phrase from the CTO at one of my previous jobs  —  Alexander Ionov. It sounds so trivial and obvious, but it greatly affected me. I want to tell you about some cases where developers forgot to switch on their brains.
 
 ## 1. Bubble sort in the production code

@@ -5,12 +5,14 @@ title: "How to become a better programmer"
 
 To become a better programmer, you need to keep doing two things: practice and learn. Yes, it's that simple and obvious. Finding what to learn may be difficult, and it's great when there's someone who can give good advice. I didn't get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.
 
+<!--more-->
+
 ## Learn the basics of functional programming
 
 I had a short Lisp course at the university, but I didn't understand how can I use what I learned. For a long time, I ignored functional programming. It was something obscure to me. Don't repeat my mistake! Even if you won't ever need to write in functional languages like Haskell, Scala, Erlang or Clojure, it's crucial to understand functional programming concepts and apply them in your work. Two essential concepts are:
 
-- [Pure functions](#)
-- [Data immutability](#)
+- [Pure functions]
+- [Data immutability]
 
 Pure functions are like math functions: they always evaluate the same result given the same arguments, and they don't cause any side effects. Make as much of your functions pure as possible! Pure functions are easier to debug and maintain, and you can cover them with unit tests easily.
 
@@ -32,8 +34,8 @@ You shouldn't underestimate the importance of a good software architecture! If y
 
 Define interfaces/protocols, make smaller classes, use class inheritance wisely, break down your code into layers (entities, repositories, use cases, user interface, etc.), write testable code... Software architecture is a vast topic, there are many different approaches and no single correct answer, but my recommendations would be:
 
-- Learn [SOLID principles](#).
-- Read about [“Clean Architecture” by Robert Martin (Uncle Bob)](#).
+- Learn [SOLID principles].
+- Read about [“Clean Architecture” by Robert Martin (Uncle Bob)].
 
 ---- 
 
@@ -43,3 +45,8 @@ It's not an exhaustive list of recommendations, and it only covers hard skills. 
 - Be modest, accept the fact that there are developers better than you and learn from them.
 - Don't be afraid to ask questions
 - Become a good team player
+
+[Pure functions]: https://en.wikipedia.org/wiki/Pure_function
+[Data immutability]: https://en.wikipedia.org/wiki/Immutable_object
+[SOLID principles]: https://en.wikipedia.org/wiki/SOLID
+[“Clean Architecture” by Robert Martin (Uncle Bob)]: https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
