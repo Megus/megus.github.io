@@ -27,10 +27,10 @@ Atari 2600 (also known as VCS) is the most famous second generation video game c
 
 Atari 2600 demos are not as entertaining as, for example, C64 ones, but watch them keeping in mind all the crazy platform limitations. It's no surprise that demo coders like VCS — it's a real challenge to make any classic demo effect on it!
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/j90nIyq6_vM"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/j90nIyq6_vM"></iframe>
 Bang! by Xayax
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/1nTRMTnTeLQ"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/1nTRMTnTeLQ"></iframe>
 Chiphead by KK/Altair^DMA
 
 ---- 
@@ -47,10 +47,10 @@ Atari 8-bit computers are a big step forward compared to VCS. New chips ANTIC an
 
 Sounds produced by POKEY are also a giant leap from VCS's TIA. Four oscillators with several 1-bit waveforms and decent pitch accuracy (you could also pair two channels to improve it).
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/9EAG_811b4o"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/9EAG_811b4o"></iframe>
 Near by Agenda
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/HVuEd742Yyg"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/HVuEd742Yyg"></iframe>
 Numen by Taqart
 
 ---- 
@@ -67,10 +67,10 @@ On CPC you can also set a color for each pixel, similar to Atari XL/XE. In 160x2
 
 AY sound chip has three pulse wave oscillators, a noise generator that can be mixed with any pulse oscillator, and a simple amplitude envelope generator. However, musicians came up with a way to get more complex waveforms by using the fact that envelope generator can generate looped sawtooth and triangle envelopes and loop frequency can go to the audio range.
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/dDVAzMjA7bM"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/dDVAzMjA7bM"></iframe>
 Still Rising by Vanity
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/6wBwbRYL-F4"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/6wBwbRYL-F4"></iframe>
 phX by Condense
 
 ---- 
@@ -89,10 +89,10 @@ You can use only two colors ("ink" and "paper") in an 8-by-8 pixel block on Spec
 
 Even with multicolor you're still limited to the 16 colors palette. Here comes another trick: if you flip two colors each frame, you get a flickery illusion of a "mixed" color. You get about 36 colors this way. The cover image for this article was drawn using this technique. Developers often used the same trick on other platforms.
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/zQ1C4FpsR2o"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/zQ1C4FpsR2o"></iframe>
 Stellar Contour by Brainwave
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/b-kkzl2foaQ"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/b-kkzl2foaQ"></iframe>
 Across the Edge by deMarche
 
 ---- 
@@ -118,8 +118,8 @@ The CPU of C64 is pretty slow, but the creative and smart usage of VIC-II allows
 
 The most outstanding feature of C64 for me is its sound chip — SID. It was designed by a musician for musicians, and it's fantastic! Three oscillator channels with multiple waveforms, ring modulation, oscillator sync, analog multimode filter and ADSR envelopes. No other platform came close to this power!
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/52mQzN439W4"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/52mQzN439W4"></iframe>
 We Come In Peace by Fairlight, Censor Design, Offence
 
-<iframe allowfullscreen src="http://www.youtube.com/embed/W-Crwct7U0c"></iframe>
+<iframe allowfullscreen src="https://www.youtube.com/embed/W-Crwct7U0c"></iframe>
 Second Reality (C64 version) by Smash Designs
