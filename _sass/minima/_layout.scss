@@ -130,9 +130,10 @@
 }
 
 .footer-col-wrapper {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(0.75);
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
+  text-align: center;
   @extend %clearfix;
 }
 
