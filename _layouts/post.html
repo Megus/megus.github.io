@@ -10,15 +10,16 @@ layout: default
       </div>
     {%- else -%}
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-      <span hidden itemscope itemtype="http://schema.org/Person" itemprop="author">
-        <span hidden itemprop="name">Roman "Megus" Petrov</span>
-      </span>
     {%- endif -%}
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+    </p>
+    <span hidden itemscope itemtype="http://schema.org/Person" itemprop="author">
+      <span hidden itemprop="name">Roman "Megus" Petrov</span>
+    </span>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
