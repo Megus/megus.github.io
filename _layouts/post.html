@@ -5,7 +5,7 @@ layout: default
   <header class="post-header">
     {%- if page.image -%}
       <div class="post-cover" style="background-image: url({{ page.image }})">
-        <img hidden itemtype="image" src="{{ page.image }}" />
+        <img hidden itemprop="image" src="{{ page.image }}" />
         <h1 class="post-cover-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       </div>
     {%- else -%}
