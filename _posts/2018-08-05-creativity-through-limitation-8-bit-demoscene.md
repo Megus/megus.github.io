@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creativity through limitation: 8-bit demoscene"
-cover_image: /assets/blog-images/2018-08-05-cover.jpg
+image: /assets/blog-images/2018-08-05-cover.jpg
 comments: true
 ---
 

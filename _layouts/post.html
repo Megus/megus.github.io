@@ -3,9 +3,8 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    {%- if page.cover_image -%}
-      <div class="post-cover" style="background-image: url({{ page.cover_image }})">
-        <img hidden itemprop="image" src="{{ page.cover_image }}" />
+    {%- if page.image -%}
+      <div class="post-cover" style="background-image: url({{ page.image }})">
         <h1 class="post-cover-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       </div>
     {%- else -%}
@@ -16,8 +15,6 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span hidden itemprop="name">Roman "Megus" Petrov</span></span>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
