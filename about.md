@@ -1,20 +1,18 @@
 ---
-layout: default
+layout: page
 title: About
 ---
 
-# About me
-
 Hello, my name is Roman “Megus” Petrov. I'm a software developer and a musician from Russia. 
+
+[My Resume](/resume.html)
 
 Social links:
 
-- [Medium](https://medium.com/@megus)
-- [Twitter](https://twitter.com/sugem)
 - [GitHub](https://github.com/Megus)
-- [Soundcloud](https://soundcloud.com/sugem)
-- [YouTube](https://www.youtube.com/user/megussugem)
+- [Twitter](https://twitter.com/sugem)
 - [Facebook](https://www.facebook.com/sugem)
 - [VK](https://vk.com/megus)
+- [Medium](https://medium.com/@megus)
 
 I'm also a founder of [Wise Hedgehog Studio](https://wisehedgehog.studio) — an indie development team.
