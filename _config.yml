@@ -28,6 +28,11 @@ header_pages:
   - about.md
   - music.md
 
+collections:
+  projects:
+    output: true
+
+
 show_excerpts: true
 excerpt_separator: <!--more-->
 

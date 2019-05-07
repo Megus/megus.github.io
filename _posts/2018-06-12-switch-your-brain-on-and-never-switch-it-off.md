@@ -2,6 +2,7 @@
 layout: post
 title: "Switch your brain on and never switch it off!"
 comments: true
+tags: [programming]
 ---
 
 I started to learn programming when I was six, and this year I'm celebrating thirty years of my programming experience (for the last sixteen years I'm getting paid for it). I learned a lot, and I believe it's time to start to share my experience with the world. The first thing I want to share is my motto:
