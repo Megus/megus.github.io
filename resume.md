@@ -1,52 +1,76 @@
 ---
 layout: page
-title: Resume
+title: Roman Petrov
 ---
 
-**Roman Petrov (36 y.o.)**
+Senior software development engineer, team leader.
 
-Professional software developer and team leader.
+- E-mail: [megus.sugem@gmail.com](mailto:megus.sugem@gmail.com)
+- Phone: +79648638619
 
-Graduated with Honors from Mari State Technical University in 2004.
+# Summary
 
-Languages: Russian (first language), English (upper intermediate, fluent speaker)
+I'm a highly-skilled software development engineer with 17 years of professional experience.
+My current main specialization is mobile application development: native iOS apps and
+cross-platform apps using Flutter toolkit. Over the years I worked with many languages and
+technologies and I'm able to learn new ones quickly.
 
-- email: [megus.sugem@gmail.com][e]
-- Telegram: [@megussugem][t]
+# Skills
 
-### As a programmer
+- Cross-platform mobile apps development with Flutter toolkit (Dart)
+- iOS development (Objective-C, Swift)
+- Web development (JavaScript, React)
+- Software architecture design
+- Project management
+- Leading small teams of developers
 
-I started programming when I was 6. Over the years I've worked with different platforms, technologies and programming languages. I love clean and testable code.
+# Experience
 
-- Current interests and specializations:
-  - iOS native app development (Swift)
-  - Web development (ReactJS)
-  - Game development (Defold Engine)
-  - Audio processing and sound synthesis
-- Current programming languages:
-  - Swift, Lua, JavaScript, Kotlin, Python, C
+### 2016−Present: GXB Development
 
-Notable projects:
+- Position: team leader, project manager, software developer
+- Summary: Lead a development team for Acroplia — a startup in education and team collaboration.
+- Key responsibilities:
+  - Managing the project backlog, prioritizing tasks
+  - Implementing collaboration features in the mobile application
+- Key achievements:
+  - Created a robust test passing library with multiple practice variants
+  - Ported ShareDB (realtime database) client library from JavaScript to Dart
 
-- Real-time polyphonic pitch detection and performance evaluation module for a guitar training app [Guitarability][g]
-- BattleBots for Gameboy Advance — fitting 8MB game in a 4MB cart (created compression utilities)
-- Audio engine for Gameboy Advance (C, ARM Assembler)
+### 2012−2016: Omega-R
 
-### As a manager
+- Position: CTO, project manager, iOS developer
+- Summary: led a cross-functional development team (up to 25 members)
+- Key responsibilities:
+  - Developing standards
+  - Educating new team members
+  - Project management on key projects
+  - Developing critical modules for key projects
+- Key achievements:
+  - Initiated a creation of constantly growing collection of in-house reusable libraries
+  - Developed an offline data synchronization module for a banking application
+  - Developed a realtime polyphonic pitch detection and performance evaluation module for a guitar training application
 
-I have over 8 years of experience in managing developers. I worked as a project manager, a team leader, and a CTO. Did code reviews, created coding standards, taught new developers, communicated with clients and managed projects.
+### 2010−2011: DIGT
 
-### Past workplaces
+- Position: software development engineer
+- Summary: web browser plugins and extensions development (JavaScript, C++)
 
-- Since 2016: GXB Development. Team leader, project manager, developer (JavaScript, Kotlin, Lua, Swift, PostgreSQL)
-- 2012—2016: Omega-R. CTO, iOS developer, project manager (Objective-C, Swift)
-- 2010—2011: DIGT. Web browser plugins and extensions developer (JavaScript, C++)
-- 2007—2010: Team Force LLC. Web and mobile app developer (PHP, Java, JavaScript, MySQL)
-- 2007: Foros InfoTravel. Developed Custom CRM for travel business (Perl, JavaScript)
-- 2006—2007: Freelance web developer. PHP, JavaScript, MySQL
-- 2003—2004: Freelance game developer, J2ME and GBA platforms (Java, C, C++, ARM Assembler)
-- 2002: Pilot Group RUS Ltd. Software developer (С++, ASP, MS SQL)
+### 2007−2010: Team Force LLC
 
-[e]: mailto:megus.sugem@gmail.com
-[t]: https://t.me/megussugem
-[g]: http://guitarability.com
+- Position: software development engineer
+- Summary: web and mobile app development (PHP, Java, JavaScript, SQL)
+- Key responsibilities:
+  - Software development
+  - Managing a project team of 3 developers
+
+# Education
+
+Mari State Technical University, Yoshkar-Ola, Russia (1999-2004).
+
+Degree: Specialist in Computer Science (graduated with Honors)
+
+# Languages
+
+- Russian (first language)
+- English (upper intermediate, fluent speaker)
