@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-22T06:54:38+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Megus</title><subtitle>Personal website of Roman &quot;Megus&quot; Petrov</subtitle><author><name>Megus</name></author><entry><title type="html">Ludum Dare 42 game jam: our experience</title><link href="http://localhost:4000/2018/09/02/ludum-dare-42.html" rel="alternate" type="text/html" title="Ludum Dare 42 game jam: our experience" /><published>2018-09-02T00:00:00+03:00</published><updated>2018-09-02T00:00:00+03:00</updated><id>http://localhost:4000/2018/09/02/ludum-dare-42</id><content type="html" xml:base="http://localhost:4000/2018/09/02/ludum-dare-42.html">&lt;p&gt;Last month &lt;a href=&quot;https://wisehedgehog.studio&quot;&gt;Wise Hedgehog Studio&lt;/a&gt; team took part in &lt;a href=&quot;https://ldjam.com/&quot;&gt;Ludum Dare 42 game jam&lt;/a&gt;. A game jam is an accelerated game development competition. Ludum Dare is the oldest and widely known online jam. It is held three times a year. You have two or three days to create a game that fits a given theme. This time participants submitted over three thousands games!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;It’s our second time participating in Ludum Dare, and we loved the experience. Over the weekend we created a little puzzle game “No Space In My Stomach” about an extraterrestrial snail Stewart.&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/X7WfU53GP1o&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://wisehedgehog.itch.io/no-space-in-my-stomach&quot;&gt;Play “No Space In My Stomach” at itch.io&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After the “submission hour” the voting begins. It lasts for three weeks, you play other games and rate them in several categories: Overall, Fun, Innovation, Theme, Graphics, Audio, Humor, Mood. Here are our results:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog-images/2018-09-05-results.jpg&quot; alt=&quot;No Space In My Stomach results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s not easy to create a game in just three days, but I believe we did pretty well. We received tons of positive feedback and constructive criticism! After some thought, we decided to continue the development later.&lt;/p&gt;
+
+&lt;p&gt;We recommend everyone who is interested in game development, to try to take part in some game jam (there are a lot of them) for the number of reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It’s a fantastic challenge. Creating a game is difficult, but doing it in a limited time frame is even more difficult.&lt;/li&gt;
+  &lt;li&gt;Train your creativity within some limitations (yes, game jams are also about &lt;a href=&quot;/2018/08/05/creativity-through-limitation-8-bit-demoscene.html&quot;&gt;“Creativity through limitations”&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Get instant feedback from fellow game developers.&lt;/li&gt;
+  &lt;li&gt;Meet new people.&lt;/li&gt;
+  &lt;li&gt;Learn from others.&lt;/li&gt;
+  &lt;li&gt;It’s fun!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;some-recommendations-for-ludum-dare-participants&quot;&gt;Some recommendations for Ludum Dare participants&lt;/h2&gt;
+
+&lt;p&gt;After taking part in two game jams, I came up with some general recommendations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t be too ambitious with your ideas and do something you can finish in the given time limits.&lt;/li&gt;
+  &lt;li&gt;Include clear instructions in the game itself on how to play it. Adding a tutorial is even better.&lt;/li&gt;
+  &lt;li&gt;Ask friends to play your game. They may help you to find and fix mistakes you overlooked because you know how to play it.&lt;/li&gt;
+  &lt;li&gt;Use some analytics framework (e.g. &lt;a href=&quot;https://gameanalytics.com&quot;&gt;GameAnalytics&lt;/a&gt;) to get valuable insights later.&lt;/li&gt;
+  &lt;li&gt;Create a browser version of your game. It significantly increases the chances that others play your game because they won’t need to download it. Desktop and mobile builds are always welcome, but a browser build is strongly recommended.&lt;/li&gt;
+  &lt;li&gt;Test your game on different devices/platforms/browsers. There’s not much time for that, of course, but try to do it still.&lt;/li&gt;
+  &lt;li&gt;Play and rate as many games, as you can. Other participants often rate your game in return.&lt;/li&gt;
+  &lt;li&gt;Leave detailed and quality feedback: praise strengths, mention weak sides, provide recommendations for possible improvements, describe emotions you felt when playing the game. Even if a game is weak, try to find something positive, but never lie and never write anything like “this game sucks.” Be supportive! The perfect example of quality feedback is the comment &lt;a href=&quot;http://ddrkirby.com/&quot;&gt;DDRKirby(ISQ)&lt;/a&gt; wrote about our game:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog-images/2018-09-05-ddr-kirby.jpg&quot; alt=&quot;DDRKirby's feedback&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t hesitate to write a blog post about your game and invite others to play it. Don’t forget to rate their games in return. It’s always appreciated. Don’t post too often.&lt;/li&gt;
+  &lt;li&gt;It is also good to write something like “Looking for some HTML5 games to play and rate! Leave links to your games in comments.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-we-made-no-space-in-my-stomach&quot;&gt;How we made “No Space In My Stomach”&lt;/h2&gt;
+
+&lt;h3 id=&quot;day-0-brainstorm&quot;&gt;Day 0: Brainstorm&lt;/h3&gt;
+
+&lt;p&gt;Just like previous time, we decided to start early by brainstorming ideas for all sixteen themes which made it to the final theme voting round. In our opinion, it’s an excellent way to wake up your “creative muscle,” if it’s sleeping. Last time it helped, we came up with ideas we used in the games.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-1-prototype&quot;&gt;Day 1: Prototype&lt;/h3&gt;
+
+&lt;p&gt;When we woke up Saturday morning and read the announced theme — “Running out of space” — we realized that the brainstorm didn’t work this time. We didn’t like this theme, the idea we had for it wasn’t that exciting. So we had to come up with a better concept.&lt;/p&gt;
+
+&lt;p&gt;Stanislav invented a puzzle-platformer with simple mechanics: there are colored platforms and “pills” of the same colors. When a character eats a pill, all platforms of a corresponding color disappear. Stomach size is limited, and you can’t eat more than three pills, so you need to think about which pills and in what order to eat. We also added a toilet which you use to free character’s stomach (but only once). It let us make pretty complicated levels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog-images/2018-09-05-beginning.jpg&quot; alt=&quot;How it all started&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;How it all started&lt;/p&gt;
+
+&lt;p&gt;To speed up development, we used a new library for Defold — Platypus. This library implements all ordinary platformer mechanics. Ludum Dare rules allow using 3rd party libraries. I built the first playable game prototype in about three hours; it was good enough to start designing and testing levels. Anna was working on graphics, and she did a fantastic job!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog-images/2018-09-05-process.jpg&quot; alt=&quot;Designers at work&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;Designers at work&lt;/p&gt;
+
+&lt;p&gt;While Anna and Stanislav were doing their job, I was fixing bugs and adding nice visual effects here and there.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-2-from-a-prototype-to-a-finished-game&quot;&gt;Day 2: From a prototype to a finished game&lt;/h3&gt;
+
+&lt;p&gt;I dedicated my second day to routine work mostly: adding more effects, polishing, and implementing GUI. However, the best part was composing music and recording sound effects. Music was the most challenging task, I finally wrote it after three poor attempts.&lt;/p&gt;
+
+&lt;p&gt;Anna and Stanislav finished their work by evening, and the game was almost complete! My kids took part in testing while I was finishing GUI and fixing minor bugs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/blog-images/2018-09-05-agatha.jpg&quot; alt=&quot;Agatha playing No Space In My Stomach&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;day-3-final-polishing&quot;&gt;Day 3: final polishing&lt;/h3&gt;
+
+&lt;p&gt;The third day was Monday, and we all have our daily jobs, so there wasn’t much time to work on the game. So I just added saving game progress and a little tutorial, integrated GameAnalytics, and, finally, published the game. We did it!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Now, when the jam is over, and we collected much feedback, it’s time to retrospect our work.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-we-did-right&quot;&gt;What we did right&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We didn’t try to do something too ambitious and made a simple fun game.&lt;/li&gt;
+  &lt;li&gt;Game mechanics we came up with bases on a familiar genre — platformer. It’s simple and straightforward but still gives much freedom for creating challenging levels and adding new features.&lt;/li&gt;
+  &lt;li&gt;The fact that Stanislav could spend most of his time just designing levels helped us to have multiple well-designed ones. The difficulty curve is also good enough for a jam game.&lt;/li&gt;
+  &lt;li&gt;Cute and stylish graphics with soft colors. Almost everyone who left feedback to our game expressed admiration for Anna’s work.&lt;/li&gt;
+  &lt;li&gt;We added a little tutorial to the game to help people understand what to do.&lt;/li&gt;
+  &lt;li&gt;Many people praised the music and sound effects.&lt;/li&gt;
+  &lt;li&gt;The user interface has transition effects and animations, and the game looks finished and polished.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-we-did-wrong&quot;&gt;What we did wrong&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We didn’t test the game on different browsers. The first version was very slow in Chrome. We did most of the testing in Defold IDE, and some final tests we did in Safari, not a very common browser. We fixed this problem quickly, but some people reported it.&lt;/li&gt;
+  &lt;li&gt;The character’s move was a bit too slow for most people (even though it’s a snail).&lt;/li&gt;
+  &lt;li&gt;We didn’t include the information about controls in the game itself. While they’re pretty obvious, some users still reported this as an issue.&lt;/li&gt;
+  &lt;li&gt;Menu navigation is mouse-only, while the game is keyboard-only. We’d better allow users to navigate through the menu with a keyboard too.&lt;/li&gt;
+  &lt;li&gt;The tutorial doesn’t include enough details. Most people didn’t notice that there are horizontally and vertically oriented pills, so they thought that pills seem to remove random platforms.&lt;/li&gt;
+  &lt;li&gt;Some people reported that the introduction of different mechanics was a bit too fast. When we continue to develop the game, we’ll add more tutorial levels.&lt;/li&gt;
+  &lt;li&gt;Colorblind people had problems recognizing some pills.&lt;/li&gt;
+  &lt;li&gt;The platformer library we used is a new one and has some bugs. The main problem is that you can’t jump from a platform which is moving down.&lt;/li&gt;
+  &lt;li&gt;Several people said that the music was repetitive and too loud. Unfortunately, I didn’t have much time to write a longer track and my experience in game music is not that big, the background music is still a challenge for me.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ludum Dare 42 was a fantastic experience for our team. We’re looking forward to taking part in the next jam in December!&lt;/p&gt;</content><author><name>Megus</name></author><category term="gamedev" /><summary type="html">Last month Wise Hedgehog Studio team took part in Ludum Dare 42 game jam. A game jam is an accelerated game development competition. Ludum Dare is the oldest and widely known online jam. It is held three times a year. You have two or three days to create a game that fits a given theme. This time participants submitted over three thousands games!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/blog-images/2018-09-05-cover.jpg" /></entry><entry><title type="html">Creativity through limitation: 8-bit demoscene</title><link href="http://localhost:4000/2018/08/05/creativity-through-limitation-8-bit-demoscene.html" rel="alternate" type="text/html" title="Creativity through limitation: 8-bit demoscene" /><published>2018-08-05T00:00:00+03:00</published><updated>2018-08-05T00:00:00+03:00</updated><id>http://localhost:4000/2018/08/05/creativity-through-limitation-8-bit-demoscene</id><content type="html" xml:base="http://localhost:4000/2018/08/05/creativity-through-limitation-8-bit-demoscene.html">&lt;p&gt;“Creativity through limitation” is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Demoscene&quot;&gt;Demoscene&lt;/a&gt; is a computer art subculture; its roots are in software cracking culture. Starting back in the 80s, crackers were adding small introductions to games — cracktros. Cracktros usually featured sweet music and visual effects. Crackers started competing for the best effects, and it became a whole new culture — the demoscene. A demo is like a music video, but the computer in real-time generates all visuals.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My favorite 8-bit platforms are ZX Spectrum and Commodore 64. It’s so cool to watch how demomakers push the hardware to absolute limits; you want to scream “It’s impossible!”, However, it’s possible. In the late 90s, I was a member of the demoscene team &lt;a href=&quot;http://www.pouet.net/groups.php?which=715&quot;&gt;Brainwave&lt;/a&gt;; we made several demos for ZX Spectrum, PC, and GameBoy Advance.&lt;/p&gt;
+
+&lt;p&gt;8-bit platforms have different graphical limitations. Often you’re limited to two or four colors for an 8-by-8 pixel block, or it’s up to 16 colors for each pixel from a bigger palette. However, there’s a trick which allows using more colors: “racing the beam.” It is based on how CRT displays work. A ray draws the frame line by line, so if you synchronize to its movement and change color attributes before it draws the next line, you can get more colors. I had thought that this trick was used only on ZX Spectrum until I learned more about other platforms. Now I know that the history of “racing the beam” goes back to the late 70s and Atari 2600 game console, where it was the only way to display something more or less complex. So, let’s begin with Atari 2600 demos!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;atari-2600&quot;&gt;Atari 2600&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: &lt;a href=&quot;https://en.wikipedia.org/wiki/MOS_Technology_6507&quot;&gt;MOS 6507&lt;/a&gt; @ 1.19MHz&lt;/li&gt;
+  &lt;li&gt;RAM: 128 bytes (it’s not a mistake. BYTES)&lt;/li&gt;
+  &lt;li&gt;Graphics: 256x192, up to 320x240, 128 colors&lt;/li&gt;
+  &lt;li&gt;Sound: &lt;a href=&quot;https://en.wikipedia.org/wiki/Television_Interface_Adaptor&quot;&gt;custom TIA chip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release date: 1977&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Atari_2600&quot;&gt;Atari 2600&lt;/a&gt; (also known as VCS) is the most famous second generation video game console. “Racing the beam” was the “advanced trick” on other 8-bit platforms, but for VCS game developers it was a common pain. The palette of TIA chip (it handled both video and audio) is pretty rich, but to get more than two colors in a single line, you need to race the beam while it’s drawing this line.&lt;/p&gt;
+
+&lt;p&gt;128 bytes of RAM is not enough for anyone, every byte counts! Sound capabilities are limited as hell too: two channels with volume control and 32 possible pitches. Pitches are out of tune, so it’s difficult to make it sound nice.&lt;/p&gt;
+
+&lt;p&gt;Atari 2600 demos are not as entertaining as, for example, C64 ones, but watch them keeping in mind all the crazy platform limitations. It’s no surprise that demo coders like VCS — it’s a real challenge to make any classic demo effect on it!&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/j90nIyq6_vM&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=62955&quot;&gt;Bang! by Xayax&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/1nTRMTnTeLQ&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=68505&quot;&gt;Chiphead by KK/Altair^DMA&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;atari-xlxe&quot;&gt;Atari XL/XE&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: &lt;a href=&quot;https://en.wikipedia.org/wiki/MOS_Technology_6502&quot;&gt;MOS 6502&lt;/a&gt; @ 1.79MHz&lt;/li&gt;
+  &lt;li&gt;RAM: 64KB&lt;/li&gt;
+  &lt;li&gt;Graphics: up to 320x192, 256 colors&lt;/li&gt;
+  &lt;li&gt;Sound: &lt;a href=&quot;https://en.wikipedia.org/wiki/POKEY&quot;&gt;custom POKEY chip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release date: 1983&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Atari_8-bit_family&quot;&gt;Atari 8-bit computers&lt;/a&gt; are a big step forward compared to VCS. New chips &lt;a href=&quot;https://en.wikipedia.org/wiki/ANTIC&quot;&gt;ANTIC&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/CTIA_and_GTIA&quot;&gt;GTIA&lt;/a&gt; gave them multiple graphics modes and greater possibilities. ANTIC allows mixing different modes on a screen with a display list — a little program that defines how to draw each line. In graphics modes, you could set a color for each pixel, but only from a subset of all possible colors. In 320x192 mode, you have only 2 colors, in 80x192 modes — up to 16. If you want to display more colors simultaneously, you need to update palette each scanline — the same “racing the beam” trick.&lt;/p&gt;
+
+&lt;p&gt;Sounds produced by POKEY are also a giant leap from VCS’s TIA. Four oscillators with several 1-bit waveforms and decent pitch accuracy (you could also pair two channels to improve it).&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/9EAG_811b4o&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=64930&quot;&gt;Near by Agenda&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/HVuEd742Yyg&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=9044&quot;&gt;Numen by Taqart&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;amstrad-cpc-6128&quot;&gt;Amstrad CPC 6128&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: &lt;a href=&quot;https://en.wikipedia.org/wiki/Zilog_Z80&quot;&gt;Zilog Z80&lt;/a&gt; @ 4MHz&lt;/li&gt;
+  &lt;li&gt;RAM: 128KB&lt;/li&gt;
+  &lt;li&gt;Graphics: 160x200, 320x200 or 640x200, 27 colors&lt;/li&gt;
+  &lt;li&gt;Sound: &lt;a href=&quot;https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910&quot;&gt;General Instrument AY-3-8912&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release date: 1985&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On &lt;a href=&quot;https://en.wikipedia.org/wiki/Amstrad_CPC&quot;&gt;CPC&lt;/a&gt; you can also set a color for each pixel, similar to Atari XL/XE. In 160x200 mode you can use 16 colors from 27 color palette, in 320x200 — 4 colors (similar to CGA on PC), in 640x200 — 2 colors. There’s no display list like in Atari XL/XE, but there is a very handy h-sync interrupt which simplifies implementing “racing the beam” trick.&lt;/p&gt;
+
+&lt;p&gt;AY sound chip has three pulse wave oscillators, a noise generator that can be mixed with any pulse oscillator, and a simple amplitude envelope generator. However, musicians came up with a way to get more complex waveforms by using the fact that envelope generator can generate looped sawtooth and triangle envelopes and loop frequency can go to the audio range.&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/dDVAzMjA7bM&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=61177&quot;&gt;Still Rising by Vanity&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/6wBwbRYL-F4&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=75725&quot;&gt;phX by Condense&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;zx-spectrum-128&quot;&gt;ZX Spectrum 128&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: &lt;a href=&quot;https://en.wikipedia.org/wiki/Zilog_Z80&quot;&gt;Zilog Z80&lt;/a&gt; @ 3.5MHz&lt;/li&gt;
+  &lt;li&gt;RAM: 128KB&lt;/li&gt;
+  &lt;li&gt;Graphics: 256x192, 16 colors&lt;/li&gt;
+  &lt;li&gt;Sound: &lt;a href=&quot;https://en.wikipedia.org/wiki/General_Instrument_AY-3-8910&quot;&gt;General Instrument AY-3-8912&lt;/a&gt; or Yamaha YM2149F&lt;/li&gt;
+  &lt;li&gt;Release date: 1985&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ZX_Spectrum&quot;&gt;Speccy&lt;/a&gt; was my first computer. ZX Basic and Z80 assembly were my first programming languages. Spectrum was the most popular 8-bit computer in Russia because Soviet engineers “hacked” its custom ULA chip and made numerous clones.&lt;/p&gt;
+
+&lt;p&gt;You can use only two colors (“ink” and “paper”) in an 8-by-8 pixel block on Spectrum. The video memory splits into a bitmap part, and color attributes part. By using “multicolor” (that’s how we call “racing the beam” on Speccy), you can get two colors in an 8-by-1 pixel block. Unlike other platforms, there are no h-sync interrupts or a way to know which line is currently being drawn, so you need to count every instruction cycle in your code to make perfect multicolor. Moreover, you’d better not waste precious CPU time by waiting; the best coders used all available CPU cycles to do some calculations for their effects.&lt;/p&gt;
+
+&lt;p&gt;Even with multicolor you’re still limited to the 16 colors palette. Here comes another trick: if you flip two colors each frame, you get a flickery illusion of a “mixed” color. You get about 36 colors this way. The cover image for this article was drawn using this technique. Developers often used the same trick on other platforms.&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/zQ1C4FpsR2o&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=6110&quot;&gt;Stellar Contour by Brainwave&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/b-kkzl2foaQ&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=68035&quot;&gt;Across the Edge by deMarche&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;commodore-64&quot;&gt;Commodore 64&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CPU: &lt;a href=&quot;https://en.wikipedia.org/wiki/MOS_Technology_6510&quot;&gt;MOS 6510&lt;/a&gt; @ 1MHz&lt;/li&gt;
+  &lt;li&gt;RAM: 64KB&lt;/li&gt;
+  &lt;li&gt;Graphics: 160x200 or 320x200, 16 colors&lt;/li&gt;
+  &lt;li&gt;Sound: &lt;a href=&quot;https://en.wikipedia.org/wiki/MOS_Technology_SID&quot;&gt;MOS 6581/8580 SID&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Release date: 1982&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Commodore_64&quot;&gt;C64&lt;/a&gt; is the king of 8-bit platforms. It is the highest-selling 8-bit computer ever, and the community is still very active. Graphics-wise C64 is comparable to other platforms, but it has some nice features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hardware sprites.&lt;/li&gt;
+  &lt;li&gt;Hardware scrolling.&lt;/li&gt;
+  &lt;li&gt;Raster interrupts (remember multicolor on Speccy? On C64 you don’t need to count every CPU cycle to synchronize, there’s an interrupt for that)&lt;/li&gt;
+  &lt;li&gt;Combining high-res (fewer colors) and low-res (more colors) graphics on a screen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In 320x200 mode Commodore is similar to Spectrum — only 2 colors in 8x8 block, but in 160x200 video mode, it can have 4 colors in 4x8 blocks. On top of that, it can display eight sprites. Just like on Spectrum, to achieve more colors and better graphics, C64 coders used “racing the beam” (synchronizing code with CRT display ray) trick, but as &lt;a href=&quot;https://en.wikipedia.org/wiki/MOS_Technology_VIC-II&quot;&gt;VIC-II&lt;/a&gt; video chip has raster interrupts, it was easier to implement.&lt;/p&gt;
+
+&lt;p&gt;The CPU of C64 is pretty slow, but the creative and smart usage of VIC-II allows demomakers to achieve results that are comparable or even better than on faster machines like ZX Spectrum or Amstrad CPC.&lt;/p&gt;
+
+&lt;p&gt;The most outstanding feature of C64 for me is its sound chip — SID. It was designed by a musician for musicians, and it’s fantastic! Three oscillator channels with multiple waveforms, ring modulation, oscillator sync, analog multimode filter and ADSR envelopes. No other platform came close to this power!&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/52mQzN439W4&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=75743&quot;&gt;We Come In Peace by Fairlight, Censor Design, Offence&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/W-Crwct7U0c&quot;&gt;&lt;/iframe&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=1216&quot;&gt;Second Reality (C64 version) by Smash Designs&lt;/a&gt;&lt;/p&gt;</content><author><name>Megus</name></author><category term="demoscene" /><category term="creativity_through_limitations" /><category term="8bit" /><summary type="html">“Creativity through limitation” is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/blog-images/2018-08-05-cover.jpg" /></entry><entry><title type="html">How to become a better programmer</title><link href="http://localhost:4000/2018/06/19/how-to-become-a-better-programmer.html" rel="alternate" type="text/html" title="How to become a better programmer" /><published>2018-06-19T00:00:00+03:00</published><updated>2018-06-19T00:00:00+03:00</updated><id>http://localhost:4000/2018/06/19/how-to-become-a-better-programmer</id><content type="html" xml:base="http://localhost:4000/2018/06/19/how-to-become-a-better-programmer.html">&lt;p&gt;To become a better programmer, you need to keep doing two things: practice and learn. Yes, it’s that simple and obvious. Finding what to learn may be difficult, and it’s great when there’s someone who can give good advice. I didn’t get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;learn-the-basics-of-functional-programming&quot;&gt;Learn the basics of functional programming&lt;/h2&gt;
+
+&lt;p&gt;I had a short Lisp course at the university, but I didn’t understand how can I use what I learned. For a long time, I ignored functional programming. It was something obscure to me. Don’t repeat my mistake! Even if you won’t ever need to write in functional languages like Haskell, Scala, Erlang or Clojure, it’s crucial to understand functional programming concepts and apply them in your work. Two essential concepts are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Pure_function&quot;&gt;Pure functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Immutable_object&quot;&gt;Data immutability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pure functions are like math functions: they always evaluate the same result given the same arguments, and they don’t cause any side effects. Make as much of your functions pure as possible! Pure functions are easier to debug and maintain, and you can cover them with unit tests easily.&lt;/p&gt;
+
+&lt;p&gt;Immutable data structures are great because of reasons similar to pure functions: when your code uses immutable data, you get less unpleasant side effects, it saves your debug time. Instead of modifying data directly, you create a copy with necessary changes. This way if the original data is used elsewhere then your changes don’t have a chance to break anything. Some languages, e.g., Swift, have native support for immutable data structures, in other languages like Javascript you can use frameworks to create immutable objects.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn-different-programming-languages&quot;&gt;Learn different programming languages&lt;/h2&gt;
+
+&lt;p&gt;There are hundreds of languages, and you don’t need to learn all of them. I like learning (or at least reading about) new languages to find useful concepts and ideas. Even if you don’t use some language, you can still learn something valuable that you can apply to your work.&lt;/p&gt;
+
+&lt;p&gt;Of all the languages I want to highlight one of my favorite ones — &lt;a href=&quot;#&quot;&gt;C&lt;/a&gt;. It was the second high-level language I learned (the first one was Basic), and I’m still confident that it was a very important time investment. I wouldn’t recommend it as the first language for anyone, but you should try and learn C to understand how things work on a lower level. When you grasp the idea of pointers, you may feel enlightenment. I did, even that I had good experience with Assembler already.&lt;/p&gt;
+
+&lt;h2 id=&quot;understand-data-structures&quot;&gt;Understand data structures&lt;/h2&gt;
+
+&lt;p&gt;It’s important to know how different data structures (dictionaries, lists, sets, trees, etc.) work inside. Most languages or their standard libraries provide these structures out-of-the-box, and you rarely need to implement them yourself. However, this knowledge may become important when you optimize your code for performance or memory usage. To improve the understanding, try to implement common data structures in C. It’s an excellent exercise.&lt;/p&gt;
+
+&lt;h2 id=&quot;learn-about-software-architecture&quot;&gt;Learn about software architecture&lt;/h2&gt;
+
+&lt;p&gt;You shouldn’t underestimate the importance of a good software architecture! If your project is bigger than a simple calculator, you’d better design an architecture properly.&lt;/p&gt;
+
+&lt;p&gt;Define interfaces/protocols, make smaller classes, use class inheritance wisely, break down your code into layers (entities, repositories, use cases, user interface, etc.), write testable code… Software architecture is a vast topic, there are many different approaches and no single correct answer, but my recommendations would be:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learn &lt;a href=&quot;https://en.wikipedia.org/wiki/SOLID&quot;&gt;SOLID principles&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Read about &lt;a href=&quot;https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html&quot;&gt;“Clean Architecture” by Robert Martin (Uncle Bob)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;It’s not an exhaustive list of recommendations, and it only covers hard skills. To become a better developer, you should also develop various soft skills. And here are some bits of advice to wrap up this article:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be curious, never stop learning!&lt;/li&gt;
+  &lt;li&gt;Be modest, accept the fact that there are developers better than you and learn from them.&lt;/li&gt;
+  &lt;li&gt;Don’t be afraid to ask questions&lt;/li&gt;
+  &lt;li&gt;Become a good team player&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Megus</name></author><category term="programming" /><summary type="html">To become a better programmer, you need to keep doing two things: practice and learn. Yes, it’s that simple and obvious. Finding what to learn may be difficult, and it’s great when there’s someone who can give good advice. I didn’t get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.</summary></entry><entry><title type="html">Switch your brain on and never switch it off!</title><link href="http://localhost:4000/2018/06/12/switch-your-brain-on-and-never-switch-it-off.html" rel="alternate" type="text/html" title="Switch your brain on and never switch it off!" /><published>2018-06-12T00:00:00+03:00</published><updated>2018-06-12T00:00:00+03:00</updated><id>http://localhost:4000/2018/06/12/switch-your-brain-on-and-never-switch-it-off</id><content type="html" xml:base="http://localhost:4000/2018/06/12/switch-your-brain-on-and-never-switch-it-off.html">&lt;p&gt;I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;— Switch your brain on and never switch it off!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I first heard this phrase from the CTO at one of my previous jobs  —  Alexander Ionov. It sounds so trivial and obvious, but it greatly affected me. I want to tell you about some cases where developers forgot to switch on their brains.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-bubble-sort-in-the-production-code&quot;&gt;1. Bubble sort in the production code&lt;/h2&gt;
+
+&lt;p&gt;It happened when we were developing a game for a social network. A network had been planning to launch a developer platform in a month, and our game was to become one of the first games there. What a godsend! However, this godsend turned into a nightmare. My teammate wrote a leaderboard generation function that queried the whole top scores table from the database and used a bubble sort. There was no code review and a little testing. The game was approved by QA team and successfully published. In the very first hours after launch the server stopped responding to requests - it was too busy doing sorting! We had to stay in the office until midnight that day and fixed the issue with simple SQL sorting.&lt;/p&gt;
+
+&lt;p&gt;In a couple of days SQL sorting queries also became slow, but we wrote a proper leaderboard generation module before it was too late.&lt;/p&gt;
+
+&lt;p&gt;I understand why my teammate did it this way: he wrote a temporary implementation (and it’s perfectly fine to use bubble sort as a temporary solution), but forgot that thousands of people would use the app he wrote. Don’t forget to do load testing and think how you can scale your app.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-a-pedometer-app-that-crashes-in-anhour&quot;&gt;2. A pedometer app that crashes in an hour&lt;/h2&gt;
+
+&lt;p&gt;A team was working on an update to a pedometer mobile app. The code quality was bad, and the team decided to refactor it. They did a great job improving the architecture, but then they made a big mistake rewriting the core logic, the step counting routine. The old routine was working perfectly fine, but the new one was very unstable, it took weeks to make it work. They finally did it, and everyone was happy, but client’s QA engineers found out that app crashes during long workouts.&lt;/p&gt;
+
+&lt;p&gt;I joined the team to help and here’s what I found: the rewritten step counting routine was querying all recorded data every step to calculate aggregate values like pace, speed, and distance. So, the data to process used more and more memory leading to an inevitable “Out of memory” crash. The original routine used a sliding window approach and could run for hours. We reverted back to the old code and adapted it to the new data model.&lt;/p&gt;
+
+&lt;p&gt;There’s a golden rule in software development: “If something works, don’t touch it!”&lt;/p&gt;
+
+&lt;h2 id=&quot;3-a-chat-app-that-cant-handle-a-hundred-messages-in-a-conversation&quot;&gt;3. A chat app that can’t handle a hundred messages in a conversation&lt;/h2&gt;
+
+&lt;p&gt;Another mobile app: a messenger for sending pictures. Everything was OK until a conversation became quite long. The app crashed because it tried to keep all chat images in the memory. I’m not saying it’s terrible, it’s a good temporary solution for a prototype when you are more focused on the user experience. However, when you finish prototyping, you should replace your temporary solution with a proper implementation. And never forget to test your code on the real use cases!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’m not saying that the developers who make these mistakes lack skills. No, usually they do a great job, but sometimes they just forget to switch their brains on. It happens to all of us, and it happened to me as well. However, every mistake is an opportunity to learn. Don’t miss these opportunities!&lt;/p&gt;
+
+&lt;p&gt;Can you share some funny situations like that?&lt;/p&gt;</content><author><name>Megus</name></author><category term="programming" /><summary type="html">I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto: — Switch your brain on and never switch it off!</summary></entry></feed>
