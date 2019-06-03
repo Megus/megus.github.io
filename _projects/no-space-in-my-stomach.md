@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Guitarability
+title: No Space In My Stomach
 ---
 
 Oh, hi!

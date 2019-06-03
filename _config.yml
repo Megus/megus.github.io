@@ -26,6 +26,7 @@ disqus:
 
 header_pages:
   - about.md
+  - portfolio.md
   - music.md
 
 collections:
