@@ -320,3 +320,32 @@
 .home-post-cover {
   margin-bottom: $spacing-unit / 2;
 }
+
+
+/**
+ * Portfolio page
+ */
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.portfolio-project {
+  width: -webkit-calc(50% - (#{$spacing-unit}));
+  width:         calc(50% - (#{$spacing-unit}));
+  padding-bottom: $spacing-unit;
+
+  h3 {
+    margin-top: $spacing-unit / 2;
+  }
+}
+
+@include media-query($on-palm) {
+  .portfolio-project {
+    width: 100%;
+    padding-bottom: $spacing-unit;
+  }
+}
