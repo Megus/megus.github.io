@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "Defold extensions"
-description: "Various open-source libraries and extensions for Defold game engine"
-image: /assets/blog-images/2018-08-05-cover.jpg
+description: "Open-source libraries and extensions for Defold game engine"
+image: /assets/portfolio/defold-extensions.png
 order: 4
 ---
 
