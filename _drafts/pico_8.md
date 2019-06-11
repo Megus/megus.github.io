@@ -12,8 +12,9 @@ This is the second article in “Creativity through limitation” series. Check 
 
 When was the last time you coded something just for fun? If you’re like me, then it haven’t happened for years. However, about a year ago I learned about PICO-8, bought it, and I have to say that these were probably the most worthy $15 I spent on myself last year!
 
-## What is PICO-8?
+<!--more-->
 
+## What is PICO-8?
 
 > PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a command line and simple built-in tools for creating your own cartridges and exploring the PICO-8 cartverse.
 

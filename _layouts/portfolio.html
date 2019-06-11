@@ -14,8 +14,8 @@ layout: default
       {%- assign ordered_projects = site.projects | sort:"order" -%}
       {%- for project in ordered_projects -%}
       <div class="portfolio-project">
-          <img src="{{ project.image }}" />
-          <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+          <a href="{{ project.url | relative_url }}"><img src="{{ project.image }}" />
+          <h3>{{ project.title | escape }}</h3></a>
           <p>{{ project.description | escape }}</p>
         </div>
       {%- endfor -%}
