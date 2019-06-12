@@ -2,9 +2,11 @@
 layout: project
 title: Malady
 description: "4K intro for ZX Spectrum"
-image: /assets/blog-images/2018-08-05-cover.jpg
-order: 5
+image: /assets/portfolio/malady.png
+order: 6
 ---
+
+{% youtube CvZNnYb1cZQ %}
 
 List of effects
 
