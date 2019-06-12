@@ -8,7 +8,7 @@ order: 6
 
 {% youtube CvZNnYb1cZQ %}
 
-I wrote Malady in 1999 and it took the 3rd place at CAFe'99 demoparty in ZX 4K Intro Compo. I thought that the source code was lost, but I found it at [ZX Spectrum Open Source Web Project](http://opensourcezx.untergrund.net/b_demo-malady_src.html) and uploaded it to [GitHub](https://github.com/Megus/malady4k).
+I wrote Malady in 1999, and it took the 3rd place at CAFe'99 demoparty in ZX 4K Intro Compo. I thought that the source code was lost, but I found it at [ZX Spectrum Open Source Web Project](http://opensourcezx.untergrund.net/b_demo-malady_src.html) and uploaded it to [GitHub](https://github.com/Megus/malady4k).
 
 The list of effects:
 

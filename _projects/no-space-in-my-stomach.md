@@ -14,4 +14,4 @@ order: 3
 
 We ([Wise Hedgehog Studio](https://wisehedgehog.studio)) developed this game during Ludum Dare 42 game jam. When you have only 72 hours to create a game from scratch, it boosts your creativity.
 
-I wrote all the code and composed music, my wife Anna created all the graphics and Stanislav Rozhkov did all the game design work: game mechanics and level design. The game is developed with [Defold game engine](https://www.defold.com).
+I wrote all the code, and composed music, my wife Anna created all the graphics, and Stanislav Rozhkov did all the game design work: game mechanics and level design. The game is developed with [Defold game engine](https://www.defold.com).

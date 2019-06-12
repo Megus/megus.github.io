@@ -26,6 +26,8 @@ disqus:
 
 exclude:
   - build.sh
+  - Gemfile
+  - Gemfile.lock
 
 header_pages:
   - about.md
