@@ -24,6 +24,9 @@ twitter_username: sugem
 disqus:
   shortname: megus
 
+exclude:
+  - build.sh
+
 header_pages:
   - about.md
   - portfolio.md
