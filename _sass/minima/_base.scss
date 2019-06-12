@@ -213,21 +213,22 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #{$grey-color};
+  padding-right: 5px;
+  vertical-align: text-top;
 }
 
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  fill: #{$grey-color};
+  padding-right: 16px;
+  vertical-align: text-top;
 }
-
-
 
 /**
  * Tables

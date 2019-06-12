@@ -118,57 +118,19 @@
   padding: $spacing-unit 0;
 }
 
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
 .footer-col-wrapper {
-  @include relative-font-size(0.75);
+  @include relative-font-size(0.9);
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
   text-align: center;
-  @extend %clearfix;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
   padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
 }
 
 @include media-query($on-palm) {
@@ -178,7 +140,6 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
-
 
 
 /**
@@ -252,22 +213,29 @@
   min-height: 70vh;
 }
 
+@include media-query($on-palm) {
+  .post-cover {
+    min-height: 50vh;
+  }
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, 70%, rgba(0, 0, 0, 0.9) 100%);
+  position: absolute;
+}
+
 .post-cover-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2.5);
   letter-spacing: -1px;
   line-height: 1;
 
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+  @include media-query($on-palm) {
+    @include relative-font-size(2);
   }
   position: absolute;
   text-align: center;
-  text-shadow:
-    1px 1px 2px black,
-    -1px 1px 2px black,
-    -1px -1px 2px black,
-    1px -1px 2px black,
-    3px 3px 5px black;
   width: 100%;
   bottom: 0%;
   color: #def;
@@ -342,6 +310,30 @@
     margin-top: $spacing-unit / 2;
   }
 }
+
+.portfolio-project-cover {
+  width: 100%;
+  padding-bottom: 75%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.portfolio-project-title {
+  @include relative-font-size(1.5);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.25);
+  }
+  position: absolute;
+  text-align: center;
+  width: 99%;
+  bottom: 0%;
+  color: #def;
+}
+
 
 @include media-query($on-palm) {
   .portfolio-project {

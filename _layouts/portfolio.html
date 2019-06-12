@@ -14,10 +14,15 @@ layout: default
       {%- assign ordered_projects = site.projects | sort:"order" -%}
       {%- for project in ordered_projects -%}
       <div class="portfolio-project">
-          <a href="{{ project.url | relative_url }}"><img src="{{ project.image }}" />
-          <h3>{{ project.title | escape }}</h3></a>
-          <p>{{ project.description | escape }}</p>
-        </div>
+        <a href="{{ project.url | relative_url }}">
+          <div class="portfolio-project-cover" style="background-image: url({{ project.image }})">
+            <div class="gradient">
+              <h3 class="portfolio-project-title">{{ project.title | escape }}</h3>
+            </div>
+          </div>
+        </a>
+        <p>{{ project.description | escape }}</p>
+      </div>
       {%- endfor -%}
     </div>
 

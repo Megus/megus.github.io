@@ -2,7 +2,7 @@
 layout: project
 title: Guitarability
 description: "Performance evaluation module for a guitar training application"
-image: /assets/portfolio/guitarability.png
+image: /assets/portfolio/guitarability.jpg
 order: 1
 ---
 
