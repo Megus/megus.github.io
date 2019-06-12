@@ -8,15 +8,16 @@
 <meta property="og:title" content="Guitarability" />
 <meta name="author" content="Megus" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Oh, hi!" />
-<meta property="og:description" content="Oh, hi!" />
+<meta name="description" content="Performance evaluation module for a guitar training application" />
+<meta property="og:description" content="Performance evaluation module for a guitar training application" />
 <link rel="canonical" href="http://localhost:4000/projects/guitarability.html" />
 <meta property="og:url" content="http://localhost:4000/projects/guitarability.html" />
 <meta property="og:site_name" content="Megus" />
+<meta property="og:image" content="http://localhost:4000/assets/portfolio/guitarability.jpg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-05-22T06:54:38+03:00" />
+<meta property="article:published_time" content="2019-06-12T15:52:26+03:00" />
 <script type="application/ld+json">
-{"description":"Oh, hi!","author":{"@type":"Person","name":"Megus"},"@type":"BlogPosting","url":"http://localhost:4000/projects/guitarability.html","headline":"Guitarability","dateModified":"2019-05-22T06:54:38+03:00","datePublished":"2019-05-22T06:54:38+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/guitarability.html"},"@context":"http://schema.org"}</script>
+{"description":"Performance evaluation module for a guitar training application","author":{"@type":"Person","name":"Megus"},"@type":"BlogPosting","url":"http://localhost:4000/projects/guitarability.html","image":"http://localhost:4000/assets/portfolio/guitarability.jpg","headline":"Guitarability","dateModified":"2019-06-12T15:52:26+03:00","datePublished":"2019-06-12T15:52:26+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/guitarability.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Megus" /></head>
 <body><header class="site-header" role="banner">
@@ -32,7 +33,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/music.html">Music</a></div>
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/portfolio.html">Portfolio</a><a class="page-link" href="/music.html">Music</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -44,7 +45,13 @@
   </header>
 
   <div class="post-content">
-    <p>Oh, hi!</p>
+    <p><img src="/assets/portfolio/guitarability-animation.gif" alt="Guitarability UI" /></p>
+
+<p>Guitarability was a guitar training application for the iPad. It contained over a thousand exercises on different aspects of guitar playing (rhythm, picking, strumming, legato, scales, bends, and other). Guitarability was a “dream project” for me because I’m a self-taught guitar player and I’m interested in digital signal processing, but I hadn’t had a chance to apply my knowledge of DSP in a commercial project. I managed this project and developed one of the core modules — a performance evaluation module.</p>
+
+<p>The module has two parts: timing analyzer and polyphonic pitch detector. The most challenging one was the pitch detector. The application had to recognize not only single notes but chords too. Polyphonic Pitch Detection is a difficult task; there’s no “one and only true way” to do it; there are no commercial-grade open-source implementations.</p>
+
+<p>Another challenge was that my module had to work in real time on the iPad. I managed to get 600% performance boost compared to the first implementation, which couldn’t even work in real time. This performance improvement allowed to add smooth animations and video recording. I achieved the performance boost mostly by math optimizations. The module is written in Objective-C and uses Accelerate framework.</p>
 
   </div>
 
@@ -56,8 +63,16 @@
 
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      © 2018−2019 Roman "Megus" Petrov.<br />
-      <a class="u-email" href="mailto:megus.sugem@gmail.com">megus.sugem@gmail.com</a>
+      <div class="footer-col">
+        © 2018−2019 Roman “Megus” Petrov.<br />
+        <a class="u-email" href="mailto:megus.sugem@gmail.com">megus.sugem@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <a href="https://twitter.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a>
+        <a href="https://www.facebook.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg></a>
+        <a href="https://github.com/Megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a>
+        <a href="https://www.youtube.com/user/megussugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg></a>    
+      </div>
     </div>
   </div>
 
