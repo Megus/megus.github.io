@@ -267,6 +267,27 @@
       @include relative-font-size(1.08);
     }
   }
+
+  img {
+    @include media-query($on-palm) {
+      max-width: -webkit-calc(100% + #{$spacing-unit});
+      max-width:         calc(100% + #{$spacing-unit});
+      margin-left: -($spacing-unit / 2);
+    }
+  }
+}
+
+.frame {
+  @include media-query($on-palm) {
+    width: -webkit-calc(100% + #{$spacing-unit});
+    width:         calc(100% + #{$spacing-unit});
+    margin-left: -($spacing-unit / 2);
+  }
+}
+
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footnote {
