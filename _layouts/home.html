@@ -27,8 +27,7 @@ layout: default
           {{ post.excerpt }}
         {%- endif -%}
         <div class="post-meta">
-          <span>{{ post.date | date: date_format }}</span> |
-          <span><a href="{{ post.url | absolute_url }}#disqus_thread">Comments</a></span>
+          <span>{{ post.date | date: date_format }}</span>
         </div>
       </li>
       {%- endfor -%}
@@ -38,4 +37,3 @@ layout: default
   {%- endif -%}
 
 </div>
-<script id="dsq-count-scr" src="//megus.disqus.com/count.js" async></script>

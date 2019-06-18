@@ -20,7 +20,7 @@ Do you remember the era of 8-bit video game consoles and computers? PICO-8 retur
 
 ![PICO-8 Built-in tools](/assets/blog-images/2019-06-18-pico-8-tools.png)
 
-PICO-8 has a fantastic community. Many people create games, demos, and tutorials. Teachers use it in schools to teach children programming. Professional game developers use it for experiments. One thing unites them all — it’s fun!
+PICO-8 has a fantastic community. Many people create games, demos, and tutorials. Teachers use it at schools to teach children programming. Professional game developers use it for experiments. One thing unites them all — it’s fun!
 
 There’s also a pretty unique creative genre on PICO-8 — Tweetcart. Tweetcart is a program that fits in a Tweet (up to 280 characters) and produces some impressive visual effect. The idea is very similar to demoscene intro.
 
@@ -37,10 +37,11 @@ You can find more on [Twitter by #tweetcart](https://twitter.com/hashtag/tweetca
 If you don’t know what demoscene is, read [the first article in this series](/2018/08/05/creativity-through-limitation-8-bit-demoscene.html). Many classic effects are recurring in different demos, and I’m going to re-create two of them on PICO-8: Vertical raster bars and Rotozoomer. PICO-8 uses the Lua programming language. If you‘re not familiar with it, it shouldn‘t be a problem, because Lua syntax is simple and straightforward.
 
 <iframe class="frame" src="/demos/raster-rotozoomer/raster_rotozoomer.html"></iframe>
+<p class="footnote">PICO-8 can run in a browser. Try it!</p>
 
 ### Vertical raster bars
 
-Let’s start with Vertical raster bars (also known as Kefrens bars, even though the first implementation was done not by Kefrens demo group). They look impressive on old computers because you could think — wow, they draw so many vertical lines! In reality, this effect doesn’t require drawing vertical lines at all. The classic implementation utilized Amiga’s abilities to run some code for every scanline and change video memory address. You create a buffer for just one line and draw it repeatedly, adding a small “bar” every time in a different position.
+Let’s start with Vertical raster bars (also known as Kefrens bars, even though the first implementation was done not by Kefrens demo group). They look impressive on old computers because you could think — wow, they draw so many vertical lines! In reality, this effect doesn’t require drawing vertical lines at all. The classic implementation utilized Amiga’s ability to run some code for every scanline and change video memory address. You create a buffer for just one line and draw it repeatedly, adding a small “bar” every time in a different position.
 
 You can use the same approach on PICO-8. There are no horizontal blank interrupts, but you don’t need it; instead, you use `memcpy` function. Let’s create a template first.
 
@@ -118,9 +119,9 @@ function fx()
 end
 ```
 
-Now let’s add a roto-zoomer. I tried implementing a full-screen roto-zoomer on PICO-8 in 60 FPS and ran out of CPU time. However, if you combine a roto-zoomer with raster-bars, you don’t need to do it full-screen! You need to draw in empty space only. It’s easy to track empty space with raster bars: the bar gets wider and wider every line, it can’t get narrower, so you can keep track of the lowest and the highest X coordinates.
+Now let’s add a roto-zoomer. I tried implementing a full-screen roto-zoomer on PICO-8 in 60 FPS and ran out of CPU time. However, if you combine a roto-zoomer with raster-bars, you don’t need to do it full-screen — You can draw in empty space only! It’s easy to track empty space with raster bars: the bar gets only wider every line, it can’t get narrower, so you can keep simply track the lowest and the highest X coordinates.
 
-Roto-zoomer usually is a rotating and zooming picture, but I don’t want to bother with images and will create a rotating and zooming checkerboard. Here’s the code:
+Roto-zoomer usually is a rotating and zooming picture, but I don’t want to deal with images in this example and will create a rotating and zooming checkerboard. Here’s the code:
 
 ```lua
 -- Raster bars + roto-zoomer
@@ -213,4 +214,4 @@ That’s it! You can find the full code and some other effect I create in [my PI
 
 ---- 
 
-As I recall, it’s the first time I’ve tried to explain a demo effect, and I’m afraid that it may not be clear enough. I tried to add as many comments as possible, but if you’ve got any questions, let me know in the comments, I’m ready to improve and add more details. Thanks for your attention!
+As I recall, it’s the first time I’ve tried to explain a demo effect, and I’m afraid that it may not be clear enough. I tried to add as many comments as possible, but if you’ve got any questions, let me know, I’m ready to improve and add more details. Thanks for your attention!

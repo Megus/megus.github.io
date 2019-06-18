@@ -9,7 +9,7 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  {%- if site.projects.size > 0 -%}
     <div class="portfolio">
       {%- assign ordered_projects = site.projects | sort:"order" -%}
       {%- for project in ordered_projects -%}
@@ -29,4 +29,3 @@ layout: default
   {%- endif -%}
 
 </div>
-<script id="dsq-count-scr" src="//megus.disqus.com/count.js" async></script>
