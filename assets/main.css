@@ -334,7 +334,7 @@ hr::before {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 60px; }
 
 .post-meta {
   font-size: 15.75px;
@@ -413,6 +413,21 @@ hr::before {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 19.44px; } }
+  @media screen and (max-width: 600px) {
+    .post-content img {
+      max-width: -webkit-calc(100% + 30px);
+      max-width: calc(100% + 30px);
+      margin-left: -15px; } }
+
+@media screen and (max-width: 600px) {
+  .frame {
+    width: -webkit-calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin-left: -15px; } }
+
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto; }
 
 .footnote {
   font-size: 13.5px;
@@ -423,6 +438,10 @@ hr::before {
   .footnote a {
     color: #828282;
     text-decoration: underline; }
+
+.social-buttons {
+  margin-top: 60px;
+  text-align: center; }
 
 /**
  * Home page

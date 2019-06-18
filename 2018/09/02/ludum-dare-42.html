@@ -44,7 +44,10 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=194003690636360&autoLogAppEvents=1"></script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header"><div class="post-cover" style="background-image: url(/assets/blog-images/2018-09-05-cover.jpg)">
         <div class="gradient">
           <img hidden itemprop="image" src="/assets/blog-images/2018-09-05-cover.jpg" />
@@ -66,7 +69,7 @@
 
 <p>It’s our second time participating in Ludum Dare, and we loved the experience. Over the weekend we created a little puzzle game “No Space In My Stomach” about an extraterrestrial snail Stewart.</p>
 
-<iframe allowfullscreen="" src="https://www.youtube.com/embed/X7WfU53GP1o"></iframe>
+<iframe class="frame" allowfullscreen="" src="https://www.youtube.com/embed/X7WfU53GP1o"></iframe>
 
 <p><strong><a href="https://wisehedgehog.itch.io/no-space-in-my-stomach">Play “No Space In My Stomach” at itch.io</a></strong></p>
 
@@ -177,24 +180,23 @@
 
 <p>Ludum Dare 42 was a fantastic experience for our team. We’re looking forward to taking part in the next jam in December!</p>
 
-  </div><div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = 'https://megus.org/2018/09/02/ludum-dare-42.html';
-      this.page.identifier = 'https://megus.org/2018/09/02/ludum-dare-42.html';
-    };
+  </div>
 
-    (function() {
-      var d = document, s = d.createElement('script');
+  <a class="u-url" href="/2018/09/02/ludum-dare-42.html" hidden></a>
 
-      s.src = 'https://megus.disqus.com/embed.js';
-
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/2018/09/02/ludum-dare-42.html" hidden></a>
 </article>
+
+<div class="social-buttons">
+  <a class="twitter-share-button" data-size="large"
+    href="https://twitter.com/intent/tweet?text=Ludum%20Dare%2042%20game%20jam:%20our%20experience&via=sugem">
+    Tweet
+  </a>
+  <div class="fb-share-button" style="top: -7px;"
+    data-href="https://megus.org/2018/09/02/ludum-dare-42.html"
+    data-layout="button" data-size="large">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+  </div>
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -203,7 +205,7 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        © 2018−2019 Roman “Megus” Petrov.<br />
+        © Roman “Megus” Petrov.<br />
         <a class="u-email" href="mailto:megus.sugem@gmail.com">megus.sugem@gmail.com</a>
       </div>
       <div class="footer-col">
