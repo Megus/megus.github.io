@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Switch your brain on and never switch it off!"
-comments: true
 tags: [programming]
 ---
 

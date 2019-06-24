@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How to become a better programmer"
-comments: true
 tags: [programming]
 ---
 

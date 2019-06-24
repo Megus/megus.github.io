@@ -2,7 +2,6 @@
 layout: post
 title: "Creativity through limitation: PICO-8 — Fantasy Console"
 image: /assets/blog-images/2019-06-18-cover.jpg
-comments: true
 tags: [demoscene, "creativity_through_limitations", "8bit"]
 ---
 

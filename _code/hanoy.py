@@ -7,4 +7,4 @@ def hanoy_recursive(disks, src, dst, hlp):
   print(src, dst)
   hanoy_recursive(disks - 1, hlp, dst, src)
 
-hanoy_recursive(6, 1, 3, 2)
+hanoy_recursive(6, 0, 2, 1)
