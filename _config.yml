@@ -14,8 +14,8 @@ exclude:
 
 header_pages:
   - about.md
-  - portfolio.md
-  - music.md
+  - portfolio.html
+  - music.html
 
 collections:
   projects:
