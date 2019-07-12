@@ -1,6 +1,7 @@
 title: Megus
 email: megus.sugem@gmail.com
-author: Megus
+author:
+  twitter: sugem
 description: >
   Personal website of Roman "Megus" Petrov, a programmer and a musician.
 baseurl: ""
