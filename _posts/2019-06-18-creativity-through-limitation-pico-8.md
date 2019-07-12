@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Creativity through limitation: PICO-8 — Fantasy Console"
+description: "When was the last time you coded something just for fun? PICO-8 brings fun back to programming!"
 image: /assets/blog-images/2019-06-18-cover.jpg
 tags: [demoscene, "creativity_through_limitations", "8bit"]
 ---

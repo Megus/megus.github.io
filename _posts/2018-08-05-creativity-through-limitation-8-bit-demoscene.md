@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Creativity through limitation: 8-bit demoscene"
+description: "Pushing old computers to the limits and beyond"
 image: /assets/blog-images/2018-08-05-cover.jpg
 tags: [demoscene, "creativity_through_limitations", "8bit"]
 ---
@@ -122,7 +123,7 @@ The CPU of C64 is pretty slow, but the creative and smart usage of VIC-II allows
 
 The most outstanding feature of C64 for me is its sound chip — SID. It was designed by a musician for musicians, and it's fantastic! Three oscillator channels with multiple waveforms, ring modulation, oscillator sync, analog multimode filter and ADSR envelopes. No other platform came close to this power!
 
-{% youtube 52mQzN439W4 %}
+{% youtube HlNtoZNzGZo %}
 <p class="footnote"><a href="http://www.pouet.net/prod.php?which=75743">We Come In Peace by Fairlight, Censor Design, Offence</a></p>
 
 {% youtube W-Crwct7U0c %}

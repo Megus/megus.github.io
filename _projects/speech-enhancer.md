@@ -4,6 +4,8 @@ title: "Speech enhancer"
 description: "Automatic speech recordings enhancer working in a browser"
 image: /assets/portfolio/speech-enhancer.png
 order: 2
+seo:
+  type: WebPage
 ---
 
 I developed a speech recording enhancer that works in a browser. It makes speech louder and more intelligible by applying several effects:

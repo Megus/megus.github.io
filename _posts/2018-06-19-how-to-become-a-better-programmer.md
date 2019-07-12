@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to become a better programmer"
+description: "Four tips to a beginner programmers"
 tags: [programming]
 ---
 

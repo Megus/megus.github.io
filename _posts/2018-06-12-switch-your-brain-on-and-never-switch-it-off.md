@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Switch your brain on and never switch it off!"
+description: "Three stories about programmers who forgot to switch on they brain"
 tags: [programming]
 ---
 

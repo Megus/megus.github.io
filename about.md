@@ -3,16 +3,13 @@ layout: page
 title: About
 ---
 
-Hello, my name is Roman “Megus” Petrov. I'm a software developer and a musician from Russia. 
+My name is Roman, but friends often call me Megus. I’m a software developer and a team leader with 17 years of professional experience. I wrote my first program when I was six, so in total, I’m programming for more than thirty years! Throughout my career, I worked with many languages and technologies, the solid foundation in computer science helps me to learn new ones quickly. My current main specialization is mobile application development.
 
-[My Resume](/resume.html)
+As a developer, I like clean code, good architecture, and challenging tasks; as a leader, I always try to help people thrive and deliver meaningful results. I had extensive experience with resource-limited systems (8-bit computers, handheld consoles), which helped me to learn a lot about code optimization. My long-time interest is digital signal processing (DSP) or, how I call it, “audio math.”
 
-Social links:
+For more details about my work, you can [read my CV](/files/Roman_Petrov_CV.pdf).
 
-- [GitHub](https://github.com/Megus)
-- [Twitter](https://twitter.com/sugem)
-- [Facebook](https://www.facebook.com/sugem)
-- [VK](https://vk.com/megus)
-- [Medium](https://medium.com/@megus)
+My main hobby is composing and playing music. I’m a multi-instrumentalist and collect ethnic instruments, there are over fifteen instruments in my collection now. I’m not very active, and so far I’ve released four albums, which you can find at the Music page.
 
-I'm also a founder of [Wise Hedgehog Studio](https://wisehedgehog.studio) — an indie development team.
+I’m also a member of [Wise Hedgehog Studio](https://wisehedgehog.studio) — an indie development team. We create small games in our free time.
+

@@ -4,6 +4,8 @@ title: "No Space In My Stomach"
 description: "A puzzle platformer game created on Ludum Dare game jam"
 image: /assets/portfolio/no-space-in-my-stomach.jpg
 order: 3
+seo:
+  type: WebPage
 ---
 
 {% youtube X7WfU53GP1o %}

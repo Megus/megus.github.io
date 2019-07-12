@@ -4,6 +4,8 @@ title: "Good Hamster Dead Hamster"
 description: "A mix of cellular automaton fun and strategy"
 image: /assets/portfolio/good-hamster-dead-hamster.jpg
 order: 4
+seo:
+  type: WebPage
 ---
 
 {% youtube mQ24OU7B3WU %}

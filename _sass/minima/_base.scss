@@ -231,6 +231,12 @@ pre {
   vertical-align: text-top;
 }
 
+@include media-query($on-palm) {
+  .social-icon {
+    padding-right: 8px;
+  }
+}
+
 /**
  * Tables
  */

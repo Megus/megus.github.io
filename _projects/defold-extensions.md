@@ -4,6 +4,8 @@ title: "Defold extensions"
 description: "Open-source libraries and extensions for Defold game engine"
 image: /assets/portfolio/defold-extensions.jpg
 order: 5
+seo:
+  type: WebPage
 ---
 
 I've created several open-source extensions for [Defold](https://defold.com). Defold is a free game engine developed by [King](https://king.com). It uses [Lua](https://www.lua.org) for scripting.

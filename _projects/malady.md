@@ -4,6 +4,8 @@ title: Malady
 description: "4K intro for ZX Spectrum"
 image: /assets/portfolio/malady.jpg
 order: 6
+seo:
+  type: WebPage
 ---
 
 {% youtube CvZNnYb1cZQ %}
