@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Coding problems: why do I like them? Solving Tower of Hanoi puzzle"
-description: ""
+description: "What benefits can developers get by solving coding problems? An example of solving a classic puzzle – Tower of Hanoi."
 image: /assets/blog-images/2019-07-17-cover.jpg
 tags: [programming]
 css: /assets/css/hanoi.css
