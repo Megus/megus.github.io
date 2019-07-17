@@ -1,3 +1,19 @@
-table {
-    background-color: #f00;
+.hanoi2 {
+    font-size: 15px;
+}
+
+.hanoi2 tr td:nth-child(4) {
+    background-color: #ada;
+}
+
+.hanoi2 tr th:nth-child(4) {
+    background-color: #9c9;
+}
+
+.hanoi2 tr td:nth-child(6) {
+    background-color: #ada;
+}
+
+.hanoi2 tr th:nth-child(6) {
+    background-color: #9c9;
 }

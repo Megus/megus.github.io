@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-104711057-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-104711057-2');
+	</script><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/favicon-96x96.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|PT+Serif|Source+Code+Pro&display=swap" rel="stylesheet"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Coding problems: why do I like them? Solving Tower of Hanoi puzzle | Megus</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Coding problems: why do I like them? Solving Tower of Hanoi puzzle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What benefits can developers get by solving coding problems? An example of solving a classic puzzle – Tower of Hanoi." />
+<meta property="og:description" content="What benefits can developers get by solving coding problems? An example of solving a classic puzzle – Tower of Hanoi." />
+<link rel="canonical" href="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html" />
+<meta property="og:url" content="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html" />
+<meta property="og:site_name" content="Megus" />
+<meta property="og:image" content="https://megus.org/assets/blog-images/2019-07-17-cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-17T00:00:00+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@sugem" />
+<meta name="twitter:creator" content="@sugem" />
+<script type="application/ld+json">
+{"description":"What benefits can developers get by solving coding problems? An example of solving a classic puzzle – Tower of Hanoi.","@type":"BlogPosting","url":"https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html","image":"https://megus.org/assets/blog-images/2019-07-17-cover.jpg","headline":"Coding problems: why do I like them? Solving Tower of Hanoi puzzle","dateModified":"2019-07-17T00:00:00+03:00","datePublished":"2019-07-17T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link rel="stylesheet" href="/assets/css/hanoi.css"><link type="application/atom+xml" rel="alternate" href="https://megus.org/feed.xml" title="Megus" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a href="/"><img class="site-logo" src="/assets/megus.png" />
+    <span class="site-title" rel="author">Megus</span></a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/portfolio.html">Portfolio</a><a class="page-link" href="/music.html">Music</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=194003690636360&autoLogAppEvents=1"></script>
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header"><div class="post-cover" style="background-image: url(/assets/blog-images/2019-07-17-cover.jpg)">
+        <div class="gradient">
+          <img hidden itemprop="image" src="/assets/blog-images/2019-07-17-cover.jpg" />
+          <h1 class="post-cover-title p-name" itemprop="name headline">Coding problems: why do I like them? Solving Tower of Hanoi puzzle</h1>
+        </div>
+      </div><p class="post-meta">
+      <time class="dt-published" datetime="2019-07-17T00:00:00+03:00" itemprop="datePublished">Jul 17, 2019
+      </time>
+    </p>
+    <span hidden itemscope itemtype="http://schema.org/Person" itemprop="author">
+      <span hidden itemprop="name">Roman "Megus" Petrov</span>
+    </span>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code.</p>
+
+<p>Most coding problems are irrelevant to the daily job of a developer, and there’s no practical application for them. They’re just brain teasers or exercises. However, that is why I like them, and I would recommend programmers to solve them at least sometimes. Everybody knows that you need to do exercises to stay fit. The brain is a “muscle” too in the sense that you need to exercise to get the most of it. I think that coding exercises help developer’s brain to “stay fit.”</p>
+
+<p>As developers, we spend much time fixing bugs and doing routine work. We rarely have tricky problems, but problem-solving is a crucial skill for a developer. Coding problems may help you to improve it. Also, as I already said, coding problems don’t have practical application usually, but you can pick something useful from them still.</p>
+
+<p>In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now.</p>
+
+<!--more-->
+
+<h2 id="tower-of-hanoi">Tower of Hanoi</h2>
+
+<div class="centered"><img src="/assets/blog-images/2019-07-17-hanoi.gif" /></div>
+
+<p>Tower of Hanoi is an old puzzle, and solving it is a well-known coding problem. You have three pegs with disks of different sizes on one of them; the objective is to move all disks to another peg, obeying simple rules:</p>
+
+<ol>
+  <li>You can move only one disk at a time.</li>
+  <li>You can’t put a larger disk on a smaller one</li>
+</ol>
+
+<p>I knew about the Tower of Hanoi since childhood, but as a developer, I met it after my first year at university. My summer practice task was to visualize Tower of Hanoi solution process. The recursive solution is trivial:</p>
+
+<ol>
+  <li>Move <code class="highlighter-rouge">n−1</code> disks from the source peg to the spare peg</li>
+  <li>Move the biggest disk from the source peg to the target peg</li>
+  <li>Move <code class="highlighter-rouge">n−1</code> disks from the spare peg to the target peg</li>
+  <li>The base case is to move 0 disks — do nothing.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hanoi_recursive</span><span class="p">(</span><span class="n">disks</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">spare</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">disks</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">[]</span>
+
+  <span class="n">moves</span> <span class="o">=</span> <span class="n">hanoi_recursive</span><span class="p">(</span><span class="n">disks</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">spare</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+  <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>
+  <span class="n">moves</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">hanoi_recursive</span><span class="p">(</span><span class="n">disks</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">spare</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">source</span><span class="p">))</span>
+  <span class="k">return</span> <span class="n">moves</span>
+</code></pre></div></div>
+
+<p>Time complexity is O(2<sup>n</sup>), auxiliary space required is O(n), where <code class="highlighter-rouge">n</code> is a number of disks. If you’re not familiar with space complexity estimation or recursive algorithms, it may look like it’s O(1). However, every function call allocates some memory on the stack, and this code makes up to <code class="highlighter-rouge">n</code> consecutive recursive calls.</p>
+
+<p>I finished my summer practice task in one day and felt bored — too easy! I was young and full of enthusiasm, and I wondered: is there another way to solve this puzzle? Can I do it iteratively? Today you could go to <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Wikipedia</a> and find several iterative solutions, but it was 2000 and Wikipedia opened only next year. StackOverflow couldn’t help either, because it opened eight years later. However, even if both had existed those days, I would have tried devising the solution myself anyway. After a couple of days and a pile of paper, I found the solution. Unfortunately, I forgot it. The only thing I remembered was that I used the binary representation of the move number. So, I solved it again for this article; however, I can’t be sure it’s the same as nineteen years ago.</p>
+
+<p>Here’s the final solution code in Python:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hanoi_iterative_remap</span><span class="p">(</span><span class="n">disks</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">spare</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">disks</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">[]</span>
+  
+  <span class="n">is_even</span> <span class="o">=</span> <span class="p">(</span><span class="n">disks</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="n">pegs</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">source</span><span class="p">,</span>
+    <span class="n">target</span> <span class="k">if</span> <span class="n">is_even</span> <span class="k">else</span> <span class="n">spare</span><span class="p">,</span>
+    <span class="n">spare</span> <span class="k">if</span> <span class="n">is_even</span> <span class="k">else</span> <span class="n">target</span>
+  <span class="p">]</span>
+  <span class="n">moves</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">disks</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">%</span> <span class="mi">3</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="p">((</span><span class="n">m</span> <span class="o">|</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span>
+    <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">pegs</span><span class="p">[</span><span class="n">s</span><span class="p">],</span> <span class="n">pegs</span><span class="p">[</span><span class="n">t</span><span class="p">]))</span>
+
+  <span class="k">return</span> <span class="n">moves</span>
+</code></pre></div></div>
+
+<p>This code is about 450% faster than the recursive one, but the time complexity is still O(2<sup>n</sup>) — you can’t improve it because you need to do 2<sup>n</sup>−1 moves to solve the puzzle. It works faster because there’s no function calling overhead and there are fewer memory allocations, so auxiliary space is O(1).</p>
+
+<p>As you can see, I use some binary “magic” in my solution. How did I devise these formulas? I made a spreadsheet with solutions for the different number of disks and started to analyze them. This time I used Google Sheets, nineteen years ago I used paper. I use zero-based pegs numbers; we’re moving all disks from peg 0 to peg 2.</p>
+
+<div class="csvtable"><table><tr><th>Move</th><th>3 disks</th><th>4 disks</th></tr><tr><td>1</td><td>0→2</td><td>0→1</td></tr><tr><td>2</td><td>0→1</td><td>0→2</td></tr><tr><td>3</td><td>2→1</td><td>1→2</td></tr><tr><td>4</td><td>0→2</td><td>0→1</td></tr><tr><td>5</td><td>1→0</td><td>2→0</td></tr><tr><td>6</td><td>1→2</td><td>2→1</td></tr><tr><td>7</td><td>0→2</td><td>0→1</td></tr><tr><td></td><td></td><td>…</td></tr></table></div>
+
+<p>The first thing I noticed is that the peg pairs repeat every 3 moves, which led me to a thought that formula should have <code class="highlighter-rouge">x % 3</code> somewhere. However, even that the final formulas have it, it’s not because of repeating pairs. The second observation was that the first moves are always the same for any number of disks, except for “swapping” target and spare peg number for even and odd numbers. It led to “peg remapping” in my final solution.</p>
+
+<p>As I said above, the only thing I remembered about my old solution was that I used the binary representations of the move numbers. So, I started to analyze them. The only thing I could find was that the number of binary zeroes at the right determines the disk to move, not the peg. Then I tried to do some random things and suddenly found something that worked: <code class="highlighter-rouge">m AND (m − 1)</code>. If you divide this number by 3, the remainder defines the source peg for the move! I admit that it was a pure guess, but that’s how you discover new things sometimes: experiment and try different things until you find a solution. After that I, experimented a bit more and came up with <code class="highlighter-rouge">m OR (m - 1)</code>. When you increment it and then divide by 3, the remainder is the target peg for the move. Problem solved!</p>
+
+<div class="csvtable hanoi2"><table><tr><th></th><th>m</th><th>m&amp;m−1</th><th>(m&amp;m−1)%3</th><th> m|m−1</th><th>((m|m−1)+1)%3</th><th>4 disks</th><th>5 disks</th></tr><tr><td>1</td><td>00000001</td><td>0</td><td>0</td><td>1</td><td>2</td><td>0→1</td><td>0→2</td></tr><tr><td>2</td><td>00000010</td><td>0</td><td>0</td><td>3</td><td>1</td><td>0→2</td><td>0→1</td></tr><tr><td>3</td><td>00000011</td><td>2</td><td>2</td><td>3</td><td>1</td><td>1→2</td><td>2→1</td></tr><tr><td>4</td><td>00000100</td><td>0</td><td>0</td><td>7</td><td>2</td><td>0→1</td><td>0→2</td></tr><tr><td>5</td><td>00000101</td><td>4</td><td>1</td><td>5</td><td>0</td><td>2→0</td><td>1→0</td></tr><tr><td>6</td><td>00000110</td><td>4</td><td>1</td><td>7</td><td>2</td><td>2→1</td><td>1→2</td></tr><tr><td>7</td><td>00000111</td><td>6</td><td>0</td><td>7</td><td>2</td><td>0→1</td><td>0→2</td></tr><tr><td>8</td><td>00001000</td><td>0</td><td>0</td><td>15</td><td>1</td><td>0→2</td><td>0→1</td></tr><tr><td>9</td><td>00001001</td><td>8</td><td>2</td><td>9</td><td>1</td><td>1→2</td><td>2→1</td></tr><tr><td>10</td><td>00001010</td><td>8</td><td>2</td><td>11</td><td>0</td><td>1→0</td><td>2→0</td></tr><tr><td>11</td><td>00001011</td><td>10</td><td>1</td><td>11</td><td>0</td><td>2→0</td><td>1→0</td></tr><tr><td>12</td><td>00001100</td><td>8</td><td>2</td><td>15</td><td>1</td><td>1→2</td><td>2→1</td></tr><tr><td>13</td><td>00001101</td><td>12</td><td>0</td><td>13</td><td>2</td><td>0→1</td><td>0→2</td></tr><tr><td>14</td><td>00001110</td><td>12</td><td>0</td><td>15</td><td>1</td><td>0→2</td><td>0→1</td></tr><tr><td>15</td><td>00001111</td><td>14</td><td>2</td><td>15</td><td>1</td><td>1→2</td><td>2→1</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>…</td></tr></table></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hanoi_iterative</span><span class="p">(</span><span class="n">disks</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">disks</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">[]</span>
+  
+  <span class="n">moves</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">disks</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="n">m</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">%</span> <span class="mi">3</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="p">((</span><span class="n">m</span> <span class="o">|</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span>
+    <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>
+
+  <span class="k">return</span> <span class="n">moves</span>
+</code></pre></div></div>
+
+<p>The only thing left for the universal solution was “peg remapping” because these formulas assume:</p>
+
+<ul>
+  <li>the source peg is always 0;</li>
+  <li>the target peg is 1 for an even number of disks and 2 for an odd number of disks.</li>
+</ul>
+
+<p>That’s it. I think it was a good exercise in problem-solving and code optimization. 450% speed boost was impressive. Surely, you never need to solve the Tower of Hanoi in your daily job. However, there are tons of real tasks which have trivial slow solutions, but require deep thought and experimenting to find the optimal ones. I like such tasks; they make me feel proud of my job.</p>
+
+<hr />
+
+<p>PS: While searching for something on an old HDD, I found my original solution from university time! It was in Pascal, but I rewrote it in Python for convenience. Even that it’s far less optimal than the one described in the article, it still performs a bit better than the recursive one.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">count_binary_zeros</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">zeros</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="n">zeros</span> <span class="o">=</span> <span class="n">zeros</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
+  
+  <span class="k">return</span> <span class="n">zeros</span>
+
+
+<span class="k">def</span> <span class="nf">hanoi_2000</span><span class="p">(</span><span class="n">disks</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+  <span class="n">moves</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="n">source</span>
+  <span class="n">t</span> <span class="o">=</span> <span class="n">target</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="n">disks</span>
+
+  <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">disks</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+      <span class="n">t</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
+
+    <span class="k">if</span> <span class="n">f</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>
+      <span class="n">f</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">count_binary_zeros</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
+      
+      <span class="n">t</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
+      <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>
+      <span class="n">s</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
+      <span class="n">n</span> <span class="o">=</span> <span class="n">count_binary_zeros</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+      <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">return</span> <span class="n">moves</span>
+</code></pre></div></div>
+
+  </div>
+
+  <a class="u-url" href="/2019/07/17/coding-problems-tower-of-hanoi.html" hidden></a>
+
+</article>
+
+<div class="social-buttons">
+  <a class="twitter-share-button" data-size="large"
+    href="https://twitter.com/intent/tweet?text=Coding%20problems:%20why%20do%20I%20like%20them?%20Solving%20Tower%20of%20Hanoi%20puzzle&via=sugem">
+    Tweet
+  </a>
+  <div class="fb-share-button" style="top: -7px;"
+    data-href="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html"
+    data-layout="button" data-size="large">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+  </div>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        © Roman “Megus” Petrov.<br />
+        <a class="u-email" href="mailto:roman.petrov@icloud.com">roman.petrov@icloud.com</a>
+      </div>
+      <div class="footer-col">
+        <a href="https://twitter.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a>
+        <a href="https://www.facebook.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg></a>
+        <a href="https://github.com/Megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a>
+        <a href="https://www.youtube.com/user/megussugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg></a>    
+        <a href="https://medium.com/@megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#medium"></use></svg></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>

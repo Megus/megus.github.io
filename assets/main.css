@@ -393,6 +393,7 @@ hr::before {
   line-height: 1;
   position: absolute;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 100%;
   bottom: 0%;
   color: #def; }
@@ -428,6 +429,13 @@ hr::before {
     width: -webkit-calc(100% + 30px);
     width: calc(100% + 30px);
     margin-left: -15px; } }
+
+.centered {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.csvtable {
+  overflow-x: auto; }
 
 .twitter-tweet {
   margin-left: auto;
