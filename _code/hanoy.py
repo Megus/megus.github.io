@@ -1,15 +1,17 @@
 import time
 
-def hanoy_recursive(disks, source, target, spare):
+# Recursive solution
+def hanoi_recursive(disks, source, target, spare):
   if disks == 0:
     return []
 
-  moves = hanoy_recursive(disks - 1, source, spare, target)
+  moves = hanoi_recursive(disks - 1, source, spare, target)
   moves.append((source, target))
-  moves.extend(hanoy_recursive(disks - 1, spare, target, source))
+  moves.extend(hanoi_recursive(disks - 1, spare, target, source))
   return moves
 
-def hanoy_iterative(disks):
+# Iterative solution without peg remapping
+def hanoi_iterative(disks):
   if disks == 0:
     return []
   
@@ -22,8 +24,8 @@ def hanoy_iterative(disks):
 
   return moves
 
-
-def hanoy_iterative_remap(disks, source, target, spare):
+# Iterative solution with peg remapping
+def hanoi_iterative_remap(disks, source, target, spare):
   if disks == 0:
     return []
   
@@ -42,36 +44,91 @@ def hanoy_iterative_remap(disks, source, target, spare):
 
   return moves
 
-#moves = hanoy_recursive(5, 0, 2, 1)
-#print(moves)
+# The solution from 2000
+def count_binary_zeros(n):
+  zeros = 0
+  for _ in range(0, 31):
+    if n % 2 == 0:
+      zeros = zeros + 1
+    else:
+      break
+    n = n >> 1
+  
+  return zeros
 
-#moves = hanoy_iterative_remap(5, 0, 2, 1)
-#print(moves)
 
-# Measure time of multiple calls to hanoy recursive
-time1 = time.time()
-for _ in range(20):
-  hanoy_recursive(16, 0, 2, 1)
+def hanoi_2000(disks, source, target):
+  moves = []
 
-time_recursive = time.time() - time1
+  f = 0
+  s = source
+  t = target
+  n = disks
 
-time1 = time.time()
-for _ in range(20):
-  hanoy_iterative(16)
+  for m in range(1, 1 << disks):
+    while n > 1:
+      n = n - 1
+      t = 3 - s - t
 
-time_iterative = time.time() - time1
+    if f == 0:
+      moves.append((s, t))
+      f = 1
+    else:
+      if count_binary_zeros(m) % 2 == 0:
+        s = 3 - s - t
+      
+      t = 3 - s - t
+      moves.append((s, t))
+      s = 3 - s - t
+      n = count_binary_zeros(m)
+      f = 0
 
-time1 = time.time()
-for _ in range(20):
-  hanoy_iterative_remap(16, 0, 2, 1)
+  return moves
 
-time_iterative_remap = time.time() - time1
 
-print(f'Recursive: {time_recursive}')
-print(f'Iterative: {time_iterative}')
-print(f'Iterative with remapping: {time_iterative_remap}')
 
-time_ratio = time_recursive / time_iterative
-print(f'Recursive/iterative time ratio: {time_ratio}')
-time_ratio = time_recursive / time_iterative_remap
-print(f'Recursive/iterative with remapping time ratio: {time_ratio}')
+
+
+def demo():
+  moves = hanoi_2000(4, 0, 2)
+  print(moves)
+
+  moves = hanoi_recursive(4, 0, 2, 1)
+  print(moves)
+
+  moves = hanoi_iterative_remap(4, 0, 2, 1)
+  print(moves)
+
+# Measure time of multiple calls to hanoi recursive
+def measure_performance():
+  time1 = time.time()
+  for _ in range(20):
+    hanoi_recursive(16, 0, 2, 1)
+
+  time_recursive = time.time() - time1
+
+  time1 = time.time()
+  for _ in range(20):
+    hanoi_2000(16, 0, 2)
+
+  time_2000 = time.time() - time1
+
+  time1 = time.time()
+  for _ in range(20):
+    hanoi_iterative_remap(16, 0, 2, 1)
+
+  time_iterative_remap = time.time() - time1
+
+  print(f'Recursive: {time_recursive}')
+  print(f'Iterative 2000: {time_2000}')
+  print(f'Iterative with remapping: {time_iterative_remap}')
+
+  time_ratio = time_recursive / time_2000
+  print(f'Recursive/iteratve 2000 time ratio: {time_ratio}')
+  time_ratio = time_recursive / time_iterative_remap
+  print(f'Recursive/iterative with remapping time ratio: {time_ratio}')
+
+
+
+demo()
+#measure_performance()

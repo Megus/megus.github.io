@@ -1,12 +1,25 @@
 class CSVTable < Liquid::Tag
   def initialize(tagName, markup, tokens)
     super
-    @csvdata = markup
+
+    params = markup.split
+
+    @csvdata = params.shift
+
+    if params.size > 0
+      @class = params.shift
+    end
   end
 
   def render(context)
     csvdata = context[@csvdata]
-    markup = "<table>"
+
+    markup = ""
+    if @class != nil
+      markup += "<div class=\"csvtable #{@class}\"><table>"
+    else
+      markup += "<div class=\"csvtable\"><table>"
+    end
 
     # Header
     markup += "<tr>"
@@ -25,7 +38,7 @@ class CSVTable < Liquid::Tag
       markup += "</tr>"
     end
 
-    markup += "</table>"
+    markup += "</table></div>"
 
     markup
   end

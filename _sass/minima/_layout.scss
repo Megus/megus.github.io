@@ -236,6 +236,7 @@
   }
   position: absolute;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
   width: 100%;
   bottom: 0%;
   color: #def;
@@ -283,6 +284,15 @@
     width:         calc(100% + #{$spacing-unit});
     margin-left: -($spacing-unit / 2);
   }
+}
+
+.centered {
+  text-align: center;
+  margin-bottom: $spacing-unit;
+}
+
+.csvtable {
+  overflow-x: auto;
 }
 
 .twitter-tweet {
