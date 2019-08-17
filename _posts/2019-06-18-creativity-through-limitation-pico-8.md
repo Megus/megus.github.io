@@ -6,7 +6,7 @@ image: /assets/blog-images/2019-06-18-cover.jpg
 tags: [demoscene, "creativity_through_limitations", "8bit"]
 ---
 
-It is the second article in “Creativity through limitation” series. Check out the first one: [8-bit demoscene](/2018/08/05/creativity-through-limitation-8-bit-demoscene.html). In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it.
+It is the second article in “Creativity through limitation” series. Check out the first one: [8-bit demoscene]({% link _posts/2018-08-05-creativity-through-limitation-8-bit-demoscene.md %}). In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it.
 
 When was the last time you coded something just for fun? If you’re like me, then it hasn’t happened for years. However, about a year ago, I learned about PICO-8, bought it, and I have to say that these were probably the most worthy $15 I spent on myself last year!
 
