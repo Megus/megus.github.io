@@ -122,7 +122,7 @@
   <span class="k">return</span> <span class="n">moves</span>
 </code></pre></div></div>
 
-<p>Time complexity is O(2<sup>n</sup>), auxiliary space required is O(n), where <code class="highlighter-rouge">n</code> is a number of disks. If you’re not familiar with space complexity estimation or recursive algorithms, it may look like it’s O(1). However, every function call allocates some memory on the stack, and this code makes up to <code class="highlighter-rouge">n</code> consecutive recursive calls.</p>
+<p>Time complexity is O(2<sup>n</sup>), auxiliary space required is O(n), where <code class="highlighter-rouge">n</code> is a number of disks. If you’re not familiar with space complexity estimation of recursive algorithms, it may look like it’s O(1). However, every function call allocates some memory on the stack, and this code makes up to <code class="highlighter-rouge">n</code> consecutive recursive calls.</p>
 
 <p>I finished my summer practice task in one day and felt bored — too easy! I was young and full of enthusiasm, and I wondered: is there another way to solve this puzzle? Can I do it iteratively? Today you could go to <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi">Wikipedia</a> and find several iterative solutions, but it was 2000 and Wikipedia opened only next year. StackOverflow couldn’t help either, because it opened eight years later. However, even if both had existed those days, I would have tried devising the solution myself anyway. After a couple of days and a pile of paper, I found the solution. Unfortunately, I forgot it. The only thing I remembered was that I used the binary representation of the move number. So, I solved it again for this article; however, I can’t be sure it’s the same as nineteen years ago.</p>
 
@@ -131,7 +131,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hanoi_iterative_remap</span><span class="p">(</span><span class="n">disks</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">spare</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">disks</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">return</span> <span class="p">[]</span>
-  
+
   <span class="n">is_even</span> <span class="o">=</span> <span class="p">(</span><span class="n">disks</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
   <span class="n">pegs</span> <span class="o">=</span> <span class="p">[</span>
     <span class="n">source</span><span class="p">,</span>
@@ -163,7 +163,7 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hanoi_iterative</span><span class="p">(</span><span class="n">disks</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">disks</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">return</span> <span class="p">[]</span>
-  
+
   <span class="n">moves</span> <span class="o">=</span> <span class="p">[]</span>
 
   <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">disks</span><span class="p">):</span>
@@ -195,7 +195,7 @@
     <span class="k">else</span><span class="p">:</span>
       <span class="k">break</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
-  
+
   <span class="k">return</span> <span class="n">zeros</span>
 
 
@@ -218,7 +218,7 @@
     <span class="k">else</span><span class="p">:</span>
       <span class="k">if</span> <span class="n">count_binary_zeros</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">s</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
-      
+
       <span class="n">t</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
       <span class="n">moves</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>
       <span class="n">s</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">s</span> <span class="o">-</span> <span class="n">t</span>
