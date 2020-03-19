@@ -3,7 +3,7 @@ layout: project
 title: "Good Hamster Dead Hamster"
 description: "A mix of cellular automaton fun and strategy"
 image: /assets/portfolio/good-hamster-dead-hamster.jpg
-order: 4
+order: 3
 seo:
   type: WebPage
 ---

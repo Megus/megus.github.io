@@ -3,7 +3,7 @@ layout: project
 title: "Defold extensions"
 description: "Open-source libraries and extensions for Defold game engine"
 image: /assets/portfolio/defold-extensions.jpg
-order: 5
+order: 2
 seo:
   type: WebPage
 ---

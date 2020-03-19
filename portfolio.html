@@ -10,7 +10,7 @@ title: "Portfolio"
 
   {%- if site.projects.size > 0 -%}
     <div class="portfolio">
-      {%- assign ordered_projects = site.projects | sort:"order" -%}
+      {%- assign ordered_projects = site.projects | sort:"order" | reverse -%}
       {%- for project in ordered_projects -%}
       <div class="portfolio-project">
         <a href="{{ project.url | relative_url }}">

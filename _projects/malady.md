@@ -3,7 +3,7 @@ layout: project
 title: Malady
 description: "4K intro for ZX Spectrum"
 image: /assets/portfolio/malady.jpg
-order: 6
+order: 1
 seo:
   type: WebPage
 ---

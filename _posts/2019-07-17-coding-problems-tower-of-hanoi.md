@@ -7,13 +7,13 @@ tags: [programming]
 css: /assets/css/hanoi.css
 ---
 
-If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code. 
+If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code.
 
 Most coding problems are irrelevant to the daily job of a developer, and there’s no practical application for them. They’re just brain teasers or exercises. However, that is why I like them, and I would recommend programmers to solve them at least sometimes. Everybody knows that you need to do exercises to stay fit. The brain is a “muscle” too in the sense that you need to exercise to get the most of it. I think that coding exercises help developer’s brain to “stay fit.”
 
 As developers, we spend much time fixing bugs and doing routine work. We rarely have tricky problems, but problem-solving is a crucial skill for a developer. Coding problems may help you to improve it. Also, as I already said, coding problems don’t have practical application usually, but you can pick something useful from them still.
 
-In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now. 
+In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now.
 
 <!--more-->
 
@@ -44,7 +44,7 @@ def hanoi_recursive(disks, source, target, spare):
   return moves
 ```
 
-Time complexity is O(2<sup>n</sup>), auxiliary space required is O(n), where `n` is a number of disks. If you're not familiar with space complexity estimation or recursive algorithms, it may look like it’s O(1). However, every function call allocates some memory on the stack, and this code makes up to `n` consecutive recursive calls.
+Time complexity is O(2<sup>n</sup>), auxiliary space required is O(n), where `n` is a number of disks. If you're not familiar with space complexity estimation of recursive algorithms, it may look like it’s O(1). However, every function call allocates some memory on the stack, and this code makes up to `n` consecutive recursive calls.
 
 I finished my summer practice task in one day and felt bored — too easy! I was young and full of enthusiasm, and I wondered: is there another way to solve this puzzle? Can I do it iteratively? Today you could go to [Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi) and find several iterative solutions, but it was 2000 and Wikipedia opened only next year. StackOverflow couldn’t help either, because it opened eight years later. However, even if both had existed those days, I would have tried devising the solution myself anyway. After a couple of days and a pile of paper, I found the solution. Unfortunately, I forgot it. The only thing I remembered was that I used the binary representation of the move number. So, I solved it again for this article; however, I can’t be sure it’s the same as nineteen years ago.
 
@@ -54,7 +54,7 @@ Here’s the final solution code in Python:
 def hanoi_iterative_remap(disks, source, target, spare):
   if disks == 0:
     return []
-  
+
   is_even = (disks % 2 == 0)
   pegs = [
     source,
@@ -87,7 +87,7 @@ As I said above, the only thing I remembered about my old solution was that I us
 def hanoi_iterative(disks):
   if disks == 0:
     return []
-  
+
   moves = []
 
   for m in range(1, 1 << disks):
@@ -105,7 +105,7 @@ The only thing left for the universal solution was “peg remapping” because t
 
 That’s it. I think it was a good exercise in problem-solving and code optimization. 450% speed boost was impressive. Surely, you never need to solve the Tower of Hanoi in your daily job. However, there are tons of real tasks which have trivial slow solutions, but require deep thought and experimenting to find the optimal ones. I like such tasks; they make me feel proud of my job.
 
----- 
+----
 
 PS: While searching for something on an old HDD, I found my original solution from university time! It was in Pascal, but I rewrote it in Python for convenience. Even that it’s far less optimal than the one described in the article, it still performs a bit better than the recursive one.
 
@@ -118,7 +118,7 @@ def count_binary_zeros(n):
     else:
       break
     n = n >> 1
-  
+
   return zeros
 
 
@@ -141,7 +141,7 @@ def hanoi_2000(disks, source, target):
     else:
       if count_binary_zeros(m) % 2 == 0:
         s = 3 - s - t
-      
+
       t = 3 - s - t
       moves.append((s, t))
       s = 3 - s - t
