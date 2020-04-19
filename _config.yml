@@ -15,6 +15,7 @@ twitter:
 
 exclude:
   - build.sh
+  - run.sh
   - Gemfile
   - Gemfile.lock
 
