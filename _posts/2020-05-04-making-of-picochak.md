@@ -6,7 +6,7 @@ image: /assets/blog-images/2020-05-04-cover.jpg
 tags: [programming]
 ---
 
-Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.” This article is “behind the scenes” of PICOCHAK.
+Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.”
 
 {% youtube gUooT-v4LIU %}
 
@@ -58,11 +58,11 @@ If you’re unfamiliar with PICO-8:  `update` function updates the state, and `d
 
 ### 1st attempt: state machine
 
-Initially, I decided to “describe” each effect as a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine), and`update` functions in effects had series of `if` expressions: one `if` for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.
+Initially, I decided to “describe” each effect as a [state machine](https://en.wikipedia.org/wiki/Finite-state_machine), and `update` functions in effects had series of `if` expressions: one `if` for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.
 
 ### 2nd attempt: better state machine
 
-I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read: the more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.
+I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read. The more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.
 
 ### 3rd attempt: coroutines
 
