@@ -81,7 +81,7 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.” This article is “behind the scenes” of PICOCHAK.</p>
+    <p>Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.”</p>
 
 <iframe class="frame" allowfullscreen="" src="https://www.youtube.com/embed/gUooT-v4LIU"></iframe>
 
@@ -141,11 +141,11 @@
 
 <h3 id="1st-attempt-state-machine">1st attempt: state machine</h3>
 
-<p>Initially, I decided to “describe” each effect as a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a>, and<code class="highlighter-rouge">update</code> functions in effects had series of <code class="highlighter-rouge">if</code> expressions: one <code class="highlighter-rouge">if</code> for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.</p>
+<p>Initially, I decided to “describe” each effect as a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a>, and <code class="highlighter-rouge">update</code> functions in effects had series of <code class="highlighter-rouge">if</code> expressions: one <code class="highlighter-rouge">if</code> for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.</p>
 
 <h3 id="2nd-attempt-better-state-machine">2nd attempt: better state machine</h3>
 
-<p>I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read: the more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.</p>
+<p>I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read. The more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.</p>
 
 <h3 id="3rd-attempt-coroutines">3rd attempt: coroutines</h3>
 
