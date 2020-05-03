@@ -77,13 +77,13 @@ To simplify synchronization, I created four helper functions: `loop_frames`, `wa
 
 ```lua
 while loop_frames(64) do
-	donuty -= 2
+  donuty -= 2
 end
 
 move_donuts, show_mega = true, true
 wait_frames(120)
 while loop_frames(210) do
-	offy -= 1
+  offy -= 1
 end
 wait_sync()
 ```
@@ -123,11 +123,11 @@ Music was another challenge for us. PICO-8 doesn’t have much space for music, 
 I created a little “music control system,” which used a list of “audio commands.” Each command consists of 2 numbers: time and the command itself. Like in the scenario system, time is measured in the number of patterns played since the beginning of the demo. Here are some examples of commands:
 
 ```lua
-23, 0x0404,		-- FX: filter and distortion for channel 3
-24, 0x131c.8,	-- Set loop for patterns 0x13-0x1c
-27, 0x0.01,		-- FX: reverb on channel 1
-31, 0x0.09,		-- FX: reverb on channels 1 and 4
-47, 0x0.8,		-- Overwrite patterns
+23, 0x0404,   -- FX: filter and distortion for channel 3
+24, 0x131c.8, -- Set loop for patterns 0x13-0x1c
+27, 0x0.01,   -- FX: reverb on channel 1
+31, 0x0.09,   -- FX: reverb on channels 1 and 4
+47, 0x0.8,    -- Overwrite patterns
 ```
 
 n1k-o, our composer, writes a lot of music for ZX Spectrum with Vortex Tracker. To let him use one of his favorite tools, I created a converter from Vortex Tracker to PICO-8 format. ZX sound chip and PICO-8 sound system are different, so it was impossible to make a perfect converter. However, we developed some conventions which allowed him to do most of the work in Vortex Tracker and use PICO-8 music editor only for the final touches. The [VT2-to-PICO-8 converter code is available on GitHub](https://github.com/Megus/vt2-to-pico-8).
@@ -185,7 +185,7 @@ This is a pretty obvious recommendation, but it can save you a lot of tokens. I 
 
 ```lua
 function ssin(t, scale, tscale)
-	return sin(t / (tscale or 1)) * scale
+  return sin(t / (tscale or 1)) * scale
 end
 ```
 
