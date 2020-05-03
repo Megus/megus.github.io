@@ -1,38 +1,39 @@
----
-layout: default
----
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="home">
+        {%- for post in site.posts -%}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
+        {%- if forloop.first -%}
+        <div class="home-first-post">
           {%- if post.image -%}
-            <img class="home-post-cover" src="{{ post.image }}" />
+            <a href="{{ post.url | relative_url }}"><div class="home-first-post-cover" style="background-image: url({{ post.image }})"></div></a>
           {%- endif -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-        <div class="post-meta">
-          <span>{{ post.date | date: date_format }}</span>
+          <div class="home-first-post-body">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            <p>{{ post.description }}</p>
+            <p class="post-meta"><span>{{ post.date | date: date_format }}</span></p>
+          </div>
         </div>
-      </li>
-      {%- endfor -%}
-    </ul>
+        {%- else -%}
+        <div class="home-post">
+          {%- if post.image -%}<a href="{{ post.url | relative_url }}"><div class="home-post-cover" style="background-image: url({{ post.image }})"></div></a>{%- endif -%}
+          <div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            <span>{{ post.description }}</span>
+            <p class="post-meta"><span>{{ post.date | date: date_format }}</span></p>
+          </div>
+          </a>
+        </div>
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <p class="rss-subscribe"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>
 
-    <p class="rss-subscribe"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
-  {%- endif -%}
-
-</div>

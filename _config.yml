@@ -28,9 +28,6 @@ collections:
   projects:
     output: true
 
-show_excerpts: true
-excerpt_separator: <!--more-->
-
 google_analytics: UA-104711057-2
 
 # Build settings

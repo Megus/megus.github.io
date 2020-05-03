@@ -1,14 +1,12 @@
 ---
 layout: post
 title: "Creativity through limitation: 8-bit demoscene"
-description: "Pushing old computers to the limits and beyond"
+description: "Pushing old computers to the limits and beyond."
 image: /assets/blog-images/2018-08-05-cover.jpg
 tags: [demoscene, "creativity_through_limitations", "8bit"]
 ---
 
 "Creativity through limitation" is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.
-
-<!--more-->
 
 > [Demoscene] is a computer art subculture; its roots are in software cracking culture. Starting back in the 80s, crackers were adding small introductions to games — cracktros. Cracktros usually featured sweet music and visual effects. Crackers started competing for the best effects, and it became a whole new culture — the demoscene. A demo is like a music video, but the computer in real-time generates all visuals.
 
@@ -16,7 +14,7 @@ My favorite 8-bit platforms are ZX Spectrum and Commodore 64. It's so cool to wa
 
 8-bit platforms have different graphical limitations. Often you're limited to two or four colors for an 8-by-8 pixel block, or it's up to 16 colors for each pixel from a bigger palette. However, there's a trick which allows using more colors: "racing the beam." It is based on how CRT displays work. A ray draws the frame line by line, so if you synchronize to its movement and change color attributes before it draws the next line, you can get more colors. I had thought that this trick was used only on ZX Spectrum until I learned more about other platforms. Now I know that the history of "racing the beam" goes back to the late 70s and Atari 2600 game console, where it was the only way to display something more or less complex. So, let's begin with Atari 2600 demos!
 
----- 
+----
 
 ## Atari 2600
 
@@ -38,7 +36,7 @@ Atari 2600 demos are not as entertaining as, for example, C64 ones, but watch th
 {% youtube 1nTRMTnTeLQ %}
 <p class="footnote"><a href="http://www.pouet.net/prod.php?which=68505">Chiphead by KK/Altair^DMA</a></p>
 
----- 
+----
 
 ## Atari XL/XE
 
@@ -58,7 +56,7 @@ Sounds produced by POKEY are also a giant leap from VCS's TIA. Four oscillators 
 {% youtube HVuEd742Yyg %}
 <p class="footnote"><a href="http://www.pouet.net/prod.php?which=9044">Numen by Taqart</a></p>
 
----- 
+----
 
 ## Amstrad CPC 6128
 
@@ -78,7 +76,7 @@ AY sound chip has three pulse wave oscillators, a noise generator that can be mi
 {% youtube 6wBwbRYL-F4 %}
 <p class="footnote"><a href="http://www.pouet.net/prod.php?which=75725">phX by Condense</a></p>
 
----- 
+----
 
 ## ZX Spectrum 128
 
@@ -100,7 +98,7 @@ Even with multicolor you're still limited to the 16 colors palette. Here comes a
 {% youtube b-kkzl2foaQ %}
 <p class="footnote"><a href="http://www.pouet.net/prod.php?which=68035">Across the Edge by deMarche</a></p>
 
----- 
+----
 
 ## Commodore 64
 

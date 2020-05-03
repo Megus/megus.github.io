@@ -1,13 +1,11 @@
 ---
 layout: post
 title: "How to become a better programmer"
-description: "Four tips to a beginner programmers"
+description: "Four tips for beginner programmers."
 tags: [programming]
 ---
 
 To become a better programmer, you need to keep doing two things: practice and learn. Yes, it's that simple and obvious. Finding what to learn may be difficult, and it's great when there's someone who can give good advice. I didn't get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.
-
-<!--more-->
 
 ## Learn the basics of functional programming
 
@@ -39,7 +37,7 @@ Define interfaces/protocols, make smaller classes, use class inheritance wisely,
 - Learn [SOLID principles].
 - Read about [“Clean Architecture” by Robert Martin (Uncle Bob)].
 
----- 
+----
 
 It's not an exhaustive list of recommendations, and it only covers hard skills. To become a better developer, you should also develop various soft skills. And here are some bits of advice to wrap up this article:
 

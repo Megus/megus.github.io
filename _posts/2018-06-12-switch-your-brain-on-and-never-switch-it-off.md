@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "Switch your brain on and never switch it off!"
-description: "Three stories about programmers who forgot to switch on they brain"
+description: "Three stories about programmers who forgot to switch on they brain."
 tags: [programming]
 ---
 
 I started to learn programming when I was six, and this year I'm celebrating thirty years of my programming experience (for the last sixteen years I'm getting paid for it). I learned a lot, and I believe it's time to start to share my experience with the world. The first thing I want to share is my motto:
 
 > — Switch your brain on and never switch it off!
-
-<!--more-->
 
 I first heard this phrase from the CTO at one of my previous jobs  —  Alexander Ionov. It sounds so trivial and obvious, but it greatly affected me. I want to tell you about some cases where developers forgot to switch on their brains.
 
@@ -33,7 +31,7 @@ There's a golden rule in software development: "If something works, don't touch 
 
 Another mobile app: a messenger for sending pictures. Everything was OK until a conversation became quite long. The app crashed because it tried to keep all chat images in the memory. I'm not saying it's terrible, it's a good temporary solution for a prototype when you are more focused on the user experience. However, when you finish prototyping, you should replace your temporary solution with a proper implementation. And never forget to test your code on the real use cases!
 
----- 
+----
 
 I'm not saying that the developers who make these mistakes lack skills. No, usually they do a great job, but sometimes they just forget to switch their brains on. It happens to all of us, and it happened to me as well. However, every mistake is an opportunity to learn. Don't miss these opportunities!
 

@@ -10,8 +10,6 @@ It is the second article in “Creativity through limitation” series. Check ou
 
 When was the last time you coded something just for fun? If you’re like me, then it hasn’t happened for years. However, about a year ago, I learned about PICO-8, bought it, and I have to say that these were probably the most worthy $15 I spent on myself last year!
 
-<!--more-->
-
 ## What is PICO-8?
 
 > PICO-8 is a fantasy console for making, sharing and playing tiny games and other computer programs. When you turn it on, the machine greets you with a command line and simple built-in tools for creating your own cartridges and exploring the PICO-8 cartverse. — [PICO-8 official page](https://www.lexaloffle.com/pico-8.php)
@@ -24,9 +22,9 @@ PICO-8 has a fantastic community. Many people create games, demos, and tutorials
 
 There’s also a pretty unique creative genre on PICO-8 — Tweetcart. Tweetcart is a program that fits in a Tweet (up to 280 characters) and produces some impressive visual effect. The idea is very similar to demoscene intro.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tree with Moon // 278 chars -- <a href="https://twitter.com/hashtag/pico8?src=hash&amp;ref_src=twsrc%5Etfw">#pico8</a> src in reply<a href="https://twitter.com/hashtag/tweetcart?src=hash&amp;ref_src=twsrc%5Etfw">#tweetcart</a> <a href="https://twitter.com/hashtag/tweetjam?src=hash&amp;ref_src=twsrc%5Etfw">#tweetjam</a> <a href="https://t.co/3ZgbsSXaG0">pic.twitter.com/3ZgbsSXaG0</a></p>&mdash; zep.p8 (@lexaloffle) <a href="https://twitter.com/lexaloffle/status/1052502760329961473?ref_src=twsrc%5Etfw">October 17, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tree with Moon // 278 chars -- <a href="https://twitter.com/hashtag/pico8?src=hash&amp;ref_src=twsrc%5Etfw">#pico8</a> src in reply<a href="https://twitter.com/hashtag/tweetcart?src=hash&amp;ref_src=twsrc%5Etfw">#tweetcart</a> <a href="https://twitter.com/hashtag/tweetjam?src=hash&amp;ref_src=twsrc%5Etfw">#tweetjam</a> <a href="https://t.co/3ZgbsSXaG0">pic.twitter.com/3ZgbsSXaG0</a></p>&mdash; zep.p8 (@lexaloffle) <a href="https://twitter.com/lexaloffle/status/1052502760329961473?ref_src=twsrc%5Etfw">October 17, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Gardner&#39;s sky texture. Source in next message and also in Computer graphics principles and practice (2nd edition) / Chapter 20.8.2 Clouds and atmosphere<br><br>BTW It took me about an hour to realize I had some extra spaces in the code!<a href="https://twitter.com/hashtag/pico8?src=hash&amp;ref_src=twsrc%5Etfw">#pico8</a> <a href="https://twitter.com/hashtag/tweetcart?src=hash&amp;ref_src=twsrc%5Etfw">#tweetcart</a> <a href="https://twitter.com/hashtag/tweetjam?src=hash&amp;ref_src=twsrc%5Etfw">#tweetjam</a> <a href="https://twitter.com/hashtag/screenshotsunday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsunday</a> <a href="https://t.co/qx7XsjumOB">pic.twitter.com/qx7XsjumOB</a></p>&mdash; Michał Rostocki (@von_rostock) <a href="https://twitter.com/von_rostock/status/1114960242171949058?ref_src=twsrc%5Etfw">April 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Gardner&#39;s sky texture. Source in next message and also in Computer graphics principles and practice (2nd edition) / Chapter 20.8.2 Clouds and atmosphere<br><br>BTW It took me about an hour to realize I had some extra spaces in the code!<a href="https://twitter.com/hashtag/pico8?src=hash&amp;ref_src=twsrc%5Etfw">#pico8</a> <a href="https://twitter.com/hashtag/tweetcart?src=hash&amp;ref_src=twsrc%5Etfw">#tweetcart</a> <a href="https://twitter.com/hashtag/tweetjam?src=hash&amp;ref_src=twsrc%5Etfw">#tweetjam</a> <a href="https://twitter.com/hashtag/screenshotsunday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsunday</a> <a href="https://t.co/qx7XsjumOB">pic.twitter.com/qx7XsjumOB</a></p>&mdash; Michał Rostocki (@von_rostock) <a href="https://twitter.com/von_rostock/status/1114960242171949058?ref_src=twsrc%5Etfw">April 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 You can find more on [Twitter by #tweetcart](https://twitter.com/hashtag/tweetcart?src=hash) or at [Museum of Tweetcart History](https://museum-of-tweetcart-history.neocities.org).
 
@@ -212,6 +210,6 @@ Instead of using texture look-up, I use bitwise operations to create checkerboar
 
 That’s it! You can find the full code and some other effect I create in [my PICO-8 repository on GitHub](https://github.com/Megus/pico-8-experiments).
 
----- 
+----
 
 As I recall, it’s the first time I’ve tried to explain a demo effect, and I’m afraid that it may not be clear enough. I tried to add as many comments as possible, but if you’ve got any questions, let me know, I’m ready to improve and add more details. Thanks for your attention!

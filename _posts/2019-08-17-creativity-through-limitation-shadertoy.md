@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creativity through limitation: Shadertoy"
-description: "Shadertoy is a place where anyone can share realtime procedural graphics experiments. This article is an introduction to procedural graphics and ray tracing"
+description: "Shadertoy is a place where anyone can share realtime procedural graphics experiments. This article is an introduction to procedural graphics and ray tracing."
 image: /assets/blog-images/2019-08-17-cover.jpg
 tags: [programming]
 ---
@@ -21,8 +21,6 @@ Here’s an example of what people do:
 
 <p class="footnote">Click the “play” button to see it in action.</p>
 
-<!--more-->
-
 You may think that it looks pretty simple compared to, for example, the latest video games. Let me give you a quick high-level introduction to 3D graphics (CG-pros, if you read it, don’t blame me for the oversimplification, please). To draw some 3D object, you need to model it with triangles, define transformations (rotation, scaling, projection, etc.) and then use some shader magic. Shaders are small programs running on GPU — graphics processing unit on a video card. First, you pass all polygon vertices and transformations to vertex shaders. They convert 3D coordinates to 2D screen coordinates and pass all data to a rasterizer. Rasterizer draws triangles and calls fragment shaders for each pixel to get the color.
 
 Sounds simple? Then remove everything but a fragment shader. The only input you have now is a coordinate on a screen. Try to think about how to draw a 3D cube. Shaders run in parallel on multiple GPU cores, so you can’t have any state to pass between shader calls while drawing a single frame. Shaders are just like functions in functional programming languages, or mathematical functions — they can’t have side effects. Does it sound challenging and limiting now? I believe that your answer is “YES!”
@@ -35,7 +33,7 @@ As you remember, the only input we have in a fragment shader is a screen coordin
 
 > A disk is the region in a plane bounded by a circle.
 >
-> A circle is the set of all points in a plane that are at a given distance (the radius) from a given point (the center). 
+> A circle is the set of all points in a plane that are at a given distance (the radius) from a given point (the center).
 
 So, if the distance from the center is less than the radius, then the point is inside the disk, otherwise — it’s outside. To calculate the distance from an origin point, we use the following formula: sqrt(x² + y²). Given that, to draw a disk, we need to check each pixel for sqrt(x² + y²) \< r, or x² + y² \< r² (it’s the disk formula in Cartesian coordinates). Now let’s look at the shader code:
 
@@ -51,7 +49,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
     if (uv.x * uv.x + uv.y * uv.y < 0.3) {
         fragColor = vec4(1, 1, 1, 1);
     } else {
-        fragColor = vec4(0, 0, 0, 1);   
+        fragColor = vec4(0, 0, 0, 1);
     }
 }
 ```
@@ -62,7 +60,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
 
 ## Ray tracing with fragment shaders
 
-Now let’s do something more complicated — ray tracing. 
+Now let’s do something more complicated — ray tracing.
 
 > Ray tracing is a rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects — [Wikipedia](https://en.wikipedia.org/wiki/Ray_tracing_(graphics))
 
@@ -85,13 +83,13 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec2 uv = fragCoord.xy / iResolution.xy;
     uv = uv * 2.0 - 1.0;
     uv.x *= iResolution.x / iResolution.y;
-    
+
     // Camera
     vec3 camO = vec3(0, 0, 0);
     vec3 camL = normalize(vec3(uv.x, uv.y, 7));
-    
+
     // Ray-tracing
-    fragColor = vec4(trace(camO, camL), 1.);      
+    fragColor = vec4(trace(camO, camL), 1.);
 }
 ```
 
@@ -134,7 +132,7 @@ vec3 sphereCenter(int sphere) {
         sD.x + sin(iTime * sS.x) * sA.x,
         sD.y + sin(iTime * sS.y) * sA.y,
         sD.z + cos(iTime * sS.z) * sA.z);
-    return c;    
+    return c;
 }
 ```
 
@@ -144,7 +142,7 @@ vec3 sphereCenter(int sphere) {
 int findIntersection(vec3 o, vec3 l, int ignore, out float d) {
     int sphere = -1;
     d = 1e5;
-    
+
     for (int i = 0; i < COUNT; i++) {
         if (i == ignore) {
             continue;
@@ -190,21 +188,21 @@ I took all formulas from [“Basic shading” OpenGL tutorial](http://www.opengl
 vec3 trace(vec3 camO, vec3 camL) {
     float d = 0.;
     int sphere = findIntersection(camO, camL, -1, d);
-    
+
     if (sphere == -1) {
         // There was no intersection, return background color
         return vec3(0, 0, 0);
     }
-    
+
     vec3 lightColor = spheres[1].xyz;
 
     if (sphere == 0) {
         // It's a light source, don't need to shade it
         return lightColor;
     }
-    
+
     vec3 lightPoint = sphereCenter(0);
-    
+
     // Sphere color
     vec3 sColor = spheres[sphere * SIZE + 1].xyz;
     vec3 aColor = sColor * vec3(AMBIENT, AMBIENT, AMBIENT);
@@ -215,7 +213,7 @@ vec3 trace(vec3 camO, vec3 camL) {
 
     // Light direction vector
     vec3 lightDir = normalize(lightPoint - iPoint);
-    
+
     // Check if there's another sphere between this one and the light source
     float dShadow = 0.;
     int shadowedBy = findIntersection(iPoint, lightDir, sphere, dShadow);
@@ -224,20 +222,20 @@ vec3 trace(vec3 camO, vec3 camL) {
         // We're under shadow, use ambient color
         return aColor;
     }
-    
+
     // Lighting (diffusion and specular)
     float cosA = clamp(dot(iNormal, lightDir), 0., 1.);
     float cosS = clamp(dot(-camL, reflect(-lightDir, iNormal)), 0., 1.);
 
     float dSquared = pow(length(iPoint - lightPoint), 2.);
-    
+
     return aColor +
         sColor * lightColor * cosA * LIGHT_POWER / dSquared +
         lightColor * pow(cosS, SPECULAR_POWER) * LIGHT_POWER / dSquared;
 }
 ```
 
----- 
+----
 
 All the math above looked a bit complex to me at first, but when I did everything myself and fixed all the bugs (oh, I had plenty of them!), I grasped it. The next step would be to implement more complex models. One of the main challenges in ray tracing is finding the intersection point. It’s easy for a sphere, but it becomes difficult for other geometrical objects. The good news is that there’s a ray tracing technique called “ray marching” which makes finding intersection point simple even for very complex objects. Initially, I wanted to cover ray marching here, but if I’d done so, the article would have been much longer. If you’re interested in this topic, you may find these links useful:
 

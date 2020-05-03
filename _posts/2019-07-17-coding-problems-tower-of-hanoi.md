@@ -15,8 +15,6 @@ As developers, we spend much time fixing bugs and doing routine work. We rarely 
 
 In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now.
 
-<!--more-->
-
 ## Tower of Hanoi
 
 <div class="centered"><img src="/assets/blog-images/2019-07-17-hanoi.gif"></div>
