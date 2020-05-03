@@ -161,13 +161,13 @@
 <p>To simplify synchronization, I created four helper functions: <code class="highlighter-rouge">loop_frames</code>, <code class="highlighter-rouge">wait_frames</code>, <code class="highlighter-rouge">loop_sync</code> and <code class="highlighter-rouge">wait_sync</code>. Here’s a usage example:</p>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="n">loop_frames</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span> <span class="k">do</span>
-	<span class="n">donuty</span> <span class="o">-=</span> <span class="mi">2</span>
+  <span class="n">donuty</span> <span class="o">-=</span> <span class="mi">2</span>
 <span class="k">end</span>
 
 <span class="n">move_donuts</span><span class="p">,</span> <span class="n">show_mega</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span>
 <span class="n">wait_frames</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
 <span class="k">while</span> <span class="n">loop_frames</span><span class="p">(</span><span class="mi">210</span><span class="p">)</span> <span class="k">do</span>
-	<span class="n">offy</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">offy</span> <span class="o">-=</span> <span class="mi">1</span>
 <span class="k">end</span>
 <span class="n">wait_sync</span><span class="p">()</span>
 </code></pre></div></div>
@@ -207,11 +207,11 @@
 
 <p>I created a little “music control system,” which used a list of “audio commands.” Each command consists of 2 numbers: time and the command itself. Like in the scenario system, time is measured in the number of patterns played since the beginning of the demo. Here are some examples of commands:</p>
 
-<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">23</span><span class="p">,</span> <span class="mh">0x0404</span><span class="p">,</span>		<span class="c1">-- FX: filter and distortion for channel 3</span>
-<span class="mi">24</span><span class="p">,</span> <span class="mh">0x131c</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span>	<span class="c1">-- Set loop for patterns 0x13-0x1c</span>
-<span class="mi">27</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">01</span><span class="p">,</span>		<span class="c1">-- FX: reverb on channel 1</span>
-<span class="mi">31</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">09</span><span class="p">,</span>		<span class="c1">-- FX: reverb on channels 1 and 4</span>
-<span class="mi">47</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span>		<span class="c1">-- Overwrite patterns</span>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">23</span><span class="p">,</span> <span class="mh">0x0404</span><span class="p">,</span>   <span class="c1">-- FX: filter and distortion for channel 3</span>
+<span class="mi">24</span><span class="p">,</span> <span class="mh">0x131c</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span> <span class="c1">-- Set loop for patterns 0x13-0x1c</span>
+<span class="mi">27</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">01</span><span class="p">,</span>   <span class="c1">-- FX: reverb on channel 1</span>
+<span class="mi">31</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">09</span><span class="p">,</span>   <span class="c1">-- FX: reverb on channels 1 and 4</span>
+<span class="mi">47</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span>    <span class="c1">-- Overwrite patterns</span>
 </code></pre></div></div>
 
 <p>n1k-o, our composer, writes a lot of music for ZX Spectrum with Vortex Tracker. To let him use one of his favorite tools, I created a converter from Vortex Tracker to PICO-8 format. ZX sound chip and PICO-8 sound system are different, so it was impossible to make a perfect converter. However, we developed some conventions which allowed him to do most of the work in Vortex Tracker and use PICO-8 music editor only for the final touches. The <a href="https://github.com/Megus/vt2-to-pico-8">VT2-to-PICO-8 converter code is available on GitHub</a>.</p>
@@ -267,7 +267,7 @@
 <p>This is a pretty obvious recommendation, but it can save you a lot of tokens. I made functions even for basic calculations like this:</p>
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="nf">ssin</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">tscale</span><span class="p">)</span>
-	<span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="p">(</span><span class="n">tscale</span> <span class="ow">or</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="n">scale</span>
+  <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="p">(</span><span class="n">tscale</span> <span class="ow">or</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="n">scale</span>
 <span class="k">end</span>
 </code></pre></div></div>
 
