@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-104711057-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-104711057-2');
+	</script><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/favicon-96x96.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|PT+Serif|Source+Code+Pro&display=swap" rel="stylesheet"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Making of PICOCHAK | Megus</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Making of PICOCHAK" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“Behind the scenes” of the PICO-8 demo I created for CAFe’2019 demoparty." />
+<meta property="og:description" content="“Behind the scenes” of the PICO-8 demo I created for CAFe’2019 demoparty." />
+<link rel="canonical" href="https://megus.org/2020/05/04/making-of-picochak.html" />
+<meta property="og:url" content="https://megus.org/2020/05/04/making-of-picochak.html" />
+<meta property="og:site_name" content="Megus" />
+<meta property="og:image" content="https://megus.org/assets/blog-images/2020-05-04-cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-04T00:00:00+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@sugem" />
+<meta name="twitter:creator" content="@sugem" />
+<script type="application/ld+json">
+{"description":"“Behind the scenes” of the PICO-8 demo I created for CAFe’2019 demoparty.","@type":"BlogPosting","url":"https://megus.org/2020/05/04/making-of-picochak.html","image":"https://megus.org/assets/blog-images/2020-05-04-cover.jpg","headline":"Making of PICOCHAK","dateModified":"2020-05-04T00:00:00+03:00","datePublished":"2020-05-04T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://megus.org/2020/05/04/making-of-picochak.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://megus.org/feed.xml" title="Megus" /></head>
+<body><header class="site-header" role="banner">
+  <div class="site-header-wrapper"><a href="/"><img class="site-logo" src="/assets/megus.png" />
+    <span class="site-title" rel="author">Megus</span></a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/portfolio.html">Portfolio</a><a class="page-link" href="/music.html">Music</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=194003690636360&autoLogAppEvents=1"></script>
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header"><div class="post-cover" style="background-image: url(/assets/blog-images/2020-05-04-cover.jpg)">
+        <div class="gradient">
+          <img hidden itemprop="image" src="/assets/blog-images/2020-05-04-cover.jpg" />
+          <h1 class="post-cover-title p-name" itemprop="name headline">Making of PICOCHAK</h1>
+        </div>
+      </div><p class="post-meta">
+      <time class="dt-published" datetime="2020-05-04T00:00:00+03:00" itemprop="datePublished">May 4, 2020
+      </time>
+    </p>
+    <span hidden itemscope itemtype="http://schema.org/Person" itemprop="author">
+      <span hidden itemprop="name">Roman "Megus" Petrov</span>
+    </span>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.” This article is “behind the scenes” of PICOCHAK.</p>
+
+<iframe class="frame" allowfullscreen="" src="https://www.youtube.com/embed/gUooT-v4LIU"></iframe>
+
+<ul>
+  <li><a href="https://www.pouet.net/prod.php?which=83557" title="PICOCHAK at pouët.net">PICOCHAK at pouët.net</a></li>
+  <li><a href="https://www.lexaloffle.com/bbs/?tid=35774" title="Topic at Lexaloffle BBS">Topic at Lexaloffle BBS</a></li>
+  <li><a href="https://github.com/Megus/picochak" title="Source code at GitHub">Source code at GitHub</a></li>
+</ul>
+
+<p>The moment I had learned that <a href="https://cafeparty.org.ru/2019/">CAFe demoparty</a> is going to be back in 2019, I decided to take part in it. In 1999, CAFe became the first party I had visited. I wasn’t creating PICOCHAK alone; other members of the PICOCHAK team are:</p>
+
+<ul>
+  <li><a href="https://soundcloud.com/n1k-o/">Oleg Nikitin (n1k-o/Stardust)</a> — music</li>
+  <li><a href="https://zxart.ee/rus/avtory/d/diver/qid:121913/">Alexey Golubtsov (Diver/Stardust)</a> — graphics</li>
+  <li>Damir Nasyrov (Adam Bazaroff) — Tatar culture expert</li>
+</ul>
+
+<p>It was easy to come up with a concept. As CAFe is held in Kazan, the capital of Tatarstan, Oleg suggested using Tatar food references. I added that I like space-themed demos. By mixing these, we got our “Tatar food in space” idea. Chak-chak is a Tatar national sweet, so we made it a protagonist in the story, hence the name — PICOCHAK. Our demo took second place in the console demo competition.</p>
+
+<p>PICOCHAK in numbers:</p>
+
+<ul>
+  <li>Duration: 4 minutes, 24 seconds</li>
+  <li>12 effects</li>
+  <li>446 8x8 sprites (2 64х64 textures, 38 8х8 font sprites, 104x64 demo logo, 8 24x24 planet sprites, 72x64 “gas station” sprite, 8 16x16 “ship” sprites).</li>
+  <li>5 3D models (569 vertices and 1120 triangles in total).</li>
+  <li>80 music patterns.</li>
+</ul>
+
+<p>PICO-8 has many limitations, just like real retro hardware (I have an <a href="https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html">article about PICO-8</a> for my “Creativity through limitations” series). With this demo, I wanted to push PICO-8 limits, because that’s what <a href="https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html">retro demoscene</a> is about, in my opinion. I believe that I succeeded. I haven’t had so much fun while coding since the <a href="https://megus.org/projects/malady.html">4K intro “Malady”</a> I made for ZX Spectrum back in 1999. Never-ending battle with platform constraints, inventing coding tricks, finding smart ways to improve the code — these were a breath of fresh air, which helped me to deal with the burnout I got at my daily job.</p>
+
+<h2 id="working-on-effects">Working on effects</h2>
+
+<p>I didn’t have the goal of inventing something new and unique. For my “demoscene comeback,” I wanted to re-create some classic demoscene effects because I missed the opportunity to do them on real retro-hardware back in time. I had already had a simple 3D engine on PICO-8, but for PICOCHAK I added some new features:</p>
+
+<ul>
+  <li>Concave (non-convex) objects support</li>
+  <li>Flat shading</li>
+  <li>Textures (without perspective correction)</li>
+</ul>
+
+<p>I also re-created three classic effects: roto-zoomer, twister, and bump mapping. All other effects use sprites. As mentioned above, the demo has 446 8x8 sprites, while PICO-8 has a memory for 256 sprites only. To fit this much sprites, I used <a href="https://www.lexaloffle.com/bbs/?tid=34058">the PX9 compression algorithm by Zep</a>.</p>
+
+<div class="image-row">
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-rotozoomer.gif" />
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-twister.gif" />
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-bump-mapping.gif" />
+</div>
+
+<p>I’m not going to write about the implementation of effects, because it’s pretty easy to find all the necessary information on the Internet. This article is about the unique PICO-8 challenges I faced when creating PICOCHAK.</p>
+
+<h2 id="scenario-system-connecting-all-effects-together">Scenario system — connecting all effects together</h2>
+
+<p>To transform a bunch of effects to a demo, it needs some control system which provides synchronization with music and switches effects. I called it a “scenario system.” In PICOCHAK, it went through three iterations. Every time I had rewritten the code from scratch, I got fewer tokens and better readable code. The common idea for all three iterations was that every effect is a function, which performs some initialization procedures and then returns <code class="highlighter-rouge">update</code> and <code class="highlighter-rouge">draw</code> functions for the effect.</p>
+
+<p>If you’re unfamiliar with PICO-8:  <code class="highlighter-rouge">update</code> function updates the state, and <code class="highlighter-rouge">draw</code> function performs the actual drawing on the screen. Both functions are called 30 or 60 times per second. While you can put state updates and drawing code in any of these functions, it’s better to separate them. If your <code class="highlighter-rouge">draw</code> function takes more than 1/60 or 1/30 seconds to complete, you get FPS drop, but the perceived speed of objects on the screen doesn’t change, because PICO-8 will always call the <code class="highlighter-rouge">update</code> function 30 or 60 times per seconds.</p>
+
+<h3 id="1st-attempt-state-machine">1st attempt: state machine</h3>
+
+<p>Initially, I decided to “describe” each effect as a <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machine</a>, and<code class="highlighter-rouge">update</code> functions in effects had series of <code class="highlighter-rouge">if</code> expressions: one <code class="highlighter-rouge">if</code> for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.</p>
+
+<h3 id="2nd-attempt-better-state-machine">2nd attempt: better state machine</h3>
+
+<p>I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read: the more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.</p>
+
+<h3 id="3rd-attempt-coroutines">3rd attempt: coroutines</h3>
+
+<p>Coroutines for the rescue! Every effect had got a coroutine with the control code, which became linear, you can read it like an actual scenario. Now, every effect function returns 4 values:</p>
+
+<ul>
+  <li>Scenario coroutine</li>
+  <li><code class="highlighter-rouge">update</code> function with common animations</li>
+  <li><code class="highlighter-rouge">draw</code> function</li>
+  <li>Background color (-1 if clearing screen before <code class="highlighter-rouge">draw</code> call is not needed)</li>
+</ul>
+
+<p>To simplify synchronization, I created four helper functions: <code class="highlighter-rouge">loop_frames</code>, <code class="highlighter-rouge">wait_frames</code>, <code class="highlighter-rouge">loop_sync</code> and <code class="highlighter-rouge">wait_sync</code>. Here’s a usage example:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="n">loop_frames</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span> <span class="k">do</span>
+	<span class="n">donuty</span> <span class="o">-=</span> <span class="mi">2</span>
+<span class="k">end</span>
+
+<span class="n">move_donuts</span><span class="p">,</span> <span class="n">show_mega</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span>
+<span class="n">wait_frames</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">loop_frames</span><span class="p">(</span><span class="mi">210</span><span class="p">)</span> <span class="k">do</span>
+	<span class="n">offy</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="k">end</span>
+<span class="n">wait_sync</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>What this code does:</p>
+
+<ul>
+  <li>Decrease <code class="highlighter-rouge">donuty</code> variable by 2 every frame (repeat for 64 frames)</li>
+  <li>Set some flags</li>
+  <li>Do nothing for 120 frames (common animations in an <code class="highlighter-rouge">update</code> function are still running)</li>
+  <li>Decrease <code class="highlighter-rouge">offy</code> variable by 1 every frame (repeat for 210 frames)</li>
+  <li>Wait for the next music synchronization point</li>
+</ul>
+
+<p>Just as I said: the control code is linear and very easy to read. You don’t see any <code class="highlighter-rouge">yield</code>s because they’re all inside those helper functions.</p>
+
+<p>The overall demo scenario is a Lua table with effect functions and music synchronization points. The music synchronization point is the number of music patterns played since the beginning of the demo. Each effect may have multiple synchronization points. Here’s a part of PICOCHAK scenario:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fx_intro</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>
+<span class="n">fx_foodstars</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span>
+<span class="n">fx_donuts</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span>
+<span class="n">fx_donut_attack</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span>
+<span class="n">fx_sky_transition</span><span class="p">,</span>
+<span class="k">function</span><span class="p">()</span> <span class="k">return</span> <span class="n">fx_preparations</span><span class="p">(</span><span class="mi">104</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">end</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span>
+<span class="n">fx_kaleidoscope</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span>
+</code></pre></div></div>
+
+<h2 id="music-control-system">Music control system</h2>
+
+<p>Music was another challenge for us. PICO-8 doesn’t have much space for music, so it was clear: if we want to have a four-minute-long soundtrack, we need to use some tricks. Here’s what I came up with:</p>
+
+<p><strong>Pattern loops.</strong> I change loop parameters dynamically because 64 pattern slots are not enough, the “unrolled” soundtrack would have taken over 80 pattern slots.</p>
+
+<p><strong>Overwriting patterns.</strong> At some point after the intro, I overwrite the first 12 SFX with data stored in sprite memory. This trick gave n1k-o a bit more freedom and added variety to the music.</p>
+
+<p><strong>Audio effects.</strong> It’s an undocumented feature of PICO-8. There are 4 per-channel audio effects: reverb, filter, distortion, and “half-speed.” Turning effects on and off during loops made repetitions less annoying.</p>
+
+<p>I created a little “music control system,” which used a list of “audio commands.” Each command consists of 2 numbers: time and the command itself. Like in the scenario system, time is measured in the number of patterns played since the beginning of the demo. Here are some examples of commands:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">23</span><span class="p">,</span> <span class="mh">0x0404</span><span class="p">,</span>		<span class="c1">-- FX: filter and distortion for channel 3</span>
+<span class="mi">24</span><span class="p">,</span> <span class="mh">0x131c</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span>	<span class="c1">-- Set loop for patterns 0x13-0x1c</span>
+<span class="mi">27</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">01</span><span class="p">,</span>		<span class="c1">-- FX: reverb on channel 1</span>
+<span class="mi">31</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">09</span><span class="p">,</span>		<span class="c1">-- FX: reverb on channels 1 and 4</span>
+<span class="mi">47</span><span class="p">,</span> <span class="mh">0x0</span><span class="p">.</span><span class="mi">8</span><span class="p">,</span>		<span class="c1">-- Overwrite patterns</span>
+</code></pre></div></div>
+
+<p>n1k-o, our composer, writes a lot of music for ZX Spectrum with Vortex Tracker. To let him use one of his favorite tools, I created a converter from Vortex Tracker to PICO-8 format. ZX sound chip and PICO-8 sound system are different, so it was impossible to make a perfect converter. However, we developed some conventions which allowed him to do most of the work in Vortex Tracker and use PICO-8 music editor only for the final touches. The <a href="https://github.com/Megus/vt2-to-pico-8">VT2-to-PICO-8 converter code is available on GitHub</a>.</p>
+
+<h2 id="optimizing-code-size">Optimizing code size</h2>
+
+<p>There are three limitations on the code size on PICO-8:</p>
+
+<ul>
+  <li>8192 tokens</li>
+  <li>15KB of compressed code size</li>
+  <li>65535 characters</li>
+</ul>
+
+<p>The limits are listed in the order of their importance. If you’re creating something big on PICO-8, the first limit you’re going to hit is, most likely, the token limit. If you have too many tokens, you can’t even load a cart. The compressed code size limit is more forgiving — you can load and run a cart, but you won’t be able to export it to p8.png format.</p>
+
+<p>When I started optimizing the code, I also began taking notes on how many tokens I saved after each optimization. According to my records, I managed to cut over 3000 tokens! That means that not optimized code would have taken over 11k tokens!</p>
+
+<p>The most token-heavy module of the demo is the 3D engine. The first function I optimized was the matrix multiplication function. It was unrolled entirely to make it faster. However, it’s used only three times each frame and doesn’t impact performance significantly, so I rewrote it using loops. The next one was a triangle rasterizer. Initially, I used a speedy implementation by ElectricGryphon, but it is very long, so I wrote my own function. It is not perfect, but it’s much shorter and only a tiny bit slower. Another significant optimization was rewriting a sorting function (I use it for concave objects). Instead of some 3rd party implementation of a merge sort, I wrote an in-place radix sort. Not only is it shorter, but it is also faster.</p>
+
+<div class="image-row">
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-three-objects.gif" />
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-donut.gif" />
+<img style="width: 33%; height: 33%;" src="/assets/blog-images/2020-05-04-picochak.gif" />
+</div>
+
+<p>All 3D models in PICOCHAK are programmatically generated, and these generators took about a thousand tokens. It was OK in the beginning, but when I started to add more effects, it became clear that it’s too much. I decided to put all model data (vertices and triangles) to sprite/map memory, and I failed: there wasn’t enough space. In the end, I chose a hybrid approach: storing vertices in the map memory and building triangles programmatically.</p>
+
+<p>All these are the algorithmic optimizations, but there are also some conventional techniques which you can apply to any PICO-8 code:</p>
+
+<h3 id="multiple-assignments-on-the-same-line">Multiple assignments on the same line</h3>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Instead of this:</span>
+<span class="kd">local</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">local</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1">-- Write this:</span>
+<span class="kd">local</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<p>It makes your code difficult to read, but it saves you one token for each variable. Be careful, such assignments are “atomic,” so the code like this won’t work:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">obj</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">obj</span><span class="p">.</span><span class="n">field</span>
+</code></pre></div></div>
+
+<p>By the way, multiple assignments are perfect for swapping variable values without using a temporary variable:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span>
+</code></pre></div></div>
+
+<h3 id="move-repeating-code-to-functions">Move repeating code to functions</h3>
+
+<p>This is a pretty obvious recommendation, but it can save you a lot of tokens. I made functions even for basic calculations like this:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="nf">ssin</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">tscale</span><span class="p">)</span>
+	<span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span> <span class="o">/</span> <span class="p">(</span><span class="n">tscale</span> <span class="ow">or</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="n">scale</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>It is important to remember that each function call costs you some CPU time. In the twister effect, I had to find a balance between using functions and unrolling them to achieve 60 FPS.</p>
+
+<h3 id="use-language-features">Use language features</h3>
+
+<p>PICO-8 has some additions to Lua syntax which save tokens:</p>
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1">-- 5 tokens</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">-- 3 tokens</span>
+</code></pre></div></div>
+
+<p>You can use <code class="highlighter-rouge">all()</code> to iterate through arrays. It takes fewer tokens, but it’s a bit slower. Another trick is to use <code class="highlighter-rouge">%</code> instead of <code class="highlighter-rouge">band(x, mask)</code> for masking if you work with positive integers.</p>
+
+<h3 id="put-all-strings-to-a-single-variable">Put all strings to a single variable</h3>
+
+<p>There’s quite a lot of text in PICOCHAK. Initially, every string took 3 tokens: the string itself and a pair of coordinates. To save tokens, I used the fact that a string of any length is just one token for PICO-8. The demo is linear, and each line is used only once, so I could merge all texts and coordinates into a single very long string variable. I shaved off over a hundred tokens with this trick!</p>
+
+<h3 id="optimizing-compressed-code-size">Optimizing compressed code size</h3>
+
+<p>When I was close to the completion, I finally ran into the compressed code size limit. However, it was elementary to fix:</p>
+
+<ul>
+  <li>Convert code indentation to tabs</li>
+  <li>Remove almost all comments</li>
+  <li>Give some variables shorter names</li>
+</ul>
+
+<hr />
+
+<p>The process of creating PICOCHAK was challenging but enjoyable. I enjoyed every minute of it, including the routine moments of code size optimization. I’m definitely making another demo for PICO-8 in the future!</p>
+
+  </div>
+
+  <a class="u-url" href="/2020/05/04/making-of-picochak.html" hidden></a>
+
+</article>
+
+<div class="social-buttons">
+  <a class="twitter-share-button" data-size="large"
+    href="https://twitter.com/intent/tweet?text=Making%20of%20PICOCHAK&via=sugem">
+    Tweet
+  </a>
+  <div class="fb-share-button" style="top: -7px;"
+    data-href="https://megus.org/2020/05/04/making-of-picochak.html"
+    data-layout="button" data-size="large">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+  </div>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        © Roman “Megus” Petrov.<br />
+        <a class="u-email" href="mailto:roman.petrov@icloud.com">roman.petrov@icloud.com</a>
+      </div>
+      <div class="footer-col">
+        <a href="https://twitter.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a>
+        <a href="https://www.facebook.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg></a>
+        <a href="https://github.com/Megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a>
+        <a href="https://www.youtube.com/user/megussugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg></a>    
+        <a href="https://medium.com/@megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#medium"></use></svg></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>

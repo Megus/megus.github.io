@@ -1,5 +1,223 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://megus.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://megus.org/" rel="alternate" type="text/html" /><updated>2020-04-19T22:50:51+03:00</updated><id>https://megus.org/feed.xml</id><title type="html">Megus</title><subtitle>Personal website of Roman &quot;Megus&quot; Petrov, a programmer and a musician.
-</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><entry><title type="html">Creativity through limitation: Shadertoy</title><link href="https://megus.org/2019/08/17/creativity-through-limitation-shadertoy.html" rel="alternate" type="text/html" title="Creativity through limitation: Shadertoy" /><published>2019-08-17T00:00:00+03:00</published><updated>2019-08-17T00:00:00+03:00</updated><id>https://megus.org/2019/08/17/creativity-through-limitation-shadertoy</id><content type="html" xml:base="https://megus.org/2019/08/17/creativity-through-limitation-shadertoy.html">&lt;p&gt;This is the third article in “Creativity through limitation” series. In case you missed the previous ones:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://megus.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://megus.org/" rel="alternate" type="text/html" /><updated>2020-05-04T00:04:09+03:00</updated><id>https://megus.org/feed.xml</id><title type="html">Megus</title><subtitle>Personal website of Roman &quot;Megus&quot; Petrov, a programmer and a musician.
+</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><entry><title type="html">Making of PICOCHAK</title><link href="https://megus.org/2020/05/04/making-of-picochak.html" rel="alternate" type="text/html" title="Making of PICOCHAK" /><published>2020-05-04T00:00:00+03:00</published><updated>2020-05-04T00:00:00+03:00</updated><id>https://megus.org/2020/05/04/making-of-picochak</id><content type="html" xml:base="https://megus.org/2020/05/04/making-of-picochak.html">&lt;p&gt;Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.” This article is “behind the scenes” of PICOCHAK.&lt;/p&gt;
+
+&lt;iframe class=&quot;frame&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/gUooT-v4LIU&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pouet.net/prod.php?which=83557&quot; title=&quot;PICOCHAK at pouët.net&quot;&gt;PICOCHAK at pouët.net&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.lexaloffle.com/bbs/?tid=35774&quot; title=&quot;Topic at Lexaloffle BBS&quot;&gt;Topic at Lexaloffle BBS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Megus/picochak&quot; title=&quot;Source code at GitHub&quot;&gt;Source code at GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The moment I had learned that &lt;a href=&quot;https://cafeparty.org.ru/2019/&quot;&gt;CAFe demoparty&lt;/a&gt; is going to be back in 2019, I decided to take part in it. In 1999, CAFe became the first party I had visited. I wasn’t creating PICOCHAK alone; other members of the PICOCHAK team are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://soundcloud.com/n1k-o/&quot;&gt;Oleg Nikitin (n1k-o/Stardust)&lt;/a&gt; — music&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zxart.ee/rus/avtory/d/diver/qid:121913/&quot;&gt;Alexey Golubtsov (Diver/Stardust)&lt;/a&gt; — graphics&lt;/li&gt;
+  &lt;li&gt;Damir Nasyrov (Adam Bazaroff) — Tatar culture expert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was easy to come up with a concept. As CAFe is held in Kazan, the capital of Tatarstan, Oleg suggested using Tatar food references. I added that I like space-themed demos. By mixing these, we got our “Tatar food in space” idea. Chak-chak is a Tatar national sweet, so we made it a protagonist in the story, hence the name — PICOCHAK. Our demo took second place in the console demo competition.&lt;/p&gt;
+
+&lt;p&gt;PICOCHAK in numbers:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Duration: 4 minutes, 24 seconds&lt;/li&gt;
+  &lt;li&gt;12 effects&lt;/li&gt;
+  &lt;li&gt;446 8x8 sprites (2 64х64 textures, 38 8х8 font sprites, 104x64 demo logo, 8 24x24 planet sprites, 72x64 “gas station” sprite, 8 16x16 “ship” sprites).&lt;/li&gt;
+  &lt;li&gt;5 3D models (569 vertices and 1120 triangles in total).&lt;/li&gt;
+  &lt;li&gt;80 music patterns.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PICO-8 has many limitations, just like real retro hardware (I have an &lt;a href=&quot;https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html&quot;&gt;article about PICO-8&lt;/a&gt; for my “Creativity through limitations” series). With this demo, I wanted to push PICO-8 limits, because that’s what &lt;a href=&quot;https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html&quot;&gt;retro demoscene&lt;/a&gt; is about, in my opinion. I believe that I succeeded. I haven’t had so much fun while coding since the &lt;a href=&quot;https://megus.org/projects/malady.html&quot;&gt;4K intro “Malady”&lt;/a&gt; I made for ZX Spectrum back in 1999. Never-ending battle with platform constraints, inventing coding tricks, finding smart ways to improve the code — these were a breath of fresh air, which helped me to deal with the burnout I got at my daily job.&lt;/p&gt;
+
+&lt;h2 id=&quot;working-on-effects&quot;&gt;Working on effects&lt;/h2&gt;
+
+&lt;p&gt;I didn’t have the goal of inventing something new and unique. For my “demoscene comeback,” I wanted to re-create some classic demoscene effects because I missed the opportunity to do them on real retro-hardware back in time. I had already had a simple 3D engine on PICO-8, but for PICOCHAK I added some new features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Concave (non-convex) objects support&lt;/li&gt;
+  &lt;li&gt;Flat shading&lt;/li&gt;
+  &lt;li&gt;Textures (without perspective correction)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also re-created three classic effects: roto-zoomer, twister, and bump mapping. All other effects use sprites. As mentioned above, the demo has 446 8x8 sprites, while PICO-8 has a memory for 256 sprites only. To fit this much sprites, I used &lt;a href=&quot;https://www.lexaloffle.com/bbs/?tid=34058&quot;&gt;the PX9 compression algorithm by Zep&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image-row&quot;&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-rotozoomer.gif&quot; /&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-twister.gif&quot; /&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-bump-mapping.gif&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’m not going to write about the implementation of effects, because it’s pretty easy to find all the necessary information on the Internet. This article is about the unique PICO-8 challenges I faced when creating PICOCHAK.&lt;/p&gt;
+
+&lt;h2 id=&quot;scenario-system-connecting-all-effects-together&quot;&gt;Scenario system — connecting all effects together&lt;/h2&gt;
+
+&lt;p&gt;To transform a bunch of effects to a demo, it needs some control system which provides synchronization with music and switches effects. I called it a “scenario system.” In PICOCHAK, it went through three iterations. Every time I had rewritten the code from scratch, I got fewer tokens and better readable code. The common idea for all three iterations was that every effect is a function, which performs some initialization procedures and then returns &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;draw&lt;/code&gt; functions for the effect.&lt;/p&gt;
+
+&lt;p&gt;If you’re unfamiliar with PICO-8:  &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function updates the state, and &lt;code class=&quot;highlighter-rouge&quot;&gt;draw&lt;/code&gt; function performs the actual drawing on the screen. Both functions are called 30 or 60 times per second. While you can put state updates and drawing code in any of these functions, it’s better to separate them. If your &lt;code class=&quot;highlighter-rouge&quot;&gt;draw&lt;/code&gt; function takes more than 1/60 or 1/30 seconds to complete, you get FPS drop, but the perceived speed of objects on the screen doesn’t change, because PICO-8 will always call the &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function 30 or 60 times per seconds.&lt;/p&gt;
+
+&lt;h3 id=&quot;1st-attempt-state-machine&quot;&gt;1st attempt: state machine&lt;/h3&gt;
+
+&lt;p&gt;Initially, I decided to “describe” each effect as a &lt;a href=&quot;https://en.wikipedia.org/wiki/Finite-state_machine&quot;&gt;state machine&lt;/a&gt;, and&lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; functions in effects had series of &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; expressions: one &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; for each state. It worked fine, but it was hard to read and took many tokens. I could’ve stayed with this system, but I needed tokens for other effects.&lt;/p&gt;
+
+&lt;h3 id=&quot;2nd-attempt-better-state-machine&quot;&gt;2nd attempt: better state machine&lt;/h3&gt;
+
+&lt;p&gt;I was still thinking that state machines are the best for programming scenarios, so I made the better version, which took fewer tokens. The code became shorter, but still hard to read: the more effects I added, the less satisfied I was with it. I started to get lost in pieces of logic scattered here and there. I needed a better solution.&lt;/p&gt;
+
+&lt;h3 id=&quot;3rd-attempt-coroutines&quot;&gt;3rd attempt: coroutines&lt;/h3&gt;
+
+&lt;p&gt;Coroutines for the rescue! Every effect had got a coroutine with the control code, which became linear, you can read it like an actual scenario. Now, every effect function returns 4 values:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scenario coroutine&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function with common animations&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;draw&lt;/code&gt; function&lt;/li&gt;
+  &lt;li&gt;Background color (-1 if clearing screen before &lt;code class=&quot;highlighter-rouge&quot;&gt;draw&lt;/code&gt; call is not needed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To simplify synchronization, I created four helper functions: &lt;code class=&quot;highlighter-rouge&quot;&gt;loop_frames&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;wait_frames&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;loop_sync&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;wait_sync&lt;/code&gt;. Here’s a usage example:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop_frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;donuty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;move_donuts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;show_mega&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wait_frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop_frames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;210&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;offy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wait_sync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What this code does:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Decrease &lt;code class=&quot;highlighter-rouge&quot;&gt;donuty&lt;/code&gt; variable by 2 every frame (repeat for 64 frames)&lt;/li&gt;
+  &lt;li&gt;Set some flags&lt;/li&gt;
+  &lt;li&gt;Do nothing for 120 frames (common animations in an &lt;code class=&quot;highlighter-rouge&quot;&gt;update&lt;/code&gt; function are still running)&lt;/li&gt;
+  &lt;li&gt;Decrease &lt;code class=&quot;highlighter-rouge&quot;&gt;offy&lt;/code&gt; variable by 1 every frame (repeat for 210 frames)&lt;/li&gt;
+  &lt;li&gt;Wait for the next music synchronization point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just as I said: the control code is linear and very easy to read. You don’t see any &lt;code class=&quot;highlighter-rouge&quot;&gt;yield&lt;/code&gt;s because they’re all inside those helper functions.&lt;/p&gt;
+
+&lt;p&gt;The overall demo scenario is a Lua table with effect functions and music synchronization points. The music synchronization point is the number of music patterns played since the beginning of the demo. Each effect may have multiple synchronization points. Here’s a part of PICOCHAK scenario:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;fx_intro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fx_foodstars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fx_donuts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fx_donut_attack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fx_sky_transition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fx_preparations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;104&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;fx_kaleidoscope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;music-control-system&quot;&gt;Music control system&lt;/h2&gt;
+
+&lt;p&gt;Music was another challenge for us. PICO-8 doesn’t have much space for music, so it was clear: if we want to have a four-minute-long soundtrack, we need to use some tricks. Here’s what I came up with:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pattern loops.&lt;/strong&gt; I change loop parameters dynamically because 64 pattern slots are not enough, the “unrolled” soundtrack would have taken over 80 pattern slots.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Overwriting patterns.&lt;/strong&gt; At some point after the intro, I overwrite the first 12 SFX with data stored in sprite memory. This trick gave n1k-o a bit more freedom and added variety to the music.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Audio effects.&lt;/strong&gt; It’s an undocumented feature of PICO-8. There are 4 per-channel audio effects: reverb, filter, distortion, and “half-speed.” Turning effects on and off during loops made repetitions less annoying.&lt;/p&gt;
+
+&lt;p&gt;I created a little “music control system,” which used a list of “audio commands.” Each command consists of 2 numbers: time and the command itself. Like in the scenario system, time is measured in the number of patterns played since the beginning of the demo. Here are some examples of commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0404&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;-- FX: filter and distortion for channel 3&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x131c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;-- Set loop for patterns 0x13-0x1c&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;-- FX: reverb on channel 1&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;-- FX: reverb on channels 1 and 4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;47&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;-- Overwrite patterns&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;n1k-o, our composer, writes a lot of music for ZX Spectrum with Vortex Tracker. To let him use one of his favorite tools, I created a converter from Vortex Tracker to PICO-8 format. ZX sound chip and PICO-8 sound system are different, so it was impossible to make a perfect converter. However, we developed some conventions which allowed him to do most of the work in Vortex Tracker and use PICO-8 music editor only for the final touches. The &lt;a href=&quot;https://github.com/Megus/vt2-to-pico-8&quot;&gt;VT2-to-PICO-8 converter code is available on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;optimizing-code-size&quot;&gt;Optimizing code size&lt;/h2&gt;
+
+&lt;p&gt;There are three limitations on the code size on PICO-8:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;8192 tokens&lt;/li&gt;
+  &lt;li&gt;15KB of compressed code size&lt;/li&gt;
+  &lt;li&gt;65535 characters&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The limits are listed in the order of their importance. If you’re creating something big on PICO-8, the first limit you’re going to hit is, most likely, the token limit. If you have too many tokens, you can’t even load a cart. The compressed code size limit is more forgiving — you can load and run a cart, but you won’t be able to export it to p8.png format.&lt;/p&gt;
+
+&lt;p&gt;When I started optimizing the code, I also began taking notes on how many tokens I saved after each optimization. According to my records, I managed to cut over 3000 tokens! That means that not optimized code would have taken over 11k tokens!&lt;/p&gt;
+
+&lt;p&gt;The most token-heavy module of the demo is the 3D engine. The first function I optimized was the matrix multiplication function. It was unrolled entirely to make it faster. However, it’s used only three times each frame and doesn’t impact performance significantly, so I rewrote it using loops. The next one was a triangle rasterizer. Initially, I used a speedy implementation by ElectricGryphon, but it is very long, so I wrote my own function. It is not perfect, but it’s much shorter and only a tiny bit slower. Another significant optimization was rewriting a sorting function (I use it for concave objects). Instead of some 3rd party implementation of a merge sort, I wrote an in-place radix sort. Not only is it shorter, but it is also faster.&lt;/p&gt;
+
+&lt;div class=&quot;image-row&quot;&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-three-objects.gif&quot; /&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-donut.gif&quot; /&gt;
+&lt;img style=&quot;width: 33%; height: 33%;&quot; src=&quot;/assets/blog-images/2020-05-04-picochak.gif&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;All 3D models in PICOCHAK are programmatically generated, and these generators took about a thousand tokens. It was OK in the beginning, but when I started to add more effects, it became clear that it’s too much. I decided to put all model data (vertices and triangles) to sprite/map memory, and I failed: there wasn’t enough space. In the end, I chose a hybrid approach: storing vertices in the map memory and building triangles programmatically.&lt;/p&gt;
+
+&lt;p&gt;All these are the algorithmic optimizations, but there are also some conventional techniques which you can apply to any PICO-8 code:&lt;/p&gt;
+
+&lt;h3 id=&quot;multiple-assignments-on-the-same-line&quot;&gt;Multiple assignments on the same line&lt;/h3&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Instead of this:&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- Write this:&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It makes your code difficult to read, but it saves you one token for each variable. Be careful, such assignments are “atomic,” so the code like this won’t work:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;field&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By the way, multiple assignments are perfect for swapping variable values without using a temporary variable:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;move-repeating-code-to-functions&quot;&gt;Move repeating code to functions&lt;/h3&gt;
+
+&lt;p&gt;This is a pretty obvious recommendation, but it can save you a lot of tokens. I made functions even for basic calculations like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ssin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tscale&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is important to remember that each function call costs you some CPU time. In the twister effect, I had to find a balance between using functions and unrolling them to achieve 60 FPS.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-language-features&quot;&gt;Use language features&lt;/h3&gt;
+
+&lt;p&gt;PICO-8 has some additions to Lua syntax which save tokens:&lt;/p&gt;
+
+&lt;div class=&quot;language-lua highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 5 tokens&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 3 tokens&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can use &lt;code class=&quot;highlighter-rouge&quot;&gt;all()&lt;/code&gt; to iterate through arrays. It takes fewer tokens, but it’s a bit slower. Another trick is to use &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;band(x, mask)&lt;/code&gt; for masking if you work with positive integers.&lt;/p&gt;
+
+&lt;h3 id=&quot;put-all-strings-to-a-single-variable&quot;&gt;Put all strings to a single variable&lt;/h3&gt;
+
+&lt;p&gt;There’s quite a lot of text in PICOCHAK. Initially, every string took 3 tokens: the string itself and a pair of coordinates. To save tokens, I used the fact that a string of any length is just one token for PICO-8. The demo is linear, and each line is used only once, so I could merge all texts and coordinates into a single very long string variable. I shaved off over a hundred tokens with this trick!&lt;/p&gt;
+
+&lt;h3 id=&quot;optimizing-compressed-code-size&quot;&gt;Optimizing compressed code size&lt;/h3&gt;
+
+&lt;p&gt;When I was close to the completion, I finally ran into the compressed code size limit. However, it was elementary to fix:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Convert code indentation to tabs&lt;/li&gt;
+  &lt;li&gt;Remove almost all comments&lt;/li&gt;
+  &lt;li&gt;Give some variables shorter names&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The process of creating PICOCHAK was challenging but enjoyable. I enjoyed every minute of it, including the routine moments of code size optimization. I’m definitely making another demo for PICO-8 in the future!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.” This article is “behind the scenes” of PICOCHAK.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2020-05-04-cover.jpg" /></entry><entry><title type="html">Creativity through limitation: Shadertoy</title><link href="https://megus.org/2019/08/17/creativity-through-limitation-shadertoy.html" rel="alternate" type="text/html" title="Creativity through limitation: Shadertoy" /><published>2019-08-17T00:00:00+03:00</published><updated>2019-08-17T00:00:00+03:00</updated><id>https://megus.org/2019/08/17/creativity-through-limitation-shadertoy</id><content type="html" xml:base="https://megus.org/2019/08/17/creativity-through-limitation-shadertoy.html">&lt;p&gt;This is the third article in “Creativity through limitation” series. In case you missed the previous ones:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/2018/08/05/creativity-through-limitation-8-bit-demoscene.html&quot;&gt;8-bit demoscene&lt;/a&gt;&lt;/li&gt;
@@ -15,8 +233,6 @@
 &lt;iframe width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; src=&quot;https://www.shadertoy.com/embed/XsBXWt?gui=true&amp;amp;t=10&amp;amp;paused=true&amp;amp;muted=false&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p class=&quot;footnote&quot;&gt;Click the “play” button to see it in action.&lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;p&gt;You may think that it looks pretty simple compared to, for example, the latest video games. Let me give you a quick high-level introduction to 3D graphics (CG-pros, if you read it, don’t blame me for the oversimplification, please). To draw some 3D object, you need to model it with triangles, define transformations (rotation, scaling, projection, etc.) and then use some shader magic. Shaders are small programs running on GPU — graphics processing unit on a video card. First, you pass all polygon vertices and transformations to vertex shaders. They convert 3D coordinates to 2D screen coordinates and pass all data to a rasterizer. Rasterizer draws triangles and calls fragment shaders for each pixel to get the color.&lt;/p&gt;
 
@@ -47,7 +263,7 @@
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;fragColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;fragColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   
+        &lt;span class=&quot;n&quot;&gt;fragColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -82,13 +298,13 @@
     &lt;span class=&quot;kt&quot;&gt;vec2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fragCoord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iResolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iResolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iResolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
+
     &lt;span class=&quot;c1&quot;&gt;// Camera&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;normalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    
+
     &lt;span class=&quot;c1&quot;&gt;// Ray-tracing&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;fragColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;camO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.);&lt;/span&gt;      
+    &lt;span class=&quot;n&quot;&gt;fragColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;camO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -129,7 +345,7 @@
         &lt;span class=&quot;n&quot;&gt;sD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;sD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;sD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -138,7 +354,7 @@
 &lt;div class=&quot;language-glsl highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;findIntersection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ignore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1e5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
+
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ignore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
             &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -185,21 +401,21 @@
 &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;trace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.;&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findIntersection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;camO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    
+
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;c1&quot;&gt;// There was no intersection, return background color&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
+
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spheres&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;c1&quot;&gt;// It's a light source, don't need to shade it&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
+
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightPoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sphereCenter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    
+
     &lt;span class=&quot;c1&quot;&gt;// Sphere color&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spheres&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SIZE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xyz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AMBIENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AMBIENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AMBIENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -210,7 +426,7 @@
 
     &lt;span class=&quot;c1&quot;&gt;// Light direction vector&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;vec3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightDir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;normalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightPoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    
+
     &lt;span class=&quot;c1&quot;&gt;// Check if there's another sphere between this one and the light source&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dShadow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.;&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shadowedBy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findIntersection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightDir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sphere&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dShadow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -219,13 +435,13 @@
         &lt;span class=&quot;c1&quot;&gt;// We're under shadow, use ambient color&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    
+
     &lt;span class=&quot;c1&quot;&gt;// Lighting (diffusion and specular)&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cosA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iNormal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightDir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.);&lt;/span&gt;
     &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cosS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;camL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reflect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lightDir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iNormal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.);&lt;/span&gt;
 
     &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dSquared&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iPoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.);&lt;/span&gt;
-    
+
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;sColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lightColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cosA&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LIGHT_POWER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dSquared&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;lightColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cosS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SPECULAR_POWER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LIGHT_POWER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dSquared&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -241,15 +457,13 @@
   &lt;li&gt;&lt;a href=&quot;http://iquilezles.org/www/articles/distfunctions/distfunctions.htm&quot;&gt;“Primitives” by Inigo Quilez&lt;/a&gt; — a reference to signed distance functions.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Shadertoy is a fantastic place, and I barely scratched the surface of its features. There’s much more: textures, handling user input, multiple buffers, “sound shaders,” etc. Just go to Shadertoy and explore it! I believe that you’ll find many mind-blowing shaders.&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">This is the third article in “Creativity through limitation” series. In case you missed the previous ones: 8-bit demoscene PICO-8 — Fantasy console When I first learned about Shadertoy and browsed through some works there, my reaction was: “HOW???!!!” I already knew what shaders are because I’m interested in computer graphics and learned OpenGL basics. This knowledge only amplified my fascination. Shadertoy is a place where anyone can share their experiments with realtime procedural computer graphics. It is created by Inigo Quilez (a demoscener and a former Pixar employee) and Pol Jeremias (currently working at Pixar). It uses WebGL, so everything runs right in a browser. Here’s an example of what people do: Click the “play” button to see it in action.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-08-17-cover.jpg" /></entry><entry><title type="html">Coding problems: why do I like them? Solving Tower of Hanoi puzzle</title><link href="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html" rel="alternate" type="text/html" title="Coding problems: why do I like them? Solving Tower of Hanoi puzzle" /><published>2019-07-17T00:00:00+03:00</published><updated>2019-07-17T00:00:00+03:00</updated><id>https://megus.org/2019/07/17/coding-problems-tower-of-hanoi</id><content type="html" xml:base="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html">&lt;p&gt;If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code.&lt;/p&gt;
+&lt;p&gt;Shadertoy is a fantastic place, and I barely scratched the surface of its features. There’s much more: textures, handling user input, multiple buffers, “sound shaders,” etc. Just go to Shadertoy and explore it! I believe that you’ll find many mind-blowing shaders.&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">This is the third article in “Creativity through limitation” series. In case you missed the previous ones:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-08-17-cover.jpg" /></entry><entry><title type="html">Coding problems: why do I like them? Solving Tower of Hanoi puzzle</title><link href="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html" rel="alternate" type="text/html" title="Coding problems: why do I like them? Solving Tower of Hanoi puzzle" /><published>2019-07-17T00:00:00+03:00</published><updated>2019-07-17T00:00:00+03:00</updated><id>https://megus.org/2019/07/17/coding-problems-tower-of-hanoi</id><content type="html" xml:base="https://megus.org/2019/07/17/coding-problems-tower-of-hanoi.html">&lt;p&gt;If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code.&lt;/p&gt;
 
 &lt;p&gt;Most coding problems are irrelevant to the daily job of a developer, and there’s no practical application for them. They’re just brain teasers or exercises. However, that is why I like them, and I would recommend programmers to solve them at least sometimes. Everybody knows that you need to do exercises to stay fit. The brain is a “muscle” too in the sense that you need to exercise to get the most of it. I think that coding exercises help developer’s brain to “stay fit.”&lt;/p&gt;
 
 &lt;p&gt;As developers, we spend much time fixing bugs and doing routine work. We rarely have tricky problems, but problem-solving is a crucial skill for a developer. Coding problems may help you to improve it. Also, as I already said, coding problems don’t have practical application usually, but you can pick something useful from them still.&lt;/p&gt;
 
 &lt;p&gt;In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now.&lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;h2 id=&quot;tower-of-hanoi&quot;&gt;Tower of Hanoi&lt;/h2&gt;
 
@@ -385,11 +599,9 @@
       &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;moves&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code. Most coding problems are irrelevant to the daily job of a developer, and there’s no practical application for them. They’re just brain teasers or exercises. However, that is why I like them, and I would recommend programmers to solve them at least sometimes. Everybody knows that you need to do exercises to stay fit. The brain is a “muscle” too in the sense that you need to exercise to get the most of it. I think that coding exercises help developer’s brain to “stay fit.” As developers, we spend much time fixing bugs and doing routine work. We rarely have tricky problems, but problem-solving is a crucial skill for a developer. Coding problems may help you to improve it. Also, as I already said, coding problems don’t have practical application usually, but you can pick something useful from them still. In this article, I want to tell you about the first coding challenge I had at university, and how I solved it back then and now.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-07-17-cover.jpg" /></entry><entry><title type="html">Creativity through limitation: PICO-8 — Fantasy Console</title><link href="https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html" rel="alternate" type="text/html" title="Creativity through limitation: PICO-8 — Fantasy Console" /><published>2019-06-18T00:00:00+03:00</published><updated>2019-06-18T00:00:00+03:00</updated><id>https://megus.org/2019/06/18/creativity-through-limitation-pico-8</id><content type="html" xml:base="https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html">&lt;p&gt;It is the second article in “Creativity through limitation” series. Check out the first one: &lt;a href=&quot;/2018/08/05/creativity-through-limitation-8-bit-demoscene.html&quot;&gt;8-bit demoscene&lt;/a&gt;. In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">If you’ve ever tried to get a job in a big company or participated in a programming contest, you know what coding problems (or coding challenges) are. A typical example would be to “implement a queue using two stacks.” Many people hate them as a part of interviews because coding problems don’t demonstrate your ability to write good code.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-07-17-cover.jpg" /></entry><entry><title type="html">Creativity through limitation: PICO-8 — Fantasy Console</title><link href="https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html" rel="alternate" type="text/html" title="Creativity through limitation: PICO-8 — Fantasy Console" /><published>2019-06-18T00:00:00+03:00</published><updated>2019-06-18T00:00:00+03:00</updated><id>https://megus.org/2019/06/18/creativity-through-limitation-pico-8</id><content type="html" xml:base="https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html">&lt;p&gt;It is the second article in “Creativity through limitation” series. Check out the first one: &lt;a href=&quot;/2018/08/05/creativity-through-limitation-8-bit-demoscene.html&quot;&gt;8-bit demoscene&lt;/a&gt;. In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it.&lt;/p&gt;
 
 &lt;p&gt;When was the last time you coded something just for fun? If you’re like me, then it hasn’t happened for years. However, about a year ago, I learned about PICO-8, bought it, and I have to say that these were probably the most worthy $15 I spent on myself last year!&lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;h2 id=&quot;what-is-pico-8&quot;&gt;What is PICO-8?&lt;/h2&gt;
 
@@ -594,7 +806,7 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;As I recall, it’s the first time I’ve tried to explain a demo effect, and I’m afraid that it may not be clear enough. I tried to add as many comments as possible, but if you’ve got any questions, let me know, I’m ready to improve and add more details. Thanks for your attention!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="demoscene" /><category term="creativity_through_limitations" /><category term="8bit" /><summary type="html">It is the second article in “Creativity through limitation” series. Check out the first one: 8-bit demoscene. In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it. When was the last time you coded something just for fun? If you’re like me, then it hasn’t happened for years. However, about a year ago, I learned about PICO-8, bought it, and I have to say that these were probably the most worthy $15 I spent on myself last year!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-06-18-cover.jpg" /></entry><entry><title type="html">Long time, no see</title><link href="https://megus.org/2019/06/12/long-time-no-see.html" rel="alternate" type="text/html" title="Long time, no see" /><published>2019-06-12T00:00:00+03:00</published><updated>2019-06-12T00:00:00+03:00</updated><id>https://megus.org/2019/06/12/long-time-no-see</id><content type="html" xml:base="https://megus.org/2019/06/12/long-time-no-see.html">&lt;p&gt;I started my blog exactly a year ago, wrote four posts over three months, and then disappeared. I wanted to post new articles at least every month, but I failed. I failed because I didn’t have a daily dedicated time for my blog.&lt;/p&gt;
+&lt;p&gt;As I recall, it’s the first time I’ve tried to explain a demo effect, and I’m afraid that it may not be clear enough. I tried to add as many comments as possible, but if you’ve got any questions, let me know, I’m ready to improve and add more details. Thanks for your attention!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="demoscene" /><category term="creativity_through_limitations" /><category term="8bit" /><summary type="html">It is the second article in “Creativity through limitation” series. Check out the first one: 8-bit demoscene. In this article, I’m going to tell you about the fantasy console PICO-8 and recreate two classic demoscene effects with it.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2019-06-18-cover.jpg" /></entry><entry><title type="html">Long time, no see</title><link href="https://megus.org/2019/06/12/long-time-no-see.html" rel="alternate" type="text/html" title="Long time, no see" /><published>2019-06-12T00:00:00+03:00</published><updated>2019-06-12T00:00:00+03:00</updated><id>https://megus.org/2019/06/12/long-time-no-see</id><content type="html" xml:base="https://megus.org/2019/06/12/long-time-no-see.html">&lt;p&gt;I started my blog exactly a year ago, wrote four posts over three months, and then disappeared. I wanted to post new articles at least every month, but I failed. I failed because I didn’t have a daily dedicated time for my blog.&lt;/p&gt;
 
 &lt;p&gt;A lot of things changed since that time (and I will write a post about it), now I’m back. I’ve been working on &lt;strong&gt;megus.org&lt;/strong&gt; for the past two weeks every single day and here are some updates:&lt;/p&gt;
 
@@ -604,9 +816,7 @@
   &lt;li&gt;A new article is close to completion, I plan to publish it next week.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Megus is back, stay tuned for updates!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><summary type="html">I started my blog exactly a year ago, wrote four posts over three months, and then disappeared. I wanted to post new articles at least every month, but I failed. I failed because I didn’t have a daily dedicated time for my blog. A lot of things changed since that time (and I will write a post about it), now I’m back. I’ve been working on megus.org for the past two weeks every single day and here are some updates: The new Portfolio section The updated Resume page A new article is close to completion, I plan to publish it next week. Megus is back, stay tuned for updates!</summary></entry><entry><title type="html">Ludum Dare 42 game jam: our experience</title><link href="https://megus.org/2018/09/02/ludum-dare-42.html" rel="alternate" type="text/html" title="Ludum Dare 42 game jam: our experience" /><published>2018-09-02T00:00:00+03:00</published><updated>2018-09-02T00:00:00+03:00</updated><id>https://megus.org/2018/09/02/ludum-dare-42</id><content type="html" xml:base="https://megus.org/2018/09/02/ludum-dare-42.html">&lt;p&gt;Last month &lt;a href=&quot;https://wisehedgehog.studio&quot;&gt;Wise Hedgehog Studio&lt;/a&gt; team took part in &lt;a href=&quot;https://ldjam.com/&quot;&gt;Ludum Dare 42 game jam&lt;/a&gt;. A game jam is an accelerated game development competition. Ludum Dare is the oldest and widely known online jam. It is held three times a year. You have two or three days to create a game that fits a given theme. This time participants submitted over three thousands games!&lt;/p&gt;
-
-&lt;!--more--&gt;
+&lt;p&gt;Megus is back, stay tuned for updates!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><summary type="html">I started my blog exactly a year ago, wrote four posts over three months, and then disappeared. I wanted to post new articles at least every month, but I failed. I failed because I didn’t have a daily dedicated time for my blog.</summary></entry><entry><title type="html">Ludum Dare 42 game jam: our experience</title><link href="https://megus.org/2018/09/02/ludum-dare-42.html" rel="alternate" type="text/html" title="Ludum Dare 42 game jam: our experience" /><published>2018-09-02T00:00:00+03:00</published><updated>2018-09-02T00:00:00+03:00</updated><id>https://megus.org/2018/09/02/ludum-dare-42</id><content type="html" xml:base="https://megus.org/2018/09/02/ludum-dare-42.html">&lt;p&gt;Last month &lt;a href=&quot;https://wisehedgehog.studio&quot;&gt;Wise Hedgehog Studio&lt;/a&gt; team took part in &lt;a href=&quot;https://ldjam.com/&quot;&gt;Ludum Dare 42 game jam&lt;/a&gt;. A game jam is an accelerated game development competition. Ludum Dare is the oldest and widely known online jam. It is held three times a year. You have two or three days to create a game that fits a given theme. This time participants submitted over three thousands games!&lt;/p&gt;
 
 &lt;p&gt;It’s our second time participating in Ludum Dare, and we loved the experience. Over the weekend we created a little puzzle game “No Space In My Stomach” about an extraterrestrial snail Stewart.&lt;/p&gt;
 
@@ -720,8 +930,6 @@
 &lt;hr /&gt;
 
 &lt;p&gt;Ludum Dare 42 was a fantastic experience for our team. We’re looking forward to taking part in the next jam in December!&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="gamedev" /><summary type="html">Last month Wise Hedgehog Studio team took part in Ludum Dare 42 game jam. A game jam is an accelerated game development competition. Ludum Dare is the oldest and widely known online jam. It is held three times a year. You have two or three days to create a game that fits a given theme. This time participants submitted over three thousands games!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2018-09-05-cover.jpg" /></entry><entry><title type="html">Creativity through limitation: 8-bit demoscene</title><link href="https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html" rel="alternate" type="text/html" title="Creativity through limitation: 8-bit demoscene" /><published>2018-08-05T00:00:00+03:00</published><updated>2018-08-05T00:00:00+03:00</updated><id>https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene</id><content type="html" xml:base="https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html">&lt;p&gt;“Creativity through limitation” is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.&lt;/p&gt;
-
-&lt;!--more--&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Demoscene&quot;&gt;Demoscene&lt;/a&gt; is a computer art subculture; its roots are in software cracking culture. Starting back in the 80s, crackers were adding small introductions to games — cracktros. Cracktros usually featured sweet music and visual effects. Crackers started competing for the best effects, and it became a whole new culture — the demoscene. A demo is like a music video, but the computer in real-time generates all visuals.&lt;/p&gt;
@@ -856,8 +1064,6 @@
 &lt;iframe class=&quot;frame&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/W-Crwct7U0c&quot;&gt;&lt;/iframe&gt;
 &lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;http://www.pouet.net/prod.php?which=1216&quot;&gt;Second Reality (C64 version) by Smash Designs&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="demoscene" /><category term="creativity_through_limitations" /><category term="8bit" /><summary type="html">“Creativity through limitation” is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2018-08-05-cover.jpg" /></entry><entry><title type="html">How to become a better programmer</title><link href="https://megus.org/2018/06/19/how-to-become-a-better-programmer.html" rel="alternate" type="text/html" title="How to become a better programmer" /><published>2018-06-19T00:00:00+03:00</published><updated>2018-06-19T00:00:00+03:00</updated><id>https://megus.org/2018/06/19/how-to-become-a-better-programmer</id><content type="html" xml:base="https://megus.org/2018/06/19/how-to-become-a-better-programmer.html">&lt;p&gt;To become a better programmer, you need to keep doing two things: practice and learn. Yes, it’s that simple and obvious. Finding what to learn may be difficult, and it’s great when there’s someone who can give good advice. I didn’t get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.&lt;/p&gt;
 
-&lt;!--more--&gt;
-
 &lt;h2 id=&quot;learn-the-basics-of-functional-programming&quot;&gt;Learn the basics of functional programming&lt;/h2&gt;
 
 &lt;p&gt;I had a short Lisp course at the university, but I didn’t understand how can I use what I learned. For a long time, I ignored functional programming. It was something obscure to me. Don’t repeat my mistake! Even if you won’t ever need to write in functional languages like Haskell, Scala, Erlang or Clojure, it’s crucial to understand functional programming concepts and apply them in your work. Two essential concepts are:&lt;/p&gt;
@@ -907,8 +1113,6 @@
   &lt;p&gt;— Switch your brain on and never switch it off!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;!--more--&gt;
-
 &lt;p&gt;I first heard this phrase from the CTO at one of my previous jobs  —  Alexander Ionov. It sounds so trivial and obvious, but it greatly affected me. I want to tell you about some cases where developers forgot to switch on their brains.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-bubble-sort-in-the-production-code&quot;&gt;1. Bubble sort in the production code&lt;/h2&gt;
@@ -935,4 +1139,4 @@
 
 &lt;p&gt;I’m not saying that the developers who make these mistakes lack skills. No, usually they do a great job, but sometimes they just forget to switch their brains on. It happens to all of us, and it happened to me as well. However, every mistake is an opportunity to learn. Don’t miss these opportunities!&lt;/p&gt;
 
-&lt;p&gt;Can you share some funny situations like that?&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto: — Switch your brain on and never switch it off!</summary></entry></feed>
+&lt;p&gt;Can you share some funny situations like that?&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto:</summary></entry></feed>
