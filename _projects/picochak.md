@@ -13,8 +13,8 @@ seo:
 PICOCHAK is a demoscene production (or, simply, a demo) for [PICO-8 fantasy console]({% link _posts/2019-06-18-creativity-through-limitation-pico-8.md %}). It's a funny little demo about fictional space folks, which look surprisingly similar to Tatar national food, and their fight with evil donuts. My friends and I created it for [CAFe'2019 demoparty](https://cafeparty.org.ru), where it took the 2nd place in the console demo compo.
 
 - Code by Megus
-- [Music by n1k-o/Stardust](https://soundcloud.com/n1k-o/picochak-attack-of-donuts-pico-8)
-- Graphics by Diver/Stardust
+- Music by [n1k-o/Stardust](https://soundcloud.com/n1k-o/picochak-attack-of-donuts-pico-8)
+- Graphics by [Diver/Stardust](https://zxart.ee/rus/avtory/d/diver/qid:121913/)
 
 - [PICOCHAK at Lexaloffle BBS](https://www.lexaloffle.com/bbs/?tid=35774)
 - [PICOCHAK at pouët.net](https://www.pouet.net/prod.php?which=83557)
