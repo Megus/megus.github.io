@@ -30,7 +30,7 @@ PICOCHAK in numbers:
 - 5 3D models (569 vertices and 1120 triangles in total).
 - 80 music patterns.
 
-PICO-8 has many limitations, just like real retro hardware (I have an [article about PICO-8](https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html) for my “Creativity through limitations” series). With this demo, I wanted to push PICO-8 limits, because that’s what [retro demoscene](https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html) is about, in my opinion. I believe that I succeeded. I haven’t had so much fun while coding since the [4K intro “Malady”](https://megus.org/projects/malady.html) I made for ZX Spectrum back in 1999. Never-ending battle with platform constraints, inventing coding tricks, finding smart ways to improve the code — these were a breath of fresh air, which helped me to deal with the burnout I got at my daily job.
+PICO-8 has many limitations, just like real retro hardware (I have an [article about PICO-8](https://megus.org/2019/06/18/creativity-through-limitation-pico-8.html) in my “Creativity through limitations” series). With this demo, I wanted to push PICO-8 limits, because that’s what [retro demoscene](https://megus.org/2018/08/05/creativity-through-limitation-8-bit-demoscene.html) is about, in my opinion. I believe that I succeeded. I haven’t had so much fun while coding since the [4K intro “Malady”](https://megus.org/projects/malady.html) I made for ZX Spectrum back in 1999. Never-ending battle with platform constraints, inventing coding tricks, finding smart ways to improve the code — these were a breath of fresh air, which helped me to deal with the burnout I got at my daily job.
 
 ## Working on effects
 
