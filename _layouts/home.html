@@ -5,6 +5,8 @@
     {%- include header.html -%}
     <main class="page-content" aria-label="Content">
       <div class="home">
+        {%- include featured.html -%}
+
         {%- for post in site.posts -%}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {%- if forloop.first -%}
