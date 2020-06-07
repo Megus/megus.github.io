@@ -1,3 +1,3 @@
 #!/bin/bash
 bundle exec jekyll clean
-bundle exec jekyll serve
+bundle exec jekyll serve --drafts
