@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-104711057-2"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-104711057-2');
+	</script><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/favicon-96x96.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|PT+Serif|Source+Code+Pro&display=swap" rel="stylesheet"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Virtual Megus: my experiment with generative music | Megus</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Virtual Megus: my experiment with generative music" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A year ago, I began working on my biggest pet project — Virtual Megus. What is it and why I’m working on it." />
+<meta property="og:description" content="A year ago, I began working on my biggest pet project — Virtual Megus. What is it and why I’m working on it." />
+<link rel="canonical" href="https://megus.org/2020/08/18/virtual-megus.html" />
+<meta property="og:url" content="https://megus.org/2020/08/18/virtual-megus.html" />
+<meta property="og:site_name" content="Megus" />
+<meta property="og:image" content="https://megus.org/assets/blog-images/2020-08-18-cover.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-18T00:00:00+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@sugem" />
+<meta name="twitter:creator" content="@sugem" />
+<script type="application/ld+json">
+{"url":"https://megus.org/2020/08/18/virtual-megus.html","headline":"Virtual Megus: my experiment with generative music","dateModified":"2020-08-18T00:00:00+03:00","datePublished":"2020-08-18T00:00:00+03:00","image":"https://megus.org/assets/blog-images/2020-08-18-cover.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://megus.org/2020/08/18/virtual-megus.html"},"description":"A year ago, I began working on my biggest pet project — Virtual Megus. What is it and why I’m working on it.","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://megus.org/feed.xml" title="Megus" /></head>
+<body><header class="site-header" role="banner">
+  <div class="site-header-wrapper"><a href="/"><img class="site-logo" src="/assets/megus.png" />
+    <span class="site-title" rel="author">Megus</span></a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a><a class="page-link" href="/portfolio.html">Portfolio</a><a class="page-link" href="/music.html">Music</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=194003690636360&autoLogAppEvents=1"></script>
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header"><div class="post-cover" style="background-image: url(/assets/blog-images/2020-08-18-cover.jpg)">
+        <div class="gradient">
+          <img hidden itemprop="image" src="/assets/blog-images/2020-08-18-cover.jpg" />
+          <h1 class="post-cover-title p-name" itemprop="name headline">Virtual Megus: my experiment with generative music</h1>
+        </div>
+      </div><p class="post-meta">
+      <time class="dt-published" datetime="2020-08-18T00:00:00+03:00" itemprop="datePublished">Aug 18, 2020
+      </time>
+    </p>
+    <span hidden itemscope itemtype="http://schema.org/Person" itemprop="author">
+      <span hidden itemprop="name">Roman "Megus" Petrov</span>
+    </span>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="virtual-megus-my-experiment-with-generative-music">Virtual Megus: my experiment with generative music</h1>
+
+<iframe class="frame" allowfullscreen="" src="https://www.youtube.com/embed/ntrQNkF8z7g"></iframe>
+
+<p>A year ago, I began working on my current biggest pet project — <a href="https://megus.org/virtual-megus/">Virtual Megus</a>, a generative music system. Music is my hobby, and programming is my job. Projects which combine both of my main passions were always my favorite. I had the idea to create a program that composes music for years but never did it. Last August, I was on vacation and had plenty of time, so I finally decided to give it a try.</p>
+
+<p>Brian Eno, an ambient music pioneer, used the term “Generative music” to describe any music that is ever-different and changing, created by a system. However, the idea of creating music using algorithms or systems is far from new. According to <a href="https://ccrma.stanford.edu/~blackrse/algorithm.html">this article</a>, it dates back to the ancient Greeks! During the Classical period, one of “Musical dice games” (“Musikalisches Würfelspiel” in German) was attributed to Mozart himself, but, according to Wikipedia, this attribution hasn’t been authenticated.</p>
+
+<p>There are many generative music apps, and I tried a number of them. Some were simple and were generating abstract, ambient, and unstructured music. Others had an overwhelming amount of possibilities, but the learning curve was steep. So, like any typical programmer, I decided to invent my own system.</p>
+
+<p>Eno’s definition of generative music covers many different approaches. Manipulating pieces of pre-recorded music, random noises, rule-based composition — these are just a few examples. I picked the path of algorithmic composition. Creations often resemble their creators, mine is not an exception, hence the name — Virtual Megus. I want my system to “compose” melodic electronic music with a song-like structure. It’s an ambitious task, and as a self-taught musician without any formal music education, I realized that I can’t do it without learning music theory. I found an old Soviet music harmony textbook and began studying. When I learn something new, I add it to Virtual Megus.</p>
+
+<p>When I was beginning the work, I decided to make Virtual Megus available to everyone, that’s why it’s not a desktop or a mobile app, but a web application. Everything happens right in a browser, there’s no server-side code at all. As I wanted to learn WebAudio API better, I implemented everything myself from scratch without using any 3rd-party libraries like <a href="https://tonejs.github.io">Tone.js</a>. I also didn’t want to use any Javascript build systems, so all code is pure ES8 and is hosted directly from the repository with GitHub Pages.</p>
+
+<p>What I’ve implemented so far:</p>
+
+<ul>
+  <li>Sample-based drum machine.</li>
+  <li>Monophonic and polyphonic synths.</li>
+  <li>Song structure generator based on a state machine.</li>
+  <li>Chord sequence generator for diatonic scales.</li>
+  <li>Generators for drum patterns, bass, arpeggios, pads, and melodies.</li>
+  <li>Visualization system.</li>
+</ul>
+
+<p>The most challenging one for me now is the melody generator. It produces quite lovely results but still makes many harmony mistakes. I continue to improve every module, sometimes I even rewrite them from scratch when I decide to improve the system architecture or come up with new ideas.</p>
+
+<p>My generative music journey is only beginning. Virtual Megus backlog already has over 40 items, and it’s growing every week! Whenever I learn something new about music theory from books, Wikipedia, or YouTube videos, I get even more ideas.</p>
+
+<ul>
+  <li><a href="https://megus.org/virtual-megus/">Listen to Virtual Megus</a></li>
+  <li><a href="https://github.com/Megus/virtual-megus">Source code on GitHub</a></li>
+</ul>
+
+  </div>
+
+  <a class="u-url" href="/2020/08/18/virtual-megus.html" hidden></a>
+
+</article>
+
+<div class="social-buttons">
+  <a class="twitter-share-button" data-size="large"
+    href="https://twitter.com/intent/tweet?text=Virtual%20Megus:%20my%20experiment%20with%20generative%20music&via=sugem">
+    Tweet
+  </a>
+  <div class="fb-share-button" style="top: -7px;"
+    data-href="https://megus.org/2020/08/18/virtual-megus.html"
+    data-layout="button" data-size="large">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+  </div>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        © Roman “Megus” Petrov.<br />
+        <a class="u-email" href="mailto:roman.petrov@icloud.com">roman.petrov@icloud.com</a>
+      </div>
+      <div class="footer-col">
+        <a href="https://twitter.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a>
+        <a href="https://www.facebook.com/sugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg></a>
+        <a href="https://github.com/Megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a>
+        <a href="https://www.youtube.com/user/megussugem"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#youtube"></use></svg></a>    
+        <a href="https://medium.com/@megus"><svg viewbox="0 0 16 16" class="social-icon"><use xlink:href="/assets/minima-social-icons.svg#medium"></use></svg></a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>

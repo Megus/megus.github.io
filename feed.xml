@@ -1,5 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://megus.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://megus.org/" rel="alternate" type="text/html" /><updated>2020-06-07T12:53:06+03:00</updated><id>https://megus.org/feed.xml</id><title type="html">Megus</title><subtitle>Personal website of Roman &quot;Megus&quot; Petrov, a programmer and a musician.
-</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><entry><title type="html">Controlling screen orientation in Flutter apps on a per-screen basis</title><link href="https://megus.org/2020/06/07/flutter-orientation.html" rel="alternate" type="text/html" title="Controlling screen orientation in Flutter apps on a per-screen basis" /><published>2020-06-07T00:00:00+03:00</published><updated>2020-06-07T00:00:00+03:00</updated><id>https://megus.org/2020/06/07/flutter-orientation</id><content type="html" xml:base="https://megus.org/2020/06/07/flutter-orientation.html">&lt;h1 id=&quot;controlling-screen-orientation-in-flutter-apps-on-a-per-screen-basis&quot;&gt;Controlling screen orientation in Flutter apps on a per-screen basis&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://megus.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://megus.org/" rel="alternate" type="text/html" /><updated>2020-08-18T22:07:51+03:00</updated><id>https://megus.org/feed.xml</id><title type="html">Megus</title><subtitle>Personal website of Roman &quot;Megus&quot; Petrov, a programmer and a musician.
+</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><entry><title type="html">Virtual Megus: my experiment with generative music</title><link href="https://megus.org/2020/08/18/virtual-megus.html" rel="alternate" type="text/html" title="Virtual Megus: my experiment with generative music" /><published>2020-08-18T00:00:00+03:00</published><updated>2020-08-18T00:00:00+03:00</updated><id>https://megus.org/2020/08/18/virtual-megus</id><content type="html" xml:base="https://megus.org/2020/08/18/virtual-megus.html">&lt;h1 id=&quot;virtual-megus-my-experiment-with-generative-music&quot;&gt;Virtual Megus: my experiment with generative music&lt;/h1&gt;
+
+&lt;iframe class=&quot;frame&quot; allowfullscreen=&quot;&quot; src=&quot;https://www.youtube.com/embed/ntrQNkF8z7g&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A year ago, I began working on my current biggest pet project — &lt;a href=&quot;https://megus.org/virtual-megus/&quot;&gt;Virtual Megus&lt;/a&gt;, a generative music system. Music is my hobby, and programming is my job. Projects which combine both of my main passions were always my favorite. I had the idea to create a program that composes music for years but never did it. Last August, I was on vacation and had plenty of time, so I finally decided to give it a try.&lt;/p&gt;
+
+&lt;p&gt;Brian Eno, an ambient music pioneer, used the term “Generative music” to describe any music that is ever-different and changing, created by a system. However, the idea of creating music using algorithms or systems is far from new. According to &lt;a href=&quot;https://ccrma.stanford.edu/~blackrse/algorithm.html&quot;&gt;this article&lt;/a&gt;, it dates back to the ancient Greeks! During the Classical period, one of “Musical dice games” (“Musikalisches Würfelspiel” in German) was attributed to Mozart himself, but, according to Wikipedia, this attribution hasn’t been authenticated.&lt;/p&gt;
+
+&lt;p&gt;There are many generative music apps, and I tried a number of them. Some were simple and were generating abstract, ambient, and unstructured music. Others had an overwhelming amount of possibilities, but the learning curve was steep. So, like any typical programmer, I decided to invent my own system.&lt;/p&gt;
+
+&lt;p&gt;Eno’s definition of generative music covers many different approaches. Manipulating pieces of pre-recorded music, random noises, rule-based composition — these are just a few examples. I picked the path of algorithmic composition. Creations often resemble their creators, mine is not an exception, hence the name — Virtual Megus. I want my system to “compose” melodic electronic music with a song-like structure. It’s an ambitious task, and as a self-taught musician without any formal music education, I realized that I can’t do it without learning music theory. I found an old Soviet music harmony textbook and began studying. When I learn something new, I add it to Virtual Megus.&lt;/p&gt;
+
+&lt;p&gt;When I was beginning the work, I decided to make Virtual Megus available to everyone, that’s why it’s not a desktop or a mobile app, but a web application. Everything happens right in a browser, there’s no server-side code at all. As I wanted to learn WebAudio API better, I implemented everything myself from scratch without using any 3rd-party libraries like &lt;a href=&quot;https://tonejs.github.io&quot;&gt;Tone.js&lt;/a&gt;. I also didn’t want to use any Javascript build systems, so all code is pure ES8 and is hosted directly from the repository with GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;What I’ve implemented so far:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sample-based drum machine.&lt;/li&gt;
+  &lt;li&gt;Monophonic and polyphonic synths.&lt;/li&gt;
+  &lt;li&gt;Song structure generator based on a state machine.&lt;/li&gt;
+  &lt;li&gt;Chord sequence generator for diatonic scales.&lt;/li&gt;
+  &lt;li&gt;Generators for drum patterns, bass, arpeggios, pads, and melodies.&lt;/li&gt;
+  &lt;li&gt;Visualization system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The most challenging one for me now is the melody generator. It produces quite lovely results but still makes many harmony mistakes. I continue to improve every module, sometimes I even rewrite them from scratch when I decide to improve the system architecture or come up with new ideas.&lt;/p&gt;
+
+&lt;p&gt;My generative music journey is only beginning. Virtual Megus backlog already has over 40 items, and it’s growing every week! Whenever I learn something new about music theory from books, Wikipedia, or YouTube videos, I get even more ideas.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://megus.org/virtual-megus/&quot;&gt;Listen to Virtual Megus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Megus/virtual-megus&quot;&gt;Source code on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="virtualmegus" /><category term="music" /><summary type="html">Virtual Megus: my experiment with generative music</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://megus.org/assets/blog-images/2020-08-18-cover.jpg" /></entry><entry><title type="html">Controlling screen orientation in Flutter apps on a per-screen basis</title><link href="https://megus.org/2020/06/07/flutter-orientation.html" rel="alternate" type="text/html" title="Controlling screen orientation in Flutter apps on a per-screen basis" /><published>2020-06-07T00:00:00+03:00</published><updated>2020-06-07T00:00:00+03:00</updated><id>https://megus.org/2020/06/07/flutter-orientation</id><content type="html" xml:base="https://megus.org/2020/06/07/flutter-orientation.html">&lt;h1 id=&quot;controlling-screen-orientation-in-flutter-apps-on-a-per-screen-basis&quot;&gt;Controlling screen orientation in Flutter apps on a per-screen basis&lt;/h1&gt;
 
 &lt;p&gt;While working on the new Flutter app, I needed to make some screens appear in portrait mode only, others in landscape mode, and some should have supported both orientations. I had never done it before; all my previous apps were in portrait mode.&lt;/p&gt;
 
@@ -1237,36 +1269,4 @@
   &lt;li&gt;Be modest, accept the fact that there are developers better than you and learn from them.&lt;/li&gt;
   &lt;li&gt;Don’t be afraid to ask questions&lt;/li&gt;
   &lt;li&gt;Become a good team player&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">To become a better programmer, you need to keep doing two things: practice and learn. Yes, it’s that simple and obvious. Finding what to learn may be difficult, and it’s great when there’s someone who can give good advice. I didn’t get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.</summary></entry><entry><title type="html">Switch your brain on and never switch it off!</title><link href="https://megus.org/2018/06/12/switch-your-brain-on-and-never-switch-it-off.html" rel="alternate" type="text/html" title="Switch your brain on and never switch it off!" /><published>2018-06-12T00:00:00+03:00</published><updated>2018-06-12T00:00:00+03:00</updated><id>https://megus.org/2018/06/12/switch-your-brain-on-and-never-switch-it-off</id><content type="html" xml:base="https://megus.org/2018/06/12/switch-your-brain-on-and-never-switch-it-off.html">&lt;p&gt;I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;— Switch your brain on and never switch it off!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I first heard this phrase from the CTO at one of my previous jobs  —  Alexander Ionov. It sounds so trivial and obvious, but it greatly affected me. I want to tell you about some cases where developers forgot to switch on their brains.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-bubble-sort-in-the-production-code&quot;&gt;1. Bubble sort in the production code&lt;/h2&gt;
-
-&lt;p&gt;It happened when we were developing a game for a social network. A network had been planning to launch a developer platform in a month, and our game was to become one of the first games there. What a godsend! However, this godsend turned into a nightmare. My teammate wrote a leaderboard generation function that queried the whole top scores table from the database and used a bubble sort. There was no code review and a little testing. The game was approved by QA team and successfully published. In the very first hours after launch the server stopped responding to requests - it was too busy doing sorting! We had to stay in the office until midnight that day and fixed the issue with simple SQL sorting.&lt;/p&gt;
-
-&lt;p&gt;In a couple of days SQL sorting queries also became slow, but we wrote a proper leaderboard generation module before it was too late.&lt;/p&gt;
-
-&lt;p&gt;I understand why my teammate did it this way: he wrote a temporary implementation (and it’s perfectly fine to use bubble sort as a temporary solution), but forgot that thousands of people would use the app he wrote. Don’t forget to do load testing and think how you can scale your app.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-a-pedometer-app-that-crashes-in-anhour&quot;&gt;2. A pedometer app that crashes in an hour&lt;/h2&gt;
-
-&lt;p&gt;A team was working on an update to a pedometer mobile app. The code quality was bad, and the team decided to refactor it. They did a great job improving the architecture, but then they made a big mistake rewriting the core logic, the step counting routine. The old routine was working perfectly fine, but the new one was very unstable, it took weeks to make it work. They finally did it, and everyone was happy, but client’s QA engineers found out that app crashes during long workouts.&lt;/p&gt;
-
-&lt;p&gt;I joined the team to help and here’s what I found: the rewritten step counting routine was querying all recorded data every step to calculate aggregate values like pace, speed, and distance. So, the data to process used more and more memory leading to an inevitable “Out of memory” crash. The original routine used a sliding window approach and could run for hours. We reverted back to the old code and adapted it to the new data model.&lt;/p&gt;
-
-&lt;p&gt;There’s a golden rule in software development: “If something works, don’t touch it!”&lt;/p&gt;
-
-&lt;h2 id=&quot;3-a-chat-app-that-cant-handle-a-hundred-messages-in-a-conversation&quot;&gt;3. A chat app that can’t handle a hundred messages in a conversation&lt;/h2&gt;
-
-&lt;p&gt;Another mobile app: a messenger for sending pictures. Everything was OK until a conversation became quite long. The app crashed because it tried to keep all chat images in the memory. I’m not saying it’s terrible, it’s a good temporary solution for a prototype when you are more focused on the user experience. However, when you finish prototyping, you should replace your temporary solution with a proper implementation. And never forget to test your code on the real use cases!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I’m not saying that the developers who make these mistakes lack skills. No, usually they do a great job, but sometimes they just forget to switch their brains on. It happens to all of us, and it happened to me as well. However, every mistake is an opportunity to learn. Don’t miss these opportunities!&lt;/p&gt;
-
-&lt;p&gt;Can you share some funny situations like that?&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">I started to learn programming when I was six, and this year I’m celebrating thirty years of my programming experience (for the last sixteen years I’m getting paid for it). I learned a lot, and I believe it’s time to start to share my experience with the world. The first thing I want to share is my motto:</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;sugem&quot;}</name></author><category term="programming" /><summary type="html">To become a better programmer, you need to keep doing two things: practice and learn. Yes, it’s that simple and obvious. Finding what to learn may be difficult, and it’s great when there’s someone who can give good advice. I didn’t get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.</summary></entry></feed>
