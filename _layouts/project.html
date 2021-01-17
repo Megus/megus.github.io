@@ -12,4 +12,8 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="post-meta">
+    <p>Tags: {{ page.tags | sort | join: ", " }}</p>
+  </div>
+
 </article>

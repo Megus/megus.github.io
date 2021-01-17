@@ -2,6 +2,7 @@
 layout: project
 title: Acroplia
 description: "An education, team communication, and collaboration startup"
+tags: ["JavaScript", "Lua", "WebAudio", "React", "Redux", "Dart", "Flutter"]
 image: /assets/portfolio/acroplia.png
 order: 6
 seo:

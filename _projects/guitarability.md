@@ -2,6 +2,7 @@
 layout: project
 title: Guitarability
 description: "Performance evaluation module for a guitar training application"
+tags: ["iOS", "Objective-C", "Swift"]
 image: /assets/portfolio/guitarability.jpg
 order: 5
 seo:

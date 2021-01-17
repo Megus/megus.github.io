@@ -3,7 +3,7 @@ layout: post
 title: "Creativity through limitation: 8-bit demoscene"
 description: "Pushing old computers to the limits and beyond."
 image: /assets/blog-images/2018-08-05-cover.jpg
-tags: [demoscene, "creativity_through_limitations", "8bit"]
+tags: ["Demoscene", "Creativity through limitations", "8-bit"]
 ---
 
 "Creativity through limitation" is an excellent approach to creative work. Sometimes you feel overwhelmed with possibilities and get stuck because of this. It may seem strange at first, but adding constraints and limits can boost your creativity. You can come up with your artificial limitations or use a tool that limits you. It works in any area: music, art, etc. Programming is not an exception. This article is about demoscene on 8-bit computer platforms and the most common trick everybody used to overcome limited graphics possibilities of these platforms.

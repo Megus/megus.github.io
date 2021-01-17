@@ -3,7 +3,7 @@ layout: post
 title: "Virtual Megus: my experiment with generative music"
 description: "A year ago, I began working on my biggest pet project — Virtual Megus. What is it and why I’m working on it."
 image: /assets/blog-images/2020-08-18-cover.jpg
-tags: [virtualmegus, music]
+tags: ["Virtual Megus", "Music"]
 ---
 
 # Virtual Megus: my experiment with generative music

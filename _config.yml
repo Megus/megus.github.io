@@ -8,7 +8,7 @@ baseurl: ""
 url: "https://megus.org"
 
 twitter:
-  card: summary
+  card: summary_large_image
   username: sugem
 
 #logo: /path/to/logo.png

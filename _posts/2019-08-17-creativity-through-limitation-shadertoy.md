@@ -3,7 +3,7 @@ layout: post
 title: "Creativity through limitation: Shadertoy"
 description: "Shadertoy is a place where anyone can share realtime procedural graphics experiments. This article is an introduction to procedural graphics and ray tracing."
 image: /assets/blog-images/2019-08-17-cover.jpg
-tags: [programming]
+tags: ["Programming", "Creativity through limitations"]
 ---
 
 This is the third article in “Creativity through limitation” series. In case you missed the previous ones:

@@ -3,7 +3,7 @@ layout: post
 title: "Making of PICOCHAK"
 description: "“Behind the scenes” of the PICO-8 demo I created for CAFe'2019 demoparty."
 image: /assets/blog-images/2020-05-04-cover.jpg
-tags: [programming]
+tags: ["Programming", "Demoscene", "PICO-8", "Lua"]
 ---
 
 Last October, I made the first demoscene production after an almost two-decades-long break — a demo for PICO-8 fantasy console “PICOCHAK: Attack of Donuts.”

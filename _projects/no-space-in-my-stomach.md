@@ -2,6 +2,7 @@
 layout: project
 title: "No Space In My Stomach"
 description: "A puzzle platformer game created on Ludum Dare game jam"
+tags: ["Defold", "Lua"]
 image: /assets/portfolio/no-space-in-my-stomach.jpg
 order: 4
 seo:

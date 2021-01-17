@@ -2,6 +2,7 @@
 layout: project
 title: Virtual Megus
 description: "An experiment with procedural music"
+tags: ["WebAudio", "JavaScript"]
 image: /assets/portfolio/virtual-megus.jpg
 order: 8
 seo:

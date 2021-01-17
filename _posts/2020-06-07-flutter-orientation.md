@@ -3,7 +3,7 @@ layout: post
 title: "Controlling screen orientation in Flutter apps on a per-screen basis"
 description: "A solution to a commonly needed feature for mobile apps made with Flutter."
 image: /assets/blog-images/2020-06-07-cover.png
-tags: [programming, flutter, dart]
+tags: ["Programming", "Flutter", "Dart"]
 ---
 
 # Controlling screen orientation in Flutter apps on a per-screen basis

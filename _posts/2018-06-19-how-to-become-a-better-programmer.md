@@ -2,7 +2,7 @@
 layout: post
 title: "How to become a better programmer"
 description: "Four tips for beginner programmers."
-tags: [programming]
+tags: ["Programming"]
 ---
 
 To become a better programmer, you need to keep doing two things: practice and learn. Yes, it's that simple and obvious. Finding what to learn may be difficult, and it's great when there's someone who can give good advice. I didn't get much advice myself through my developer career, so I try to be a better leader and guide members of my teams. Here are several common recommendations I give to every junior developer.

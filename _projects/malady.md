@@ -2,6 +2,7 @@
 layout: project
 title: Malady
 description: "4K intro for ZX Spectrum"
+tags: ["ZX Spectrum", "Z80", "Demoscene"]
 image: /assets/portfolio/malady.jpg
 order: 1
 seo:

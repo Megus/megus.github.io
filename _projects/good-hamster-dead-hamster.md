@@ -2,6 +2,7 @@
 layout: project
 title: "Good Hamster Dead Hamster"
 description: "A mix of cellular automaton fun and strategy"
+tags: ["Defold", "Lua"]
 image: /assets/portfolio/good-hamster-dead-hamster.jpg
 order: 3
 seo:

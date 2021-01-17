@@ -2,6 +2,7 @@
 layout: project
 title: "Defold extensions"
 description: "Open-source libraries and extensions for Defold game engine"
+tags: ["Defold", "Lua"]
 image: /assets/portfolio/defold-extensions.jpg
 order: 2
 seo:
