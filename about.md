@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+image: /assets/social-general.png
 ---
 
 My name is Roman, but friends often call me Megus. I’m a software developer and a team leader with 18 years of professional experience. I wrote my first program when I was six, so in total, I’m programming for more than thirty years! Throughout my career, I worked with many languages and technologies, the solid foundation in computer science helps me to learn new ones quickly. My current main specialization is mobile application development.
